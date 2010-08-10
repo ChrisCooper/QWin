@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'QWin Mac' target in the 'QWin Mac' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
