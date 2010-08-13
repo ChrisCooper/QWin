@@ -17,6 +17,7 @@
 		BF38DDA71210CF670021F16C /* Timeslot.m in Sources */ = {isa = PBXBuildFile; fileRef = BF38DDA61210CF670021F16C /* Timeslot.m */; };
 		BF38DDAA1210D3290021F16C /* InstructionPeriod.m in Sources */ = {isa = PBXBuildFile; fileRef = BF38DDA91210D3290021F16C /* InstructionPeriod.m */; };
 		BF860E42120E8B0A00006BB7 /* CourseSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF860E41120E8B0A00006BB7 /* CourseSearchViewController.m */; };
+		BFEFDC4512151DA800324A7F /* CourseScraper.py in Resources */ = {isa = PBXBuildFile; fileRef = BFEFDC4412151DA800324A7F /* CourseScraper.py */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		BF38DDA91210D3290021F16C /* InstructionPeriod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstructionPeriod.m; sourceTree = "<group>"; };
 		BF860E40120E8B0A00006BB7 /* CourseSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseSearchViewController.h; sourceTree = "<group>"; };
 		BF860E41120E8B0A00006BB7 /* CourseSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseSearchViewController.m; sourceTree = "<group>"; };
+		BFEFDC4412151DA800324A7F /* CourseScraper.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = CourseScraper.py; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
+				BFEFDC4412151DA800324A7F /* CourseScraper.py */,
 			);
 			name = "QWin Mac";
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 			files = (
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
 				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
+				BFEFDC4512151DA800324A7F /* CourseScraper.py in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,8 +10,9 @@
 
 
 @interface InstructionPeriod : NSObject {
-	NSTimeIntervalSince1970
-	NSTimeInterval
+	NSDateComponents *_duration;
+	NSDateComponents *_time;
+	Semester _semester; //Fall, winter
 	InstructionType
 }
 

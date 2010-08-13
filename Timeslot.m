@@ -10,5 +10,5 @@
 
 
 @implementation Timeslot
-	NSMutableArray *_instructionPeriods; //InstructionPeriod
+
 @end
