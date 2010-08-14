@@ -9,9 +9,10 @@
 	};
 	256AC3D90F4B6AC300CF3369 /* QWin_MacAppDelegate.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1171, 655}}";
-			sepNavSelRange = "{253, 0}";
-			sepNavVisRange = "{0, 388}";
+			sepNavIntBoundsRect = "{{0, 0}, {1171, 651}}";
+			sepNavSelRange = "{163, 0}";
+			sepNavVisRange = "{0, 572}";
+			sepNavWindowFrame = "{{2, 4}, {1438, 874}}";
 		};
 	};
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
@@ -56,7 +57,7 @@
 					953,
 					60,
 					20,
-					48.16259765625,
+					48,
 					43,
 					43,
 				);
@@ -70,25 +71,16 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 303442393;
-			PBXWorkspaceStateSaveDate = 303442393;
+			PBXPerProjectTemplateStateSaveDate = 303466227;
+			PBXWorkspaceStateSaveDate = 303466227;
 		};
 		perUserProjectItems = {
-			BF1E9B22120FD3D9001BB743 = BF1E9B22120FD3D9001BB743 /* PBXTextBookmark */;
-			BF1E9B23120FD3D9001BB743 = BF1E9B23120FD3D9001BB743 /* PBXTextBookmark */;
-			BF38DDAD12123CB40021F16C = BF38DDAD12123CB40021F16C /* PBXTextBookmark */;
-			BF38DDAE12123CB40021F16C = BF38DDAE12123CB40021F16C /* PBXTextBookmark */;
-			BF38DDAF12123CB40021F16C = BF38DDAF12123CB40021F16C /* PBXTextBookmark */;
-			BF38DDB012123CB40021F16C = BF38DDB012123CB40021F16C /* PBXTextBookmark */;
-			BF38DDB212123CB40021F16C = BF38DDB212123CB40021F16C /* PBXTextBookmark */;
-			BF38DDB312123CB40021F16C = BF38DDB312123CB40021F16C /* PBXTextBookmark */;
-			BF38DDB512123CB40021F16C = BF38DDB512123CB40021F16C /* PBXTextBookmark */;
-			BF860E44120E925B00006BB7 = BF860E44120E925B00006BB7 /* PBXTextBookmark */;
-			BF860E45120E925B00006BB7 = BF860E45120E925B00006BB7 /* PBXTextBookmark */;
-			BFEFDC4612151EEB00324A7F = BFEFDC4612151EEB00324A7F /* PBXTextBookmark */;
-			BFEFDC4712151EEB00324A7F = BFEFDC4712151EEB00324A7F /* PBXTextBookmark */;
-			BFEFDC4812151EEB00324A7F = BFEFDC4812151EEB00324A7F /* PBXTextBookmark */;
-			BFEFDC4912151EEB00324A7F = BFEFDC4912151EEB00324A7F /* PBXTextBookmark */;
+			BF103A3212167149000B0E20 /* PBXTextBookmark */ = BF103A3212167149000B0E20 /* PBXTextBookmark */;
+			BF24DCC8121686FF009616D7 /* PBXTextBookmark */ = BF24DCC8121686FF009616D7 /* PBXTextBookmark */;
+			BF24DCC9121686FF009616D7 /* PBXTextBookmark */ = BF24DCC9121686FF009616D7 /* PBXTextBookmark */;
+			BF24DCCE121686FF009616D7 /* PBXTextBookmark */ = BF24DCCE121686FF009616D7 /* PBXTextBookmark */;
+			BF38DDB012123CB40021F16C /* PBXTextBookmark */ = BF38DDB012123CB40021F16C /* PBXTextBookmark */;
+			BF5CC521121659CA00979510 /* PBXTextBookmark */ = BF5CC521121659CA00979510 /* PBXTextBookmark */;
 		};
 		sourceControlManager = BF860E10120E436600006BB7 /* Source Control */;
 		userBuildSettings = {
@@ -100,158 +92,58 @@
 			BF860DFF120E435C00006BB7 /* QWin Mac */,
 		);
 	};
-	BF1E9B1E120FD3B9001BB743 /* Course.h */ = {
-		isa = PBXFileReference;
-		fileEncoding = 4;
-		lastKnownFileType = sourcecode.c.h;
-		name = Course.h;
-		path = "/Users/chriscooper/Desktop/Programming/Mac/QWin Mac/Course.h";
-		sourceTree = "<absolute>";
+	BF103A2012166D56000B0E20 /* courses.php */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1171, 550}}";
-			sepNavSelRange = "{443, 0}";
-			sepNavVisRange = "{0, 453}";
+			sepNavIntBoundsRect = "{{0, 0}, {1171, 653}}";
+			sepNavSelRange = "{212, 0}";
+			sepNavVisRange = "{0, 212}";
 		};
 	};
-	BF1E9B1F120FD3B9001BB743 /* Course.m */ = {
-		isa = PBXFileReference;
-		fileEncoding = 4;
-		lastKnownFileType = sourcecode.c.objc;
-		name = Course.m;
-		path = "/Users/chriscooper/Desktop/Programming/Mac/QWin Mac/Course.m";
-		sourceTree = "<absolute>";
+	BF103A2112166D56000B0E20 /* CourseScraper.py */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1171, 655}}";
-			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{0, 201}";
+			sepNavIntBoundsRect = "{{0, 0}, {2189, 2132}}";
+			sepNavSelRange = "{897, 0}";
+			sepNavVisRange = "{292, 1481}";
 		};
 	};
-	BF1E9B22120FD3D9001BB743 /* PBXTextBookmark */ = {
+	BF103A3212167149000B0E20 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = BF860E40120E8B0A00006BB7 /* CourseSearchViewController.h */;
-		name = "CourseSearchViewController.h: 17";
+		fRef = BF103A2012166D56000B0E20 /* courses.php */;
+		name = "courses.php: 9";
 		rLen = 0;
-		rLoc = 258;
+		rLoc = 212;
 		rType = 0;
-		vrLen = 464;
+		vrLen = 212;
 		vrLoc = 0;
 	};
-	BF1E9B23120FD3D9001BB743 /* PBXTextBookmark */ = {
+	BF24DCC8121686FF009616D7 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = BF860E41120E8B0A00006BB7 /* CourseSearchViewController.m */;
-		name = "CourseSearchViewController.m: 15";
+		fRef = BF103A2112166D56000B0E20 /* CourseScraper.py */;
+		name = "CourseScraper.py: 41";
 		rLen = 0;
-		rLoc = 306;
+		rLoc = 897;
 		rType = 0;
-		vrLen = 314;
+		vrLen = 1481;
+		vrLoc = 292;
+	};
+	BF24DCC9121686FF009616D7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3D90F4B6AC300CF3369 /* QWin_MacAppDelegate.m */;
+		name = "QWin_MacAppDelegate.m: 8";
+		rLen = 0;
+		rLoc = 163;
+		rType = 0;
+		vrLen = 572;
 		vrLoc = 0;
 	};
-	BF1E9B26120FD3F5001BB743 /* Subject.h */ = {
-		isa = PBXFileReference;
-		fileEncoding = 4;
-		lastKnownFileType = sourcecode.c.h;
-		name = Subject.h;
-		path = "/Users/chriscooper/Desktop/Programming/Mac/QWin Mac/Subject.h";
-		sourceTree = "<absolute>";
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1171, 545}}";
-			sepNavSelRange = "{235, 0}";
-			sepNavVisRange = "{0, 307}";
-		};
-	};
-	BF1E9B27120FD3F5001BB743 /* Subject.m */ = {
-		isa = PBXFileReference;
-		fileEncoding = 4;
-		lastKnownFileType = sourcecode.c.objc;
-		name = Subject.m;
-		path = "/Users/chriscooper/Desktop/Programming/Mac/QWin Mac/Subject.m";
-		sourceTree = "<absolute>";
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1171, 550}}";
-			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{0, 204}";
-		};
-	};
-	BF38DDA51210CF670021F16C /* Timeslot.h */ = {
-		isa = PBXFileReference;
-		fileEncoding = 4;
-		lastKnownFileType = sourcecode.c.h;
-		name = Timeslot.h;
-		path = "/Users/chriscooper/Desktop/Programming/Mac/QWin Mac/Timeslot.h";
-		sourceTree = "<absolute>";
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1171, 545}}";
-			sepNavSelRange = "{213, 0}";
-			sepNavVisRange = "{0, 278}";
-		};
-	};
-	BF38DDA61210CF670021F16C /* Timeslot.m */ = {
-		isa = PBXFileReference;
-		fileEncoding = 4;
-		lastKnownFileType = sourcecode.c.objc;
-		name = Timeslot.m;
-		path = "/Users/chriscooper/Desktop/Programming/Mac/QWin Mac/Timeslot.m";
-		sourceTree = "<absolute>";
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1171, 540}}";
-			sepNavSelRange = "{175, 0}";
-			sepNavVisRange = "{0, 207}";
-		};
-	};
-	BF38DDA81210D3290021F16C /* InstructionPeriod.h */ = {
-		isa = PBXFileReference;
-		fileEncoding = 4;
-		lastKnownFileType = sourcecode.c.h;
-		name = InstructionPeriod.h;
-		path = "/Users/chriscooper/Desktop/Programming/Mac/QWin Mac/InstructionPeriod.h";
-		sourceTree = "<absolute>";
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1171, 550}}";
-			sepNavSelRange = "{161, 0}";
-			sepNavVisRange = "{0, 347}";
-		};
-	};
-	BF38DDA91210D3290021F16C /* InstructionPeriod.m */ = {
-		isa = PBXFileReference;
-		fileEncoding = 4;
-		lastKnownFileType = sourcecode.c.objc;
-		name = InstructionPeriod.m;
-		path = "/Users/chriscooper/Desktop/Programming/Mac/QWin Mac/InstructionPeriod.m";
-		sourceTree = "<absolute>";
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1171, 550}}";
-			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{0, 234}";
-		};
-	};
-	BF38DDAD12123CB40021F16C /* PBXTextBookmark */ = {
+	BF24DCCE121686FF009616D7 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = BF1E9B27120FD3F5001BB743 /* Subject.m */;
-		name = "Subject.m: 1";
+		fRef = 256AC3D90F4B6AC300CF3369 /* QWin_MacAppDelegate.m */;
+		name = "QWin_MacAppDelegate.m: 8";
 		rLen = 0;
-		rLoc = 0;
+		rLoc = 163;
 		rType = 0;
-		vrLen = 204;
-		vrLoc = 0;
-	};
-	BF38DDAE12123CB40021F16C /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = BF1E9B1F120FD3B9001BB743 /* Course.m */;
-		name = "Course.m: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 201;
-		vrLoc = 0;
-	};
-	BF38DDAF12123CB40021F16C /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = BF38DDA91210D3290021F16C /* InstructionPeriod.m */;
-		name = "InstructionPeriod.m: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 234;
+		vrLen = 572;
 		vrLoc = 0;
 	};
 	BF38DDB012123CB40021F16C /* PBXTextBookmark */ = {
@@ -271,34 +163,14 @@
 		path = /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Foundation.framework/Versions/C/Headers/NSDate.h;
 		sourceTree = "<absolute>";
 	};
-	BF38DDB212123CB40021F16C /* PBXTextBookmark */ = {
+	BF5CC521121659CA00979510 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = BF38DDA81210D3290021F16C /* InstructionPeriod.h */;
-		name = "InstructionPeriod.h: 8";
+		fRef = 256AC3D80F4B6AC300CF3369 /* QWin_MacAppDelegate.h */;
+		name = "QWin_MacAppDelegate.h: 15";
 		rLen = 0;
-		rLoc = 161;
+		rLoc = 327;
 		rType = 0;
-		vrLen = 347;
-		vrLoc = 0;
-	};
-	BF38DDB312123CB40021F16C /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = BF38DDA61210CF670021F16C /* Timeslot.m */;
-		name = "Timeslot.m: 11";
-		rLen = 0;
-		rLoc = 175;
-		rType = 0;
-		vrLen = 207;
-		vrLoc = 0;
-	};
-	BF38DDB512123CB40021F16C /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = BF1E9B1E120FD3B9001BB743 /* Course.h */;
-		name = "Course.h: 20";
-		rLen = 0;
-		rLoc = 443;
-		rType = 0;
-		vrLen = 453;
+		vrLen = 334;
 		vrLoc = 0;
 	};
 	BF860DFF120E435C00006BB7 /* QWin Mac */ = {
@@ -330,6 +202,8 @@
 		showTypeColumn = 0;
 		sourceDirectories = (
 		);
+		variableFormatDictionary = {
+		};
 	};
 	BF860E10120E436600006BB7 /* Source Control */ = {
 		isa = PBXSourceControlManager;
@@ -344,98 +218,5 @@
 	BF860E11120E436600006BB7 /* Code sense */ = {
 		isa = PBXCodeSenseManager;
 		indexTemplatePath = "";
-	};
-	BF860E40120E8B0A00006BB7 /* CourseSearchViewController.h */ = {
-		isa = PBXFileReference;
-		fileEncoding = 4;
-		lastKnownFileType = sourcecode.c.h;
-		name = CourseSearchViewController.h;
-		path = "/Users/chriscooper/Desktop/Programming/Mac/QWin Mac/CourseSearchViewController.h";
-		sourceTree = "<absolute>";
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1171, 655}}";
-			sepNavSelRange = "{258, 0}";
-			sepNavVisRange = "{0, 265}";
-		};
-	};
-	BF860E41120E8B0A00006BB7 /* CourseSearchViewController.m */ = {
-		isa = PBXFileReference;
-		fileEncoding = 4;
-		lastKnownFileType = sourcecode.c.objc;
-		name = CourseSearchViewController.m;
-		path = "/Users/chriscooper/Desktop/Programming/Mac/QWin Mac/CourseSearchViewController.m";
-		sourceTree = "<absolute>";
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1171, 655}}";
-			sepNavSelRange = "{306, 0}";
-			sepNavVisRange = "{0, 314}";
-		};
-	};
-	BF860E44120E925B00006BB7 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 256AC3D80F4B6AC300CF3369 /* QWin_MacAppDelegate.h */;
-		name = "QWin_MacAppDelegate.h: 16";
-		rLen = 0;
-		rLoc = 327;
-		rType = 0;
-		vrLen = 334;
-		vrLoc = 0;
-	};
-	BF860E45120E925B00006BB7 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 256AC3D90F4B6AC300CF3369 /* QWin_MacAppDelegate.m */;
-		name = "QWin_MacAppDelegate.m: 13";
-		rLen = 0;
-		rLoc = 253;
-		rType = 0;
-		vrLen = 388;
-		vrLoc = 0;
-	};
-	BFEFDC4412151DA800324A7F /* CourseScraper.py */ = {
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {2189, 1807}}";
-			sepNavSelRange = "{2884, 0}";
-			sepNavVisRange = "{2339, 1229}";
-		};
-	};
-	BFEFDC4612151EEB00324A7F /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = BFEFDC4412151DA800324A7F /* CourseScraper.py */;
-		name = "CourseScraper.py: 20";
-		rLen = 0;
-		rLoc = 371;
-		rType = 0;
-		vrLen = 1041;
-		vrLoc = 0;
-	};
-	BFEFDC4712151EEB00324A7F /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = BF1E9B26120FD3F5001BB743 /* Subject.h */;
-		name = "Subject.h: 13";
-		rLen = 0;
-		rLoc = 235;
-		rType = 0;
-		vrLen = 307;
-		vrLoc = 0;
-	};
-	BFEFDC4812151EEB00324A7F /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = BF38DDA51210CF670021F16C /* Timeslot.h */;
-		name = "Timeslot.h: 13";
-		rLen = 0;
-		rLoc = 213;
-		rType = 0;
-		vrLen = 278;
-		vrLoc = 0;
-	};
-	BFEFDC4912151EEB00324A7F /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = BF38DDA61210CF670021F16C /* Timeslot.m */;
-		name = "Timeslot.m: 11";
-		rLen = 0;
-		rLoc = 175;
-		rType = 0;
-		vrLen = 207;
-		vrLoc = 0;
 	};
 }

@@ -13,7 +13,9 @@
 @synthesize window;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-	// Insert code here to initialize your application 
+	NSURL *url = [NSURL URLWithString:@"http://localhost/mac/quwin_mac/server/courses.php"];
+	NSString *contentsString = [NSString stringWithContentsOfURL:url encoding:NSUTF8StringEncoding error:nil];
+	NSLog(@"Result: %@", contentsString);
 }
 
 @end

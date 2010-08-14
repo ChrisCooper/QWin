@@ -20,25 +20,43 @@ class CourseEntry:
 	instructor="no instructor"
 	comments=""
 	
-	def detail(self):
-		print "--------------------------"
-		print "academicTerm: ", self.academicTerm
-		print "subject: ", self.subject
-		print "code: ", self.code
-		print "section: ", self.section
-		print "instructionType: ", self.instructionType
-		print "slot: ", self.slot
-		print "duration: ", self.duration
-		print "monTime: ", self.monTime
-		print "tuesTime: ", self.tuesTime
-		print "wedTime: ", self.wedTime
-		print "thursTime: ", self.thursTime
-		print "friTime: ", self.friTime
-		print "building: ", self.building
-		print "room: ", self.room
-		print "instructor: ", self.instructor
-		print "comments: ", self.comments
-		print "--------------"
+	def detail(self,file):
+		file.write("-----")
+		file.write("\n")
+		file.write("a: " + self.academicTerm)
+		file.write("\n")
+		file.write("su: " + self.subject)
+		file.write("\n")
+		file.write("code: "+ self.code)
+		file.write("\n")
+		file.write("se: "+ self.section)
+		file.write("\n")
+		file.write("i: "+ self.instructionType)
+		file.write("\n")
+		file.write("slot: "+ self.slot)
+		file.write("\n")
+		file.write("dur: "+ self.duration)
+		file.write("\n")
+		file.write("mon: "+ self.monTime)
+		file.write("\n")
+		file.write("tues: "+ self.tuesTime)
+		file.write("\n")
+		file.write("w: "+ self.wedTime)
+		file.write("\n")
+		file.write("thurs: "+ self.thursTime)
+		file.write("\n")
+		file.write("f: "+self.friTime)
+		file.write("\n")
+		file.write("b: "+ self.building)
+		file.write("\n")
+		file.write("r: "+ self.room)
+		file.write("\n")
+		file.write("prof: "+ self.instructor)
+		file.write("\n")
+		file.write("comm: "+ self.comments)
+		file.write("\n")
+		file.write("-----")
+		file.write("\n")
 		
 #			def __str__(self):
 #		string = self.academicTerm+", "+self.subject+" "+self.code+", "+self.section+", "+self.instructionType+", "+self.slot+", "+self.duration+", "+self.monTime+", "+self.tuesTime+", "+self.wedTime+", "+self.thursTime+", "+self.friTime+", "+self.building+", "+self.room+", "+self.instructor+", "+self.comments
@@ -55,6 +73,7 @@ def getSoup():
 	else:
 		file = open("Documents/TimeTableSearch.asp.html", "r")
 		dump = file.read()
+		file.close()
 		
 	print "Cleaning up data..."
 	soup = BeautifulSoup(dump)
@@ -117,25 +136,32 @@ def getCourseEntries():
 	
 	courses = []
 	
-	uniqueCourses = {}
+	#uniqueCourses = {}
 	
 	for row in rows:
 		course = getCourseEntryFromCourseRow(row)
 		
-		if not uniqueCourses.has_key(course.subject + course.code):
-			uniqueCourses[course.subject + course.code] = course
-				
+		#if not uniqueCourses.has_key(course.subject + course.code):
+		#	uniqueCourses[course.subject + course.code] = course
 		
 		courses.append(course)
-		course.detail()
-
 
 
 	print "done!"
 	print ""
 	print "Total course rows: ", len(courses)
-	print "Total unique courses: ", len(uniqueCourses.keys())
+	#print "Total unique courses: ", len(uniqueCourses.keys())
 	
 	return courses	
 
-getCourseEntries()
+def outputCourseEntries():
+	courses = getCourseEntries()
+	
+	file = open("course_entries.data", "w")
+	for course in courses:
+		course.detail(file)
+	
+	file.close()
+	
+	
+outputCourseEntries()
