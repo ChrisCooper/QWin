@@ -12,11 +12,6 @@
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
-		BF1E9B20120FD3B9001BB743 /* Course.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1E9B1F120FD3B9001BB743 /* Course.m */; };
-		BF1E9B28120FD3F5001BB743 /* Subject.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1E9B27120FD3F5001BB743 /* Subject.m */; };
-		BF38DDA71210CF670021F16C /* Timeslot.m in Sources */ = {isa = PBXBuildFile; fileRef = BF38DDA61210CF670021F16C /* Timeslot.m */; };
-		BF38DDAA1210D3290021F16C /* InstructionPeriod.m in Sources */ = {isa = PBXBuildFile; fileRef = BF38DDA91210D3290021F16C /* InstructionPeriod.m */; };
-		BF860E42120E8B0A00006BB7 /* CourseSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF860E41120E8B0A00006BB7 /* CourseSearchViewController.m */; };
 		BFEFDC4512151DA800324A7F /* CourseScraper.py in Resources */ = {isa = PBXBuildFile; fileRef = BFEFDC4412151DA800324A7F /* CourseScraper.py */; };
 /* End PBXBuildFile section */
 
@@ -33,16 +28,6 @@
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		8D1107310486CEB800E47090 /* QWin_Mac-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "QWin_Mac-Info.plist"; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* QWin Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "QWin Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BF1E9B1E120FD3B9001BB743 /* Course.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Course.h; sourceTree = "<group>"; };
-		BF1E9B1F120FD3B9001BB743 /* Course.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Course.m; sourceTree = "<group>"; };
-		BF1E9B26120FD3F5001BB743 /* Subject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Subject.h; sourceTree = "<group>"; };
-		BF1E9B27120FD3F5001BB743 /* Subject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Subject.m; sourceTree = "<group>"; };
-		BF38DDA51210CF670021F16C /* Timeslot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Timeslot.h; sourceTree = "<group>"; };
-		BF38DDA61210CF670021F16C /* Timeslot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Timeslot.m; sourceTree = "<group>"; };
-		BF38DDA81210D3290021F16C /* InstructionPeriod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InstructionPeriod.h; sourceTree = "<group>"; };
-		BF38DDA91210D3290021F16C /* InstructionPeriod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstructionPeriod.m; sourceTree = "<group>"; };
-		BF860E40120E8B0A00006BB7 /* CourseSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseSearchViewController.h; sourceTree = "<group>"; };
-		BF860E41120E8B0A00006BB7 /* CourseSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseSearchViewController.m; sourceTree = "<group>"; };
 		BFEFDC4412151DA800324A7F /* CourseScraper.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = CourseScraper.py; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,8 +47,6 @@
 			isa = PBXGroup;
 			children = (
 				BF1E9B21120FD3BF001BB743 /* Models */,
-				BF860E40120E8B0A00006BB7 /* CourseSearchViewController.h */,
-				BF860E41120E8B0A00006BB7 /* CourseSearchViewController.m */,
 				256AC3D80F4B6AC300CF3369 /* QWin_MacAppDelegate.h */,
 				256AC3D90F4B6AC300CF3369 /* QWin_MacAppDelegate.m */,
 			);
@@ -140,14 +123,6 @@
 		BF1E9B21120FD3BF001BB743 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				BF38DDA81210D3290021F16C /* InstructionPeriod.h */,
-				BF38DDA91210D3290021F16C /* InstructionPeriod.m */,
-				BF38DDA51210CF670021F16C /* Timeslot.h */,
-				BF38DDA61210CF670021F16C /* Timeslot.m */,
-				BF1E9B26120FD3F5001BB743 /* Subject.h */,
-				BF1E9B27120FD3F5001BB743 /* Subject.m */,
-				BF1E9B1E120FD3B9001BB743 /* Course.h */,
-				BF1E9B1F120FD3B9001BB743 /* Course.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -210,11 +185,6 @@
 			files = (
 				8D11072D0486CEB800E47090 /* main.m in Sources */,
 				256AC3DA0F4B6AC300CF3369 /* QWin_MacAppDelegate.m in Sources */,
-				BF860E42120E8B0A00006BB7 /* CourseSearchViewController.m in Sources */,
-				BF1E9B20120FD3B9001BB743 /* Course.m in Sources */,
-				BF1E9B28120FD3F5001BB743 /* Subject.m in Sources */,
-				BF38DDA71210CF670021F16C /* Timeslot.m in Sources */,
-				BF38DDAA1210D3290021F16C /* InstructionPeriod.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

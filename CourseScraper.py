@@ -46,14 +46,14 @@ class CourseEntry:
 
 
 def getSoup():
-	getActualResults = True
+	getActualResults = False
 	
 	if (getActualResults):
 		print "Fetching raw course data..."
 		dump =  urllib2.urlopen("http://130.15.242.24/TimeTableSearch.asp?viewAllRecords=TRUE")
 		print "done!" 
 	else:
-		file = open("TimeTableSearch.asp.html", "r")
+		file = open("Documents/TimeTableSearch.asp.html", "r")
 		dump = file.read()
 		
 	print "Cleaning up data..."
@@ -88,18 +88,18 @@ def getCourseEntryFromCourseRow(row):
 	else:
 		course.section = ""
 	
-	course.instructionType=getUniformEntry(tds[5])
-	course.slot=getUniformEntry(tds[6])
-	course.duration=getUniformEntry(tds[7])
-	course.monTime=getUniformEntry(tds[8])
-	course.tuesTime=getUniformEntry(tds[9])
-	course.wedTime=getUniformEntry(tds[10])
-	course.thursTime=getUniformEntry(tds[11])
-	course.friTime=getUniformEntry(tds[12])
-	course.building=getUniformEntry(tds[13])
-	course.room=getUniformEntry(tds[14])
-	course.instructor=getUniformEntry(tds[15])
-	course.comments=getUniformEntry(tds[16])
+	course.instructionType	= getUniformEntry(tds[5])
+	course.slot				= getUniformEntry(tds[6])
+	course.duration			= getUniformEntry(tds[7])
+	course.monTime			= getUniformEntry(tds[8])
+	course.tuesTime			= getUniformEntry(tds[9])
+	course.wedTime			= getUniformEntry(tds[10])
+	course.thursTime		= getUniformEntry(tds[11])
+	course.friTime			= getUniformEntry(tds[12])
+	course.building			= getUniformEntry(tds[13])
+	course.room				= getUniformEntry(tds[14])
+	course.instructor		= getUniformEntry(tds[15])
+	course.comments			= getUniformEntry(tds[16])
 	
 	return course
 	
@@ -116,14 +116,26 @@ def getCourseEntries():
 	print "Extracting individual courses..."
 	
 	courses = []
-	for i in range(len(rows)):
-		course = getCourseEntryFromCourseRow(rows[i])
+	
+	uniqueCourses = {}
+	
+	for row in rows:
+		course = getCourseEntryFromCourseRow(row)
+		
+		if not uniqueCourses.has_key(course.subject + course.code):
+			uniqueCourses[course.subject + course.code] = course
+				
+		
 		courses.append(course)
 		course.detail()
+
+
 
 	print "done!"
 	print ""
 	print "Total course rows: ", len(courses)
-	print "Total unique courses: unkown" 
+	print "Total unique courses: ", len(uniqueCourses.keys())
 	
 	return courses	
+
+getCourseEntries()
