@@ -9,7 +9,7 @@
 	};
 	256AC3D90F4B6AC300CF3369 /* QWin_MacAppDelegate.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1171, 649}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1171, 644}}";
 			sepNavSelRange = "{572, 0}";
 			sepNavVisRange = "{0, 572}";
 			sepNavWindowFrame = "{{2, 4}, {1438, 874}}";
@@ -49,6 +49,22 @@
 					PBXFileDataSource_Target_ColumnID,
 				);
 			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXSymbolsDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXSymbolsDataSource_SymbolNameID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					16,
+					200,
+					50,
+					933,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXSymbolsDataSource_SymbolTypeIconID,
+					PBXSymbolsDataSource_SymbolNameID,
+					PBXSymbolsDataSource_SymbolTypeID,
+					PBXSymbolsDataSource_ReferenceNameID,
+				);
+			};
 			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
 				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
@@ -71,17 +87,16 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 303533820;
-			PBXWorkspaceStateSaveDate = 303533820;
+			PBXPerProjectTemplateStateSaveDate = 304047202;
+			PBXWorkspaceStateSaveDate = 304047202;
 		};
 		perUserProjectItems = {
 			BF00EC6812173EDD0054E3DB = BF00EC6812173EDD0054E3DB /* PBXTextBookmark */;
-			BF00EC6912173EDD0054E3DB = BF00EC6912173EDD0054E3DB /* PBXTextBookmark */;
-			BF00EC6A12173EDD0054E3DB = BF00EC6A12173EDD0054E3DB /* PBXTextBookmark */;
 			BF24DCC8121686FF009616D7 = BF24DCC8121686FF009616D7 /* PBXTextBookmark */;
 			BF38DDB012123CB40021F16C = BF38DDB012123CB40021F16C /* PBXTextBookmark */;
 			BF5CC521121659CA00979510 = BF5CC521121659CA00979510 /* PBXTextBookmark */;
-			BFFF4A2D12178F100082C0D7 /* PBXTextBookmark */ = BFFF4A2D12178F100082C0D7 /* PBXTextBookmark */;
+			BF8F8506121F64C000EDD478 /* PBXTextBookmark */ = BF8F8506121F64C000EDD478 /* PBXTextBookmark */;
+			BFFF4A3A121798880082C0D7 = BFFF4A3A121798880082C0D7 /* PBXTextBookmark */;
 		};
 		sourceControlManager = BF860E10120E436600006BB7 /* Source Control */;
 		userBuildSettings = {
@@ -103,45 +118,13 @@
 		vrLen = 572;
 		vrLoc = 0;
 	};
-	BF00EC6912173EDD0054E3DB /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = BF103A2012166D56000B0E20 /* courses.php */;
-		name = "courses.php: 9";
-		rLen = 0;
-		rLoc = 314;
-		rType = 0;
-		vrLen = 258;
-		vrLoc = 0;
-	};
-	BF00EC6A12173EDD0054E3DB /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = BF103A2012166D56000B0E20 /* courses.php */;
-		name = "courses.php: 11";
-		rLen = 0;
-		rLoc = 280;
-		rType = 0;
-		vrLen = 432;
-		vrLoc = 0;
-	};
-	BF103A2012166D56000B0E20 /* courses.php */ = {
+	BF103A2112166D56000B0E20 /* CourseScraper.py */ = {
 		isa = PBXFileReference;
 		fileEncoding = 4;
-		lastKnownFileType = text.script.php;
-		name = courses.php;
-		path = /Users/chriscooper/Programming/mac/quwin_mac/server/courses.php;
+		lastKnownFileType = text.script.python;
+		name = CourseScraper.py;
+		path = /Users/chriscooper/Programming/mac/quwin_mac/server/CourseScraper.py;
 		sourceTree = "<absolute>";
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1171, 647}}";
-			sepNavSelRange = "{0, 427}";
-			sepNavVisRange = "{0, 427}";
-		};
-	};
-	BF103A2112166D56000B0E20 /* CourseScraper.py */ = {
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {2189, 2132}}";
-			sepNavSelRange = "{897, 0}";
-			sepNavVisRange = "{292, 1481}";
-		};
 	};
 	BF24DCC8121686FF009616D7 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -226,14 +209,45 @@
 		isa = PBXCodeSenseManager;
 		indexTemplatePath = "";
 	};
-	BFFF4A2D12178F100082C0D7 /* PBXTextBookmark */ = {
+	BF8F8503121F64A000EDD478 /* CourseScraper.py */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1171, 1469}}";
+			sepNavSelRange = "{2539, 0}";
+			sepNavVisRange = "{0, 1015}";
+		};
+	};
+	BF8F8506121F64C000EDD478 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = BF103A2012166D56000B0E20 /* courses.php */;
-		name = "courses.php: 11";
+		fRef = 256AC3D90F4B6AC300CF3369 /* QWin_MacAppDelegate.m */;
+		name = "QWin_MacAppDelegate.m: 22";
 		rLen = 0;
-		rLoc = 280;
+		rLoc = 572;
 		rType = 0;
-		vrLen = 432;
+		vrLen = 572;
+		vrLoc = 0;
+	};
+	BF8F850A121F67EC00EDD478 /* CourseModels.py */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1171, 644}}";
+			sepNavSelRange = "{508, 0}";
+			sepNavVisRange = "{0, 611}";
+		};
+	};
+	BF8F850C121F944000EDD478 /* ModelBuilder.py */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1171, 644}}";
+			sepNavSelRange = "{21, 0}";
+			sepNavVisRange = "{0, 84}";
+		};
+	};
+	BFFF4A3A121798880082C0D7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3D90F4B6AC300CF3369 /* QWin_MacAppDelegate.m */;
+		name = "QWin_MacAppDelegate.m: 22";
+		rLen = 0;
+		rLoc = 572;
+		rType = 0;
+		vrLen = 572;
 		vrLoc = 0;
 	};
 }

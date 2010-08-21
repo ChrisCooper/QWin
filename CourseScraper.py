@@ -19,49 +19,6 @@ class CourseEntry:
 	room="no room"
 	instructor="no instructor"
 	comments=""
-	
-	def detail(self,file):
-		file.write("-----")
-		file.write("\n")
-		file.write("a: " + self.academicTerm)
-		file.write("\n")
-		file.write("su: " + self.subject)
-		file.write("\n")
-		file.write("code: "+ self.code)
-		file.write("\n")
-		file.write("se: "+ self.section)
-		file.write("\n")
-		file.write("i: "+ self.instructionType)
-		file.write("\n")
-		file.write("slot: "+ self.slot)
-		file.write("\n")
-		file.write("dur: "+ self.duration)
-		file.write("\n")
-		file.write("mon: "+ self.monTime)
-		file.write("\n")
-		file.write("tues: "+ self.tuesTime)
-		file.write("\n")
-		file.write("w: "+ self.wedTime)
-		file.write("\n")
-		file.write("thurs: "+ self.thursTime)
-		file.write("\n")
-		file.write("f: "+self.friTime)
-		file.write("\n")
-		file.write("b: "+ self.building)
-		file.write("\n")
-		file.write("r: "+ self.room)
-		file.write("\n")
-		file.write("prof: "+ self.instructor)
-		file.write("\n")
-		file.write("comm: "+ self.comments)
-		file.write("\n")
-		file.write("-----")
-		file.write("\n")
-		
-#			def __str__(self):
-#		string = self.academicTerm+", "+self.subject+" "+self.code+", "+self.section+", "+self.instructionType+", "+self.slot+", "+self.duration+", "+self.monTime+", "+self.tuesTime+", "+self.wedTime+", "+self.thursTime+", "+self.friTime+", "+self.building+", "+self.room+", "+self.instructor+", "+self.comments
-#		return string
-
 
 def getSoup():
 	getActualResults = False
@@ -152,16 +109,4 @@ def getCourseEntries():
 	print "Total course rows: ", len(courses)
 	#print "Total unique courses: ", len(uniqueCourses.keys())
 	
-	return courses	
-
-def outputCourseEntries():
-	courses = getCourseEntries()
-	
-	file = open("course_entries.data", "w")
-	for course in courses:
-		course.detail(file)
-	
-	file.close()
-	
-	
-outputCourseEntries()
+	return courses

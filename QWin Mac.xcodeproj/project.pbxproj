@@ -12,7 +12,9 @@
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
-		BF103A2312166D56000B0E20 /* CourseScraper.py in Resources */ = {isa = PBXBuildFile; fileRef = BF103A2112166D56000B0E20 /* CourseScraper.py */; };
+		BF8F8504121F64A000EDD478 /* CourseScraper.py in Resources */ = {isa = PBXBuildFile; fileRef = BF8F8503121F64A000EDD478 /* CourseScraper.py */; };
+		BF8F850B121F67EC00EDD478 /* CourseModels.py in Resources */ = {isa = PBXBuildFile; fileRef = BF8F850A121F67EC00EDD478 /* CourseModels.py */; };
+		BF8F850D121F944000EDD478 /* ModelBuilder.py in Resources */ = {isa = PBXBuildFile; fileRef = BF8F850C121F944000EDD478 /* ModelBuilder.py */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,7 +30,9 @@
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		8D1107310486CEB800E47090 /* QWin_Mac-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "QWin_Mac-Info.plist"; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* QWin Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "QWin Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BF103A2112166D56000B0E20 /* CourseScraper.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; name = CourseScraper.py; path = server/CourseScraper.py; sourceTree = "<group>"; };
+		BF8F8503121F64A000EDD478 /* CourseScraper.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = CourseScraper.py; sourceTree = "<group>"; };
+		BF8F850A121F67EC00EDD478 /* CourseModels.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = CourseModels.py; sourceTree = "<group>"; };
+		BF8F850C121F944000EDD478 /* ModelBuilder.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = ModelBuilder.py; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +91,7 @@
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
-				BF103A2D12166E2D000B0E20 /* Server */,
+				BF8F8505121F64AE00EDD478 /* Scripts */,
 			);
 			name = "QWin Mac";
 			sourceTree = "<group>";
@@ -120,19 +124,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		BF103A2D12166E2D000B0E20 /* Server */ = {
-			isa = PBXGroup;
-			children = (
-				BF103A2112166D56000B0E20 /* CourseScraper.py */,
-			);
-			name = Server;
-			sourceTree = "<group>";
-		};
 		BF1E9B21120FD3BF001BB743 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		BF8F8505121F64AE00EDD478 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				BF8F8503121F64A000EDD478 /* CourseScraper.py */,
+				BF8F850A121F67EC00EDD478 /* CourseModels.py */,
+				BF8F850C121F944000EDD478 /* ModelBuilder.py */,
+			);
+			name = Scripts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,7 +186,9 @@
 			files = (
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
 				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
-				BF103A2312166D56000B0E20 /* CourseScraper.py in Resources */,
+				BF8F8504121F64A000EDD478 /* CourseScraper.py in Resources */,
+				BF8F850B121F67EC00EDD478 /* CourseModels.py in Resources */,
+				BF8F850D121F944000EDD478 /* ModelBuilder.py in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
