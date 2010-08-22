@@ -1,24 +1,7 @@
 import urllib2
 from BeautifulSoup import BeautifulSoup
 import re
-
-class CourseEntry:
-	academicTerm="no term"
-	subject="no subject"
-	code=""
-	section="no section"
-	instructionType="no instruction type"
-	slot="no slot"
-	duration="no duration"
-	monTime=""
-	tuesTime=""
-	wedTime=""
-	thursTime=""
-	friTime=""
-	building="no building"
-	room="no room"
-	instructor="no instructor"
-	comments=""
+import CourseModels
 
 def getSoup():
 	getActualResults = False
@@ -46,7 +29,7 @@ def getCourseRows():
 
 def getCourseEntryFromCourseRow(row):
 
-	course = CourseEntry()
+	course = CourseModels.CourseEntry()
 	
 	tds=row.findAll('td')
 	
@@ -78,7 +61,7 @@ def getCourseEntryFromCourseRow(row):
 	course.comments			= getUniformEntry(tds[16])
 	
 	return course
-	
+
 def getUniformEntry(node):
 	span = node.find('span')
 	data = span.nextSibling
