@@ -34,13 +34,10 @@ class Course:
 		self.id = -1
 		self.subject = ""
 		self.code = ""
-		self.credits = -1
-		self.title = ""
 		self.sections = []
 	
 	def __str__(self):
 		string = "--------------------\n" + self.subject+" "+self.code+"\n"
-		#string += str(len(self.sections))
 		for section in self.sections:
 			string += "\t" + str(section) + "\n"
 		return string
@@ -51,11 +48,21 @@ class Section:
 		self.letter = ""
 		self.term = ""
 		self.type = ""
+		self.instructor = ""
+		self.building = ""
+		self.room = ""
+		self.comments = ""
 		self.timePeriods = []
-		self.course = None
 	
 	def __str__(self):
 		string = self.type + ", Section " + self.letter + " " + self.term + "\n"
+		if not self.instructor == "":
+			string += "\tTaught by: " + self.instructor
+		if not self.building == "":
+			string += "\t in: " + self.building +" " + self.room 
+		string += "\n"
+		if not self.comments == "":
+			string += "\t" + self.comments + "\n"
 		for period in self.timePeriods:
 			string += "\t" + str(period) + "\n"
 		return string
@@ -79,4 +86,25 @@ def timePeriodFromStr(timeStr, duration, day):
 	timePeriod.dayOfWeek = day
 	timePeriod.duration = duration
 	return timePeriod
+
+def convertToBuiltinType(obj):
+	d = {}
+	if not isinstance(obj, TimePeriod):
+		d.update(obj.__dict__)
+	else:
+		d["hour"] = obj.hour
+		d["minute"] = obj.minute
+		d["dayOfWeek"] = obj.dayOfWeek
+		d["duration"] = obj.duration
+	
+	if isinstance(obj, Course):
+		d["sections"] = []
+		for section in obj.sections:
+			d["sections"].append(convertToBuiltinType(section))
+	
+	if isinstance(obj, Section):
+		d["timePeriods"] = []
+		for period in obj.timePeriods:
+			d["timePeriods"].append(convertToBuiltinType(period))
+	return d
 

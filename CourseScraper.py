@@ -11,9 +11,8 @@ def getSoup():
 		dump =  urllib2.urlopen("http://130.15.242.24/TimeTableSearch.asp?viewAllRecords=TRUE")
 		print "done!" 
 	else:
-		file = open("Documents/TimeTableSearch.asp.html", "r")
-		dump = file.read()
-		file.close()
+		with open("Documents/ReducedTimeTableSearch.asp.html", "r") as file:
+			dump = file.read()
 		
 	print "Cleaning up data..."
 	soup = BeautifulSoup(dump)

@@ -1,6 +1,7 @@
 #ModelBuilder
 from CourseScraper import *
 from CourseModels import *
+import json
 
 def createCourseModels():
 	
@@ -34,7 +35,10 @@ def createCourseModels():
 		section.letter = entry.section
 		section.type = entry.instructionType
 		section.term = entry.academicTerm
-		section.course = course
+		section.instructor = entry.instructor
+		section.building = entry.building
+		section.room = entry.room
+		section.comments = entry.comments
 		
 		times = entry.getTimes()
 		
@@ -55,8 +59,18 @@ def createCourseModels():
 	
 	print "done!\n"
 	
-	keys = courses.keys()
-	for key in keys:
-		print courses[key]
+	with open('courses.json', mode='w') as file:
+		file.write("[\n")
+		courseKeys = courses.keys()
+		for i in range(len(courseKeys)):
+			if not i == 0:
+				file.write(",\n")
+			json.dump(CourseModels.convertToBuiltinType(courses[courseKeys[i]]), file, indent=2) 
+
+		file.write("\n]")
+	
+	#keys = courses.keys()
+	#for key in keys:
+	#	print courses[key]
 		
 createCourseModels()
