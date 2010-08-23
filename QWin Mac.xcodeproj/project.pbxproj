@@ -12,6 +12,7 @@
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		BF1699E512223D5500E899B4 /* ArtSciScraper.py in Resources */ = {isa = PBXBuildFile; fileRef = BF1699E412223D5500E899B4 /* ArtSciScraper.py */; };
 		BF8F8504121F64A000EDD478 /* CourseScraper.py in Resources */ = {isa = PBXBuildFile; fileRef = BF8F8503121F64A000EDD478 /* CourseScraper.py */; };
 		BF8F850B121F67EC00EDD478 /* CourseModels.py in Resources */ = {isa = PBXBuildFile; fileRef = BF8F850A121F67EC00EDD478 /* CourseModels.py */; };
 		BF8F850D121F944000EDD478 /* ModelBuilder.py in Resources */ = {isa = PBXBuildFile; fileRef = BF8F850C121F944000EDD478 /* ModelBuilder.py */; };
@@ -30,6 +31,7 @@
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		8D1107310486CEB800E47090 /* QWin_Mac-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "QWin_Mac-Info.plist"; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* QWin Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "QWin Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF1699E412223D5500E899B4 /* ArtSciScraper.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = ArtSciScraper.py; sourceTree = "<group>"; };
 		BF8F8503121F64A000EDD478 /* CourseScraper.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = CourseScraper.py; sourceTree = "<group>"; };
 		BF8F850A121F67EC00EDD478 /* CourseModels.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = CourseModels.py; sourceTree = "<group>"; };
 		BF8F850C121F944000EDD478 /* ModelBuilder.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = ModelBuilder.py; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 				BF8F8503121F64A000EDD478 /* CourseScraper.py */,
 				BF8F850A121F67EC00EDD478 /* CourseModels.py */,
 				BF8F850C121F944000EDD478 /* ModelBuilder.py */,
+				BF1699E412223D5500E899B4 /* ArtSciScraper.py */,
 			);
 			name = Scripts;
 			sourceTree = "<group>";
@@ -189,6 +192,7 @@
 				BF8F8504121F64A000EDD478 /* CourseScraper.py in Resources */,
 				BF8F850B121F67EC00EDD478 /* CourseModels.py in Resources */,
 				BF8F850D121F944000EDD478 /* ModelBuilder.py in Resources */,
+				BF1699E512223D5500E899B4 /* ArtSciScraper.py in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
