@@ -15,4 +15,6 @@
 	NSArray *sections;
 }
 
+-(void) logDescription;
+
 @end

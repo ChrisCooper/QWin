@@ -10,10 +10,15 @@
 
 
 @interface Course : NSObject {
-	NSString *idString;
 	NSString *subject;
 	NSString *code;
 	NSArray *sections;
 }
+
+-(void) logDescription;
+
+@property (nonatomic, retain) NSString *subject;
+@property (nonatomic, retain) NSString *code;
+@property (nonatomic, retain) NSArray *sections;
 
 @end

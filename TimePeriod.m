@@ -7,8 +7,13 @@
 //
 
 #import "TimePeriod.h"
+#import "Logger.h"
 
 
 @implementation TimePeriod
+
+-(void) logDescription{
+	NSLog(@"\t\t\tTime Period:---->");
+}
 
 @end
