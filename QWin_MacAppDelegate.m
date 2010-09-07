@@ -7,15 +7,20 @@
 //
 
 #import "QWin_MacAppDelegate.h"
+#import "ModelBuilder.h"
 
 @implementation QWin_MacAppDelegate
 
 @synthesize window;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-	NSURL *url = [NSURL URLWithString:@"http://localhost/mac/quwin_mac/server/courses.php"];
-	NSString *contentsString = [NSString stringWithContentsOfURL:url encoding:NSUTF8StringEncoding error:nil];
-	NSLog(@"Result: %@", contentsString);
+	
+	//Create models from JSON file
+	ModelBuilder *builder = [[ModelBuilder alloc] init];
+	[builder loadModelsFromJson];
+	
+	
+	
 }
 
 @end
