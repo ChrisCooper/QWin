@@ -64,9 +64,9 @@
 
 #else
 
-#import <JSON/SBJsonParser.h>
-#import <JSON/SBJsonWriter.h>
-#import <JSON/NSObject+SBJSON.h>
-#import <JSON/NSString+SBJSON.h>
+#import "SBJsonParser.h"
+#import "SBJsonWriter.h"
+#import "NSObject+SBJSON.h"
+#import "NSString+SBJSON.h"
 
 #endif
