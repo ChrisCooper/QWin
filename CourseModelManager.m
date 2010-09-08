@@ -12,6 +12,8 @@ static CourseModelManager *sharedInstance = nil;
 
 @implementation CourseModelManager
 
+@synthesize courses;
+
 + (CourseModelManager*)sharedInstance
 {
     @synchronized(self)
@@ -32,6 +34,31 @@ static CourseModelManager *sharedInstance = nil;
     return nil; // on subsequent allocation attempts return nil
 }
 
+-(id)init{
+	if (self = [super init]){
+		courses = [[NSMutableDictionary alloc] init];
+	}
+	return self;
+}
+
+-(NSMutableDictionary*) getCourses{
+	return courses;
+}
+
+-(void) addCourses:(NSArray*)newCourses{
+	for (Course* course in newCourses){
+		[self addCourse:course];
+	}
+}
+
+-(void) addCourse:(Course*)course{
+	NSString *key = [course getKey];
+	if ([courses objectForKey:key] == nil){
+		[courses setObject:course forKey:key];
+	}
+}
+
+
 - (id)copyWithZone:(NSZone *)zone
 {
     return self;
@@ -41,7 +68,7 @@ static CourseModelManager *sharedInstance = nil;
     return self;
 }
 
-- (unsigned)retainCount {
+- (NSUInteger)retainCount {
     return UINT_MAX;  // denotes an object that cannot be released
 }
 
@@ -52,3 +79,5 @@ static CourseModelManager *sharedInstance = nil;
 - (id)autorelease {
     return self;
 }
+
+@end

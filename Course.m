@@ -15,11 +15,17 @@
 
 @synthesize subject;
 @synthesize code;
+@synthesize courseKey;
 @synthesize sections;
+
+-(NSString*)getKey{
+	return courseKey;
+}
 
 -(void) logDescription{
 	NSLog(@"________________________");
 	NSLog(@"Course: %@ %@", [Logger getString:[self subject]], [Logger getString:[self code]]);
+	NSLog(@"Code: %@", [Logger getString:[self getKey]]);
 	
 	if ([sections count] != 0) {
 		NSLog(@"Sections:");

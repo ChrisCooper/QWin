@@ -8,6 +8,7 @@
 
 #import "ModelBuilder.h"
 #import "JSON/JSON.h"
+#import "CourseModelManager.h"
 
 #define JSON_FILENAME @"courses.json"
 
@@ -66,8 +67,9 @@
 		
 		newCourse = [self createCourseFromDictionary:courseDict];
 		
-		//Add the new course to the array of Course models
+		//Add the new course
 		[courseModels addObject:newCourse];
+		[[CourseModelManager sharedInstance] addCourse:newCourse];
 		[newCourse logDescription];
 	
 	}
@@ -87,6 +89,7 @@
 	Course* newCourse = [[Course alloc] init];
 	[newCourse setCode:code];
 	[newCourse setSubject:subject];
+	[newCourse setCourseKey:[subject stringByAppendingString:code]];
 	
 	[newCourse setSections:sections];
 	

@@ -94,7 +94,7 @@
 				256AC3D80F4B6AC300CF3369 /* QWin_MacAppDelegate.h */,
 				256AC3D90F4B6AC300CF3369 /* QWin_MacAppDelegate.m */,
 				BFDA97721235CB9100972D0A /* Views */,
-				BF1E9B21120FD3BF001BB743 /* Models */,
+				BF1E9B21120FD3BF001BB743 /* Model */,
 				BFDA970E1235B8E800972D0A /* Logger.h */,
 				BFDA970F1235B8E800972D0A /* Logger.m */,
 			);
@@ -169,6 +169,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		BF1C36A91235F9E9006BC8D5 /* ModelClasses */ = {
+			isa = PBXGroup;
+			children = (
+				BFDA925412359F0500972D0A /* Models.h */,
+				BF1C65DF12339FF700982FC3 /* Course.h */,
+				BF1C65E012339FF700982FC3 /* Course.m */,
+				BF1C65E21233A1F800982FC3 /* Section.h */,
+				BF1C65E31233A1F800982FC3 /* Section.m */,
+				BF1C65E51233A54B00982FC3 /* TimePeriod.h */,
+				BF1C65E61233A54B00982FC3 /* TimePeriod.m */,
+			);
+			name = ModelClasses;
+			sourceTree = "<group>";
+		};
 		BF1C65E91233AD2800982FC3 /* Parsing */ = {
 			isa = PBXGroup;
 			children = (
@@ -179,21 +193,15 @@
 			name = Parsing;
 			sourceTree = "<group>";
 		};
-		BF1E9B21120FD3BF001BB743 /* Models */ = {
+		BF1E9B21120FD3BF001BB743 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				BF1C36A91235F9E9006BC8D5 /* ModelClasses */,
 				BF1C65E91233AD2800982FC3 /* Parsing */,
-				BF1C65DF12339FF700982FC3 /* Course.h */,
-				BF1C65E012339FF700982FC3 /* Course.m */,
-				BF1C65E21233A1F800982FC3 /* Section.h */,
-				BF1C65E31233A1F800982FC3 /* Section.m */,
-				BF1C65E51233A54B00982FC3 /* TimePeriod.h */,
-				BF1C65E61233A54B00982FC3 /* TimePeriod.m */,
 				BF1C660D1233B4C000982FC3 /* CourseModelManager.h */,
 				BF1C660E1233B4C000982FC3 /* CourseModelManager.m */,
-				BFDA925412359F0500972D0A /* Models.h */,
 			);
-			name = Models;
+			name = Model;
 			sourceTree = "<group>";
 		};
 		BF8F8505121F64AE00EDD478 /* Scripts */ = {

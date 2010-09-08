@@ -7,12 +7,19 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "Models.h"
 
 
 @interface CourseModelManager : NSObject {
-
+	NSMutableDictionary *courses;
 }
 
+@property (nonatomic, retain) NSMutableDictionary *courses;
+
 + (CourseModelManager*)sharedInstance;
+
+-(NSMutableDictionary*) getCourses;
+-(void) addCourses:(NSArray*)newCourses;
+-(void) addCourse:(Course*)course;
 
 @end

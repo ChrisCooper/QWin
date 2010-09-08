@@ -42,10 +42,6 @@
 	if (term != nil) {
 		NSLog(@"\t\tTaught in %@", [Logger getString:[self term]]);
 	}
-	
-	if (type != nil) {
-		NSLog(@"\t\tType: %@", [Logger getString:[self type]]);
-	}
 
 	NSLog(@"\t\t%@", [Logger getString:[self comments]]);
 	
