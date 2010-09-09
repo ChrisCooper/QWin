@@ -17,6 +17,8 @@
 @synthesize keyColumn;
 @synthesize titleColumn;
 
+@synthesize infoController;
+
 - (NSInteger)numberOfRowsInTableView:(NSTableView *)tableView {
 	NSInteger tableRows = [[[CourseModelManager sharedInstance] getCourses] count];
 	return tableRows;
@@ -32,6 +34,14 @@
 		return @"Title goes right here";
 	}
 	return @"";
+}
+
+- (void)tableViewSelectionDidChange:(NSNotification *)notification{
+	NSInteger selectedIndex = [table selectedRow];
+	
+	Course *course = [[[[CourseModelManager sharedInstance] getCourses] allValues] objectAtIndex:selectedIndex];
+	
+	[infoController displayCourse:course];
 }
 
 -(IBAction)refresh:(id)sender{

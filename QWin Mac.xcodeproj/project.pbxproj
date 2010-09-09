@@ -18,6 +18,7 @@
 		BF1C65E71233A54B00982FC3 /* TimePeriod.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1C65E61233A54B00982FC3 /* TimePeriod.m */; };
 		BF1C65FA1233AF2100982FC3 /* ModelBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1C65F91233AF2100982FC3 /* ModelBuilder.m */; };
 		BF1C660F1233B4C000982FC3 /* CourseModelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1C660E1233B4C000982FC3 /* CourseModelManager.m */; };
+		BF8365DC123928AC007A1C50 /* CourseInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8365DB123928AC007A1C50 /* CourseInfoViewController.m */; };
 		BF8F8504121F64A000EDD478 /* CourseScraper.py in Resources */ = {isa = PBXBuildFile; fileRef = BF8F8503121F64A000EDD478 /* CourseScraper.py */; };
 		BF8F850B121F67EC00EDD478 /* CourseModels.py in Resources */ = {isa = PBXBuildFile; fileRef = BF8F850A121F67EC00EDD478 /* CourseModels.py */; };
 		BF8F850D121F944000EDD478 /* ModelBuilder.py in Resources */ = {isa = PBXBuildFile; fileRef = BF8F850C121F944000EDD478 /* ModelBuilder.py */; };
@@ -55,6 +56,8 @@
 		BF1C65F91233AF2100982FC3 /* ModelBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelBuilder.m; sourceTree = "<group>"; };
 		BF1C660D1233B4C000982FC3 /* CourseModelManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseModelManager.h; sourceTree = "<group>"; };
 		BF1C660E1233B4C000982FC3 /* CourseModelManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseModelManager.m; sourceTree = "<group>"; };
+		BF8365DA123928AC007A1C50 /* CourseInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseInfoViewController.h; sourceTree = "<group>"; };
+		BF8365DB123928AC007A1C50 /* CourseInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseInfoViewController.m; sourceTree = "<group>"; };
 		BF8F8503121F64A000EDD478 /* CourseScraper.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = CourseScraper.py; sourceTree = "<group>"; };
 		BF8F850A121F67EC00EDD478 /* CourseModels.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = CourseModels.py; sourceTree = "<group>"; };
 		BF8F850C121F944000EDD478 /* ModelBuilder.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = ModelBuilder.py; sourceTree = "<group>"; };
@@ -204,6 +207,15 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
+		BF8365DD123928B4007A1C50 /* CourseInfo */ = {
+			isa = PBXGroup;
+			children = (
+				BF8365DA123928AC007A1C50 /* CourseInfoViewController.h */,
+				BF8365DB123928AC007A1C50 /* CourseInfoViewController.m */,
+			);
+			name = CourseInfo;
+			sourceTree = "<group>";
+		};
 		BF8F8505121F64AE00EDD478 /* Scripts */ = {
 			isa = PBXGroup;
 			children = (
@@ -237,6 +249,7 @@
 		BFDA97721235CB9100972D0A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				BF8365DD123928B4007A1C50 /* CourseInfo */,
 				BFDA97731235CBE700972D0A /* CourseBrowser */,
 			);
 			name = Views;
@@ -324,6 +337,7 @@
 				BF1C660F1233B4C000982FC3 /* CourseModelManager.m in Sources */,
 				BFDA97101235B8E800972D0A /* Logger.m in Sources */,
 				BFDA97711235CB6100972D0A /* CourseTableController.m in Sources */,
+				BF8365DC123928AC007A1C50 /* CourseInfoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
