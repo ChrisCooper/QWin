@@ -80,6 +80,9 @@
 	//Get properties for the Course
 	NSString *subject = [courseDict objectForKey:JSON_SUBJECT_KEY];
 	NSString *code = [courseDict objectForKey:JSON_CODE_KEY];
+	NSString *name = [courseDict objectForKey:JSON_NAME_KEY];
+	NSString *description = [courseDict objectForKey:JSON_DESCRIPTION_KEY];
+	NSString *credits = [courseDict objectForKey:JSON_CREDITS_KEY];
 	
 	NSArray *sectionDicts = [courseDict objectForKey:JSON_SECTIONS_KEY];
 	NSArray *sections = [self createSectionsFromSectionDicts:sectionDicts];
@@ -90,6 +93,8 @@
 	[newCourse setCode:code];
 	[newCourse setSubject:subject];
 	[newCourse setCourseKey:[subject stringByAppendingString:code]];
+	[newCourse setName:name];
+	[newCourse setDescription:description];
 	
 	[newCourse setSections:sections];
 	

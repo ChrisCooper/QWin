@@ -20,6 +20,9 @@
 
 -(void) displayCourse:(Course*)course{
 	[codeField setStringValue:[course getKey]];
+	[titleField setStringValue:[course name]];
+	[descriptionField setStringValue:[course description]];
+
 }
 
 @end
