@@ -1,44 +1,35 @@
 #ModelBuilder
 from CourseScraper import *
 from CourseModels import *
+from ArtSciScraper import *
 import json
 
 def createCourseModels():
-	
+	"""
+	Creates a JSON file of all the courses in the ArtSci calendar and timetable website.
+	"""
+	#Get course entries and imcomplete course models from sources
 	courseEntries = getCourseEntries()
+	courseInformationList = getArtSciCourses()
 	
 	print "Creating course model..."
 	
 	courses = {}
 	timePeriods = {}
 	
-	currentID = 1
-	
+	#Go through entries, constructing sections from each
 	for entry in courseEntries:
 		key = entry.getKey()
 		
+		#Get the correct, unique course from the table
 		if key not in courses:
-			newCourse = Course()
-			newCourse.id = currentID
-			currentID += 1
-			newCourse.subject = entry.subject
-			newCourse.code = entry.code
-			
+			newCourse = courseFromEntry(entry)
 			courses[key] = newCourse
-			
 		course = courses[key]
 
-		section = Section()		
+		section = sectionFromEntry(entry)
 		
 		course.sections.append(section)
-		
-		section.letter = entry.section
-		section.type = entry.instructionType
-		section.term = entry.academicTerm
-		section.instructor = entry.instructor
-		section.building = entry.building
-		section.room = entry.room
-		section.comments = entry.comments
 		
 		times = entry.getTimes()
 		
@@ -55,10 +46,15 @@ def createCourseModels():
 				
 				section.timePeriods.append(timePeriod)
 				
+	for key in courseInformationList:
+		if key in courses:
+			courses[key] = mergeCourses(courses[key], courseInformationList[key])
+		else:
+			courses[key] = courseInformationList[key]
 	
+	print "Done!\n"
 	
-	print "done!\n"
-	
+	print "Writing JSON file..."
 	with open('courses.json', mode='w') as file:
 		file.write("[\n")
 		courseKeys = courses.keys()
@@ -69,8 +65,34 @@ def createCourseModels():
 
 		file.write("\n]")
 	
+	print "Done!\n"
+	
 	#keys = courses.keys()
 	#for key in keys:
 	#	print courses[key]
-		
+	
+	
+def courseFromEntry(entry):
+	"""
+	Returns a Course model given a CourseEntry.
+	"""
+	newCourse = Course()
+	newCourse.subject = entry.subject
+	newCourse.code = entry.code
+	return newCourse
+
+def sectionFromEntry(entry):
+	"""
+	Returns a Section model given a CourseEntry.
+	"""
+	section = Section()		
+	section.letter = entry.section
+	section.type = entry.instructionType
+	section.term = entry.academicTerm
+	section.instructor = entry.instructor
+	section.building = entry.building
+	section.room = entry.room
+	section.comments = entry.comments
+	return section
+	
 createCourseModels()
