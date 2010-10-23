@@ -2,11 +2,33 @@
 <html>
  <head>
   <title>
-   Queen's University : Courses of Instruction (by Subject)
+   Queen's University : Courses of Instruction
   </title>
   <link type="text/css" rel="stylesheet" href="Master.css" />
  </head>
  <body>
+  <script type="text/javascript" language="JavaScript">
+   function ShowCourseTimeTable(e, prefix, code) {
+						popUpHasFocus = true;
+						courseURL = '//130.15.242.24/TimeTableSearch.asp?f_TIMCoursePrefix_DAG=' + prefix + '&f_TIMCourseNumber_DAG=' + code;
+						popWin = ShowCourseTimeTablePopUp(e, courseURL, 'TimeTable', 'scrollbars, resizable', 700, 700, false);			
+						popWin.focus();
+					}
+
+					function ShowCourseTimeTablePopUp(e, url, name, params, width, height, snapToMouse) {
+						if (!snapToMouse) {
+							var theTop = (screen.height / 2) - (height / 2);
+							var theLeft = (screen.width / 2) - (width / 2);
+
+							params += ',height=' + height + ',width=' + width + ',top=' + theTop + ',left=' + theLeft;
+						} else {
+							params += ',height=' + height + ',width=' + width + ',top=' + e.screenY + ',left=' + e.screenX;
+						}
+						var w = window.open(url, name, params);
+						w.focus();
+						return w;
+					}
+  </script>
   <script type="text/javascript" language="JavaScript">
    function ShowPopUp(e, url, name, params, width, height, snapToMouse) {
 						if (!snapToMouse) {
@@ -179,7 +201,7 @@
      </td>
      <td align="right" width="2%">
       <span id="_ctl0__ctl0_Catnavprintfriendly1">
-       <input type="image" name="_ctl0:_ctl0:_ctl16" onclick="ShowPrintFriendlyPopup(event, 'print_Courses_of_Instruction__by_Subject_.html'); return false;" src="Images/PrintFriendly.gif" alt="" border="0" />
+       <input type="image" name="_ctl0:_ctl0:_ctl16" onclick="ShowPrintFriendlyPopup(event, 'print_Courses_of_Instruction_25.html'); return false;" src="Images/PrintFriendly.gif" alt="" border="0" />
       </span>
      </td>
     </tr>
@@ -195,7 +217,15 @@
        Arts and Science
       </a>
       <img src="Images/BreadcrumbBullet.gif" />
-      <a href="Courses_of_Instruction__by_Subject_.html" class="breadcrumb">
+      <a href="Departments__Programs_and_Courses.html" class="breadcrumb">
+       Departments, Programs and Courses
+      </a>
+      <img src="Images/BreadcrumbBullet.gif" />
+      <a href="Pathology_and_Molecular_Medicine_o.html" class="breadcrumb">
+       Pathology and Molecular Medicine
+      </a>
+      <img src="Images/BreadcrumbBullet.gif" />
+      <a href="Courses_of_Instruction_25.html" class="breadcrumb">
        Courses of Instruction
       </a>
      </td>
@@ -251,6 +281,405 @@
         <td class="sideMenuLevel1">
          <a href="Departments__Programs_and_Courses.html">
           Departments, Programs and Courses
+         </a>
+        </td>
+       </tr>
+       <tr>
+        <td class="sideMenuLevel2">
+         <a href="Anatomy_and_Cell_Biology_o.html">
+          Anatomy and Cell Biology
+         </a>
+        </td>
+       </tr>
+       <tr>
+        <td class="sideMenuLevel2">
+         <a href="Arabic_Language.html">
+          Arabic Language
+         </a>
+        </td>
+       </tr>
+       <tr>
+        <td class="sideMenuLevel2">
+         <a href="Art_o.html">
+          Art
+         </a>
+        </td>
+       </tr>
+       <tr>
+        <td class="sideMenuLevel2">
+         <a href="Astronomy.html">
+          Astronomy
+         </a>
+        </td>
+       </tr>
+       <tr>
+        <td class="sideMenuLevel2">
+         <a href="Biochemistry_o.html">
+          Biochemistry
+         </a>
+        </td>
+       </tr>
+       <tr>
+        <td class="sideMenuLevel2">
+         <a href="Biology_o.html">
+          Biology
+         </a>
+        </td>
+       </tr>
+       <tr>
+        <td class="sideMenuLevel2">
+         <a href="Biomedical_Computing.html">
+          Biomedical Computing
+         </a>
+        </td>
+       </tr>
+       <tr>
+        <td class="sideMenuLevel2">
+         <a href="Chemistry_o.html">
+          Chemistry
+         </a>
+        </td>
+       </tr>
+       <tr>
+        <td class="sideMenuLevel2">
+         <a href="Chinese_Language.html">
+          Chinese Language
+         </a>
+        </td>
+       </tr>
+       <tr>
+        <td class="sideMenuLevel2">
+         <a href="Classics_o.html">
+          Classics
+         </a>
+        </td>
+       </tr>
+       <tr>
+        <td class="sideMenuLevel2">
+         <a href="Cognitive_Science_o.html">
+          Cognitive Science
+         </a>
+        </td>
+       </tr>
+       <tr>
+        <td class="sideMenuLevel2">
+         <a href="Business.html">
+          Commerce
+         </a>
+        </td>
+       </tr>
+       <tr>
+        <td class="sideMenuLevel2">
+         <a href="Computing_o.html">
+          Computing
+         </a>
+        </td>
+       </tr>
+       <tr>
+        <td class="sideMenuLevel2">
+         <a href="Computing_and_the_Creative_Arts_o.html">
+          Computing and the Creative Arts
+         </a>
+        </td>
+       </tr>
+       <tr>
+        <td class="sideMenuLevel2">
+         <a href="Drama_o.html">
+          Drama
+         </a>
+        </td>
+       </tr>
+       <tr>
+        <td class="sideMenuLevel2">
+         <a href="Economics_o.html">
+          Economics
+         </a>
+        </td>
+       </tr>
+       <tr>
+        <td class="sideMenuLevel2">
+         <a href="Education.html">
+          Education
+         </a>
+        </td>
+       </tr>
+       <tr>
+        <td class="sideMenuLevel2">
+         <a href="English_Language_and_Literature_o.html">
+          English Language and Literature
+         </a>
+        </td>
+       </tr>
+       <tr>
+        <td class="sideMenuLevel2">
+         <a href="Environmental_Studies_o.html">
+          Environmental Studies
+         </a>
+        </td>
+       </tr>
+       <tr>
+        <td class="sideMenuLevel2">
+         <a href="Film_and_Media_o.html">
+          Film and Media
+         </a>
+        </td>
+       </tr>
+       <tr>
+        <td class="sideMenuLevel2">
+         <a href="French_Studies_o.html">
+          French Studies
+         </a>
+        </td>
+       </tr>
+       <tr>
+        <td class="sideMenuLevel2">
+         <a href="Gender_Studies_o.html">
+          Gender Studies
+         </a>
+        </td>
+       </tr>
+       <tr>
+        <td class="sideMenuLevel2">
+         <a href="Geography_o.html">
+          Geography
+         </a>
+        </td>
+       </tr>
+       <tr>
+        <td class="sideMenuLevel2">
+         <a href="Geological_Sciences_and_Geological_Engineering_o.html">
+          Geological Sciences and Geological Engineering
+         </a>
+        </td>
+       </tr>
+       <tr>
+        <td class="sideMenuLevel2">
+         <a href="German_Language_and_Literature_o.html">
+          German Language and Literature
+         </a>
+        </td>
+       </tr>
+       <tr>
+        <td class="sideMenuLevel2">
+         <a href="Global_Development_Studies_o.html">
+          Global Development Studies
+         </a>
+        </td>
+       </tr>
+       <tr>
+        <td class="sideMenuLevel2">
+         <a href="Health_Studies_o.html">
+          Health Studies
+         </a>
+        </td>
+       </tr>
+       <tr>
+        <td class="sideMenuLevel2">
+         <a href="Hebrew_Language_and_Literature_o.html">
+          Hebrew Language and Literature
+         </a>
+        </td>
+       </tr>
+       <tr>
+        <td class="sideMenuLevel2">
+         <a href="History_o.html">
+          History
+         </a>
+        </td>
+       </tr>
+       <tr>
+        <td class="sideMenuLevel2">
+         <a href="Interdisciplinary_Studies_o.html">
+          Interdisciplinary Studies
+         </a>
+        </td>
+       </tr>
+       <tr>
+        <td class="sideMenuLevel2">
+         <a href="International_Studies_o.html">
+          International Studies
+         </a>
+        </td>
+       </tr>
+       <tr>
+        <td class="sideMenuLevel2">
+         <a href="Japanese_Language_o.html">
+          Japanese Language
+         </a>
+        </td>
+       </tr>
+       <tr>
+        <td class="sideMenuLevel2">
+         <a href="Jewish_Studies_o.html">
+          Jewish Studies
+         </a>
+        </td>
+       </tr>
+       <tr>
+        <td class="sideMenuLevel2">
+         <a href="Kinesiology_o.html">
+          Kinesiology
+         </a>
+        </td>
+       </tr>
+       <tr>
+        <td class="sideMenuLevel2">
+         <a href="Life_Sciences_o.html">
+          Life Sciences
+         </a>
+        </td>
+       </tr>
+       <tr>
+        <td class="sideMenuLevel2">
+         <a href="Linguistics_o.html">
+          Linguistics
+         </a>
+        </td>
+       </tr>
+       <tr>
+        <td class="sideMenuLevel2">
+         <a href="Mathematics_and_Statistics_o.html">
+          Mathematics and Statistics
+         </a>
+        </td>
+       </tr>
+       <tr>
+        <td class="sideMenuLevel2">
+         <a href="Medieval_Studies_o.html">
+          Medieval Studies
+         </a>
+        </td>
+       </tr>
+       <tr>
+        <td class="sideMenuLevel2">
+         <a href="Microbiology_and_Immunology_o.html">
+          Microbiology and Immunology
+         </a>
+        </td>
+       </tr>
+       <tr>
+        <td class="sideMenuLevel2">
+         <a href="Music_o.html">
+          Music
+         </a>
+        </td>
+       </tr>
+       <tr>
+        <td class="sideMenuLevel2">
+         <a href="Pathology_and_Molecular_Medicine_o.html">
+          Pathology and Molecular Medicine
+         </a>
+        </td>
+       </tr>
+       <tr>
+        <td class="sideMenuLevel2">
+         <a href="Pharmacology_and_Toxicology_o.html">
+          Pharmacology and Toxicology
+         </a>
+        </td>
+       </tr>
+       <tr>
+        <td class="sideMenuLevel2">
+         <a href="Philosophy_o.html">
+          Philosophy
+         </a>
+        </td>
+       </tr>
+       <tr>
+        <td class="sideMenuLevel2">
+         <a href="Physical_and_Health_Education_o.html">
+          Physical and Health Education
+         </a>
+        </td>
+       </tr>
+       <tr>
+        <td class="sideMenuLevel2">
+         <a href="Physics__Engineering_Physics_and_Astronomy_o.html">
+          Physics, Engineering Physics and Astronomy
+         </a>
+        </td>
+       </tr>
+       <tr>
+        <td class="sideMenuLevel2">
+         <a href="Physiology_o.html">
+          Physiology
+         </a>
+        </td>
+       </tr>
+       <tr>
+        <td class="sideMenuLevel2">
+         <a href="Political_Studies_o.html">
+          Political Studies
+         </a>
+        </td>
+       </tr>
+       <tr>
+        <td class="sideMenuLevel2">
+         <a href="Psychology_o.html">
+          Psychology
+         </a>
+        </td>
+       </tr>
+       <tr>
+        <td class="sideMenuLevel2">
+         <a href="Religious_Studies_o.html">
+          Religious Studies
+         </a>
+        </td>
+       </tr>
+       <tr>
+        <td class="sideMenuLevel2">
+         <a href="Sexual_and_Gender_Diversity_o.html">
+          Sexual and Gender Diversity
+         </a>
+        </td>
+       </tr>
+       <tr>
+        <td class="sideMenuLevel2">
+         <a href="Sociology_o.html">
+          Sociology
+         </a>
+        </td>
+       </tr>
+       <tr>
+        <td class="sideMenuLevel2">
+         <a href="Software_Design_o.html">
+          Software Design
+         </a>
+        </td>
+       </tr>
+       <tr>
+        <td class="sideMenuLevel2">
+         <a href="Spanish_and_Italian_Languages_and_Literatures_o.html">
+          Spanish and Italian Languages and Literatures
+         </a>
+        </td>
+       </tr>
+       <tr>
+        <td class="sideMenuLevel2">
+         <a href="Spanish_and_Latin_American_Studies_o.html">
+          Spanish and Latin American Studies
+         </a>
+        </td>
+       </tr>
+       <tr>
+        <td class="sideMenuLevel2">
+         <a href="Stage_and_Screen_Studies_o.html">
+          Stage and Screen Studies
+         </a>
+        </td>
+       </tr>
+       <tr>
+        <td class="sideMenuLevel2">
+         <a href="World_Language_Studies_o.html">
+          World Language Studies
+         </a>
+        </td>
+       </tr>
+       <tr>
+        <td class="sideMenuLevel2">
+         <a href="The_Writing_Centre_o.html">
+          The Writing Centre
          </a>
         </td>
        </tr>
@@ -314,392 +743,772 @@
      </td>
      <td valign="top" width="75%">
       <span class="page-title">
-       Courses of Instruction (by Subject)
+       Courses of Instruction
       </span>
       <table id="_ctl0__ctl0_pageContent" class="dataList-container" cellspacing="0" border="0" style="width:100%;border-collapse:collapse;">
        <tr>
         <td>
          <div class="item-container">
-          <a name="102740">
-          </a>
-          <span id="_ctl0__ctl0_pageContent__ctl0__ctl2_cnTitle" class="generic-title">
-          </span>
-          <span id="_ctl0__ctl0_pageContent__ctl0__ctl2_cnBody" class="generic-body">
-          </span>
-          <p>
-           <a href="Courses_of_Instruction_39.html" class="link-text">
-            Anatomy and Cell Biology
-           </a>
-           <br />
-           <a href="Courses_of_Instruction.html" class="link-text">
-            Arabic Language
-           </a>
-           <br />
-           <a href="Courses_of_Instruction_in_Art_History.html" class="link-text">
-            Art History
-           </a>
-           <br />
-           <a href="Courses_of_Instruction_0.html" class="link-text">
-            Biochemistry
-           </a>
-           <br />
-           <a href="Courses_of_Instruction_1.html" class="link-text">
-            Biology
-           </a>
-           <br />
-           <a href="Courses_of_Instruction_2.html" class="link-text">
-            Chemistry
-           </a>
-           <br />
-           <a href="Courses_of_Instruction_3.html" class="link-text">
-            Chinese Language
-           </a>
-           <br />
-           <a href="Courses_of_Instruction_in_Classical_Studies.html" class="link-text">
-            Classical Studies
-           </a>
-           <br />
-           <a href="Courses_of_Instruction_4.html" class="link-text">
-            Cognitive Science
-           </a>
-           <br />
-           <a href="Courses_of_Instruction_5.html" class="link-text">
-            Commerce
-           </a>
-           <br />
-           <a href="Courses_of_Instruction_in_the_Faculty_of_Health_Sciences.html" class="link-text">
-            Community Health and Epidemiology
-           </a>
-           <br />
-           <a href="Courses_of_Instruction_in_the_Faculty_of_Arts_and_Science.html" class="link-text">
-            Computing
-           </a>
-           <br />
-           <a href="Courses_of_Instruction_in_Creative_Writing.html" class="link-text">
-            Creative Writing
-           </a>
-           <br />
-           <a href="Courses_of_Instruction_6.html" class="link-text">
-            Drama
-           </a>
-           <br />
-           <a href="Courses_of_Instruction_7.html" class="link-text">
-            Economics
-           </a>
-           <br />
-           <a href="Courses_of_Instruction_in_Other_Faculties.html" class="link-text">
-            Education
-           </a>
-           <br />
-           <a href="Courses_of_Instruction_in_English_Language_and_Literature.html" class="link-text">
-            English Language and Literature
-           </a>
-           <br />
-           <a href="Courses_of_Instruction_8.html" class="link-text">
-            Environmental Studies
-           </a>
-           <br />
-           <a href="Courses_of_Instruction_9.html" class="link-text">
-            Film and Media
-           </a>
-           <br />
-           <a href="Courses_of_Instruction_in_Fine_Art.html" class="link-text">
-            Fine Art
-           </a>
-           <br />
-           <a href="Courses_of_Instruction_10.html" class="link-text">
-            French Studies
-           </a>
-           <br />
-           <a href="Courses_of_Instruction_36.html" class="link-text">
-            Gender Studies
-           </a>
-           <a href="Courses_of_Instruction_in_Geography.html" class="link-text">
-            Geography
-           </a>
-           <br />
-           <a href="Courses_of_Instruction_11.html" class="link-text">
-            Geological Sciences and Geological Engineering
-           </a>
-           <br />
-           <a href="Courses_of_Instruction_12.html" class="link-text">
-            German Language and Literature
-           </a>
-           <br />
-           <a href="Courses_of_Instruction_13.html" class="link-text">
-            Global Development Studies
-           </a>
-           <br />
-           <a href="Courses_of_Instruction_in_Greek.html" class="link-text">
-            Greek
-           </a>
-           <br />
-           <a href="Courses_of_Instruction_14.html" class="link-text">
-            Health Studies
-           </a>
-           <br />
-           <a href="Courses_of_Instruction_15.html" class="link-text">
-            Hebrew Language and Literature
-           </a>
-           <br />
-           <a href="Courses_of_Instruction_16.html" class="link-text">
-            History
-           </a>
-           <br />
-           <a href="Courses_of_Instruction_17.html" class="link-text">
-            Interdisciplinary Studies
-           </a>
-           <br />
-           <a href="Courses_of_Instruction_18.html" class="link-text">
-            International Studies
-           </a>
-           <br />
-           <a href="Courses_of_Instruction_in_Italian.html" class="link-text">
-            Italian Language and Literature
-           </a>
-           <br />
-           <a href="Courses_of_Instruction_19.html" class="link-text">
-            Japanese Language
-           </a>
-           <br />
-           <a href="Courses_of_Instruction_20.html" class="link-text">
-            Jewish Studies
-           </a>
-           <br />
-           <a href="Courses_of_Instruction_21.html" class="link-text">
-            Kinesiology
-           </a>
-           <br />
-           <a href="Courses_of_Instruction_in_Latin.html" class="link-text">
-            Latin
-           </a>
-           <br />
-           <a href="Courses_of_Instruction_in_the_Faculty_of_Health_Sciences.html" class="link-text">
-            Life Sciences
-           </a>
-           <br />
-           <a href="Courses_of_Instruction_22.html" class="link-text">
-            Linguistics
-           </a>
-           <br />
-           <a href="Courses_of_Instruction_in_Mathematics_in_the_Faculty_of_Arts_and_Science.html" class="link-text">
-            Mathematics (Arts and Science)
-           </a>
-           <br />
-           <a href="Courses_of_Instruction_in_the_Faculty_of_Engineering_and_Applied_Science_0.html" class="link-text">
-            Mathematics (Applied Science)
-           </a>
-           <br />
-           <a href="Courses_of_Instruction_in_the_School_of_Graduate_Studies_and_Research.html" class="link-text">
-            Mathematics (Graduate School)
-           </a>
-           <br />
-           <a href="Medieval_Studies_o.html" class="link-text">
-            Medieval Studies
-           </a>
-           <br />
-           <a href="Courses_of_Instruction_23.html" class="link-text">
-            Microbiology and Immunology
-           </a>
-           <br />
-           <a href="Courses_of_Instruction_24.html" class="link-text">
-            Music
-           </a>
-           <br />
-           <a href="Courses_of_Instruction_25.html" class="link-text">
-            Pathology and Molecular Medicine
-           </a>
-           <br />
-           <a href="Courses_of_Instruction_26.html" class="link-text">
-            Pharmacology and Toxicology
-           </a>
-           <br />
-           <a href="Courses_of_Instruction_27.html" class="link-text">
-            Philosophy
-           </a>
-           <br />
-           <a href="Courses_of_Instruction_for_B_P_H_E__Honours__Program.html" class="link-text">
-            Physical and Health Eduction B.P.H.E.(Honours) Program
-           </a>
-           <br />
-           <a href="Courses_of_Instruction_for_Concurrent_B_P_H_E__Programs.html" class="link-text">
-            Physical and Health Education Concurrent B.P.H.E. Programs
-           </a>
-           <br />
-           <a href="Courses_of_Instruction_28.html" class="link-text">
-            Physics, Engineering Physics and Astronomy
-           </a>
-           <br />
-           <a href="Courses_of_Instruction_29.html" class="link-text">
-            Physiology
-           </a>
-           <br />
-           <a href="Courses_of_Instruction_30.html" class="link-text">
-            Political Studies
-           </a>
-           <br />
-           <a href="Courses_of_Instruction_31.html" class="link-text">
-            Psychology
-           </a>
-           <br />
-           <a href="Courses_of_Instruction_32.html" class="link-text">
-            Religious Studies
-           </a>
-           <br />
-           <a href="Courses_of_Instruction_in_the_School_of_Urban_and_Regional_Planning.html" class="link-text">
-            School of Urban and Regional Planning
-           </a>
-           <br />
-           <a href="Courses_of_Instruction_33.html" class="link-text">
-            Sociology
-           </a>
-           <br />
-           <a href="Courses_of_Instruction_in_Spanish.html" class="link-text">
-            Spanish Language and Literature
-           </a>
-           <br />
-           <a href="Courses_of_Instruction_35.html" class="link-text">
-            Stage and Screen Studies
-           </a>
-           <br />
-           <a href="Courses_of_Instruction_in_Statistics_in_the_Faculty_of_Arts_and_Science.html" class="link-text">
-            Statistics (Arts and Science)
-           </a>
-           <br />
-           <a href="Courses_of_Instruction_in_the_Faculty_of_Engineering_and_Applied_Science_0.html" class="link-text">
-            Statistics (Applied Science)
-           </a>
-           <br />
-           <a href="Courses_of_Instruction_37.html" class="link-text">
-            The Writing Centre
-           </a>
-          </p>
-          <div class="print-spacing">
-           &nbsp;
+          <div class="link-area">
+           <table class="link-table">
+            <tr class="link-tablerow">
+             <td class="link-tablecell">
+              <a href="Courses_of_Instruction_25.html#86788" class="link-text">
+               PATH-310*/0.5
+              </a>
+             </td>
+             <td class="link-tablecell">
+              <a href="Courses_of_Instruction_25.html#86789" class="link-text">
+               PATH-425*/0.5
+              </a>
+             </td>
+             <td class="link-tablecell">
+              <a href="Courses_of_Instruction_25.html#86790" class="link-text">
+               PATH-430*/0.5
+              </a>
+             </td>
+             <td class="link-tablecell">
+              <a href="Courses_of_Instruction_25.html#86791" class="link-text">
+               CANC-440*/0.5
+              </a>
+             </td>
+             <td class="link-tablecell">
+              <a href="Courses_of_Instruction_25.html#86792" class="link-text">
+               CANC-497*/0.5
+              </a>
+             </td>
+             <td class="link-tablecell">
+              <a href="Courses_of_Instruction_25.html#86793" class="link-text">
+               CANC-499/1.5
+              </a>
+             </td>
+             <td class="link-tablecell">
+              <a href="Courses_of_Instruction_25.html#86794" class="link-text">
+               PATH-499/1.5
+              </a>
+             </td>
+            </tr>
+           </table>
           </div>
          </div>
         </td>
        </tr>
-      </table>
-     </td>
-    </tr>
-    <tr>
-     <td colspan="2" style="PADDING-RIGHT: 7px; PADDING-LEFT: 7px; WIDTH: 625px; HEIGHT: 30px" valign="middle" height="30">
-      <span id="_ctl0__ctl0_Catnavbasicbreadcrumb1" class="breadcrumb">
-      </span>
-      <?xml version='1.0' encoding='utf-8'?>
-      <a href="index.html" class="breadcrumb">
-       Arts and Science
-      </a>
-      <img src="Images/BreadcrumbBullet.gif" />
-      <a href="Courses_of_Instruction__by_Subject_.html" class="breadcrumb">
-       Courses of Instruction
-      </a>
-     </td>
-    </tr>
-    <tr>
-     <td align="center" colspan="2">
-      <span id="_ctl0__ctl0_PrevNextPage">
-      </span>
-      <a href="Continuing_and_Distance_Studies.html">
-       <img src="Images/PreviousChapter.gif" alt="previous chapter" class="" border="0" />
-      </a>
-      <a>
-      </a>
-      <a href="Other_Faculties_and_Schools_0.html">
-       <img src="Images/NextPage.gif" alt="next page" class="" border="0" />
-      </a>
-      <a>
-      </a>
-      <a href="Departments__Programs_and_Courses.html">
-       <img src="Images/NextChapter.gif" alt="next chapter" class="" border="0" />
-      </a>
-      <a>
-      </a>
-     </td>
-    </tr>
-    <!--=====FOOTER=====-->
-    <tr>
-     <td colspan="2">
-      <hr width="75%" />
-      <table align="center">
-       <tr align="center">
-        <td align="center">
-         <a class="plain10" title="Privacy Statement" href="http://www.queensu.ca/calendars/disclaimer_files/disclaimer.htm">
-          Privacy Statement
-         </a>
+       <tr>
+        <td>
+         <div class="item-container">
+          <a name="86787">
+          </a>
+          <table width="100%" cellpadding="0" cellspacing="0" border="0">
+           <tr>
+            <td width="25%" valign="top">
+             <span id="_ctl0__ctl0_pageContent__ctl1__ctl2_cnCourseCode" class="course-code">
+             </span>
+            </td>
+            <td align="left" valign="bottom">
+             <span id="_ctl0__ctl0_pageContent__ctl1__ctl2_cnCourseTitle" class="course-title">
+             </span>
+            </td>
+            <td nowrap="nowrap" align="right" valign="bottom">
+             <span id="_ctl0__ctl0_pageContent__ctl1__ctl2_cnSpecialCode" class="course-specialcode">
+             </span>
+            </td>
+           </tr>
+          </table>
+          <div>
+           <span id="_ctl0__ctl0_pageContent__ctl1__ctl2_cnCourseDescription" class="course-desc">
+            <div>
+             <font size="1" face="Optima">
+             </font>
+            </div>
+            <div>
+             <strong>
+              ENROLMENT LIMITATIONS
+             </strong>
+             <br />
+             All courses in the Department have an enrolment limit. Students meeting the minimum prerequisites are not guaranteed positions. In the case of oversubscribed courses, priority will be based on academic standing in prerequisites.
+            </div>
+            <div>
+             <br />
+             <strong>
+              AVAILABILITY
+             </strong>
+             <br />
+             The Department of Pathology and Molecular Medicine does not offer all of the courses listed in the
+             <em>
+              Calendar
+             </em>
+             every year. For the most up-to-date information on the availability of courses offered in the current year, check QCARD or consult with the departmental office.
+            </div>
+           </span>
+           <span id="_ctl0__ctl0_pageContent__ctl1__ctl2_cnCoursePrereq" class="course-prereq">
+           </span>
+          </div>
+          <div>
+           <span id="_ctl0__ctl0_pageContent__ctl1__ctl2_cnCourseCoreq" class="course-prereq">
+           </span>
+          </div>
+          <div>
+           <span id="_ctl0__ctl0_pageContent__ctl1__ctl2_cnCourseExclu" class="course-prereq">
+           </span>
+          </div>
+          <span id="_ctl0__ctl0_pageContent__ctl1__ctl2_cnCourseEquiv" class="course-prereq">
+          </span>
+         </div>
         </td>
-        <td align="center" width="10">
-         |
-        </td>
-        <td align="center">
-         <a href="http://www.queensu.ca/campusmap/" onmouseover="parent.status='Find what you\'re looking for on the campus map';return true">
-          Campus Map
-         </a>
-        </td>
-        <td align="center" width="10">
-         |
-        </td>
-        <td align="center">
-         <a href=" http://www.queensu.ca/secretariat/senate/policies/" onmouseover="parent.status='Back to the Code of Conduct home page';return true">
-          Code of Conduct
-         </a>
-        </td>
-        <td align="center" width="10">
-         |
-        </td>
-        <td align="center">
-         <a href="http://www.queensu.ca/secretariat/senate/policies/codes.html " onmouseover="parent.status='Back to the Computer Code of Ethics home page';return true">
-          Computer Code of Ethics
-         </a>
-        </td>
-        <td align="center" width="10">
-         |
-        </td>
-        <td align="center">
-         <a href="http://www.queensu.ca/secretariat/senate/policies/index.html " onmouseover="parent.status='Back to the Senate Academic Policies home page';return true">
-          Senate Academic Policies
-         </a>
-        </td>
-        <td align="center" width="10">
-         |
-        </td>
-        <td align="center">
-         <a href="http://www.queensu.ca/studentaffairs/index.html" onmouseover="parent.status='Back to the Student Services home page';return true">
-          Student Services
-         </a>
-        </td>
-        <td align="center" width="10">
-         |
-        </td>
-        <td align="center">
-         <a href="http://www.queensu.ca/search" onmouseover="parent.status='Search this site';return true">
-          Search
+       </tr>
+       <tr>
+        <td class="Example " align="right">
+         <a href="#top" style="COLOR:#0000ff">
+          back to top
          </a>
         </td>
        </tr>
+       <tr>
+        <div>
+        </div>
+       </tr>
       </table>
-      <br />
-      <br />
-      <div class="footer" align="center">
-       © 2001-2005 Queen's 
-      University. Please read our
-       <a title="Read the disclaimer" href="http://www.queensu.ca/calendars/disclaimer_files/disclaimer.htm">
-        disclaimer
+     </td>
+    </tr>
+    <tr>
+     <td>
+      <div class="item-container">
+       <a name="86788">
        </a>
-       .
-       <br />
-       Information regarding legal notices, copyright and 
-      privacy can be found
-       <a title="Read the information on legal notices... " href="http://www.queensu.ca/www/legal/">
-        here
-       </a>
-       .
+       <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+         <td width="25%" valign="top">
+          <span id="_ctl0__ctl0_pageContent__ctl2__ctl2_cnCourseCode" class="course-code">
+           PATH-310*/0.5
+           <a href="javascript:ShowCourseTimeTable(event,'PATH','310')">
+            <img src="Images/TimeTableM.gif" border="0" />
+           </a>
+          </span>
+         </td>
+         <td align="left" valign="bottom">
+          <span id="_ctl0__ctl0_pageContent__ctl2__ctl2_cnCourseTitle" class="course-title">
+           Pathology and Molecular Medicine
+          </span>
+         </td>
+         <td nowrap="nowrap" align="right" valign="bottom">
+          <span id="_ctl0__ctl0_pageContent__ctl2__ctl2_cnSpecialCode" class="course-specialcode">
+           3L/T
+          </span>
+         </td>
+        </tr>
+       </table>
+       <div>
+        <span id="_ctl0__ctl0_pageContent__ctl2__ctl2_cnCourseDescription" class="course-desc">
+         An introduction to pathology and molecular medicine. The course will be organized around a specific set of diseases, designed to illustrate basic concepts in the molecular biology, biochemistry, and pathology of human disease.
+        </span>
+        <span id="_ctl0__ctl0_pageContent__ctl2__ctl2_cnCoursePrereq" class="course-prereq">
+         PREREQUISITE   
+         <a href="Courses_of_Instruction_0.html#84838" class="link-text">
+          MBIO 218
+         </a>
+         *.
+        </span>
+       </div>
+       <div>
+        <span id="_ctl0__ctl0_pageContent__ctl2__ctl2_cnCourseCoreq" class="course-prereq">
+         COREQUISITES   
+         <a href="Courses_of_Instruction_0.html#84839" class="link-text">
+          BCHM 310
+         </a>
+         , or
+         <a href="Courses_of_Instruction_0.html#84841" class="link-text">
+          BCHM 315
+         </a>
+         * and
+         <a href="Courses_of_Instruction_0.html#84842" class="link-text">
+          BCHM 316
+         </a>
+         *.
+         <a href="Courses_of_Instruction_39.html#102551" class="link-text">
+          ANAT 215
+         </a>
+         *,
+         <a href="Courses_of_Instruction_39.html#102552" class="link-text">
+          ANAT 216
+         </a>
+         *, and
+         <a href="Courses_of_Instruction_29.html#87154" class="link-text">
+          PHGY 212
+         </a>
+         are recommended.
+        </span>
+       </div>
+       <div>
+        <span id="_ctl0__ctl0_pageContent__ctl2__ctl2_cnCourseExclu" class="course-prereq">
+         EXCLUSION&nbsp;&nbsp;&nbsp; PATH 410*.
+        </span>
+       </div>
+       <span id="_ctl0__ctl0_pageContent__ctl2__ctl2_cnCourseEquiv" class="course-prereq">
+       </span>
       </div>
      </td>
     </tr>
+    <tr>
+     <td class="Example " align="right">
+      <a href="#top" style="COLOR:#0000ff">
+       back to top
+      </a>
+     </td>
+    </tr>
+    <tr>
+     <div>
+     </div>
+    </tr>
+    <tr>
+     <td>
+      <div class="item-container">
+       <a name="86789">
+       </a>
+       <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+         <td width="25%" valign="top">
+          <span id="_ctl0__ctl0_pageContent__ctl3__ctl2_cnCourseCode" class="course-code">
+           PATH-425*/0.5
+           <a href="javascript:ShowCourseTimeTable(event,'PATH','425')">
+            <img src="Images/TimeTableM.gif" border="0" />
+           </a>
+          </span>
+         </td>
+         <td align="left" valign="bottom">
+          <span id="_ctl0__ctl0_pageContent__ctl3__ctl2_cnCourseTitle" class="course-title">
+           Current Topics in Human Genetics
+          </span>
+         </td>
+         <td nowrap="nowrap" align="right" valign="bottom">
+          <span id="_ctl0__ctl0_pageContent__ctl3__ctl2_cnSpecialCode" class="course-specialcode">
+           2L;2S
+          </span>
+         </td>
+        </tr>
+       </table>
+       <div>
+        <span id="_ctl0__ctl0_pageContent__ctl3__ctl2_cnCourseDescription" class="course-desc">
+         An advanced level course introducing current topics in human genetics. The course will focus on the significance and implications of genetic variation and its role in disease, development and normal human diversity. In particular, the course will explore the future directions and implications of human genetic research in the post genomic era. Participation in seminars and group discussions is required. Enrolment is limited. Offered in Winter Term.
+        </span>
+        <span id="_ctl0__ctl0_pageContent__ctl3__ctl2_cnCoursePrereq" class="course-prereq">
+         PREREQUISITE   
+         <a href="Courses_of_Instruction_1.html#84871" class="link-text">
+          BIOL 205
+         </a>
+         * (with a minimum grade of 75 per cent).
+         <a href="Courses_of_Instruction_0.html#84838" class="link-text">
+          MBIO 218
+         </a>
+         * (or MBIO 318*) is recommended, or permission of the Department.
+        </span>
+       </div>
+       <div>
+        <span id="_ctl0__ctl0_pageContent__ctl3__ctl2_cnCourseCoreq" class="course-prereq">
+        </span>
+       </div>
+       <div>
+        <span id="_ctl0__ctl0_pageContent__ctl3__ctl2_cnCourseExclu" class="course-prereq">
+         EXCLUSION   
+         <a href="Courses_of_Instruction_1.html#84913" class="link-text">
+          BIOL 441
+         </a>
+         *.
+        </span>
+       </div>
+       <span id="_ctl0__ctl0_pageContent__ctl3__ctl2_cnCourseEquiv" class="course-prereq">
+       </span>
+      </div>
+     </td>
+    </tr>
+    <tr>
+     <td class="Example " align="right">
+      <a href="#top" style="COLOR:#0000ff">
+       back to top
+      </a>
+     </td>
+    </tr>
+    <tr>
+     <div>
+     </div>
+    </tr>
+    <tr>
+     <td>
+      <div class="item-container">
+       <a name="86790">
+       </a>
+       <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+         <td width="25%" valign="top">
+          <span id="_ctl0__ctl0_pageContent__ctl4__ctl2_cnCourseCode" class="course-code">
+           PATH-430*/0.5
+           <a href="javascript:ShowCourseTimeTable(event,'PATH','430')">
+            <img src="Images/TimeTableM.gif" border="0" />
+           </a>
+          </span>
+         </td>
+         <td align="left" valign="bottom">
+          <span id="_ctl0__ctl0_pageContent__ctl4__ctl2_cnCourseTitle" class="course-title">
+           Molecular Basis of Disease
+          </span>
+         </td>
+         <td nowrap="nowrap" align="right" valign="bottom">
+          <span id="_ctl0__ctl0_pageContent__ctl4__ctl2_cnSpecialCode" class="course-specialcode">
+           2L
+          </span>
+         </td>
+        </tr>
+       </table>
+       <div>
+        <span id="_ctl0__ctl0_pageContent__ctl4__ctl2_cnCourseDescription" class="course-desc">
+         An in-depth perspective of the pathogenesis of human disease. An integration of the genetic, biochemical, physiologic, anatomic, and general etiologic factors which play a role in the progression of several specific diseases from inception to death or recovery. The course will comprise short introductory presentations by teaching faculty followed by the presentation and discussion of relevant scientific papers by students. Given jointly with PATH 826*. Only undergraduates with an excellent performance in the prerequisite courses will be considered. Undergraduates should contact the Department during the first week of January to confirm enrolment. Enrolment is limited. Offered in Winter Term.
+        </span>
+        <span id="_ctl0__ctl0_pageContent__ctl4__ctl2_cnCoursePrereq" class="course-prereq">
+         PREREQUISITE   
+         <a href="Courses_of_Instruction_in_the_Faculty_of_Health_Sciences.html#86414" class="link-text">
+          PATH 310
+         </a>
+         * or permission of the Course Coordinator.
+        </span>
+       </div>
+       <div>
+        <span id="_ctl0__ctl0_pageContent__ctl4__ctl2_cnCourseCoreq" class="course-prereq">
+        </span>
+       </div>
+       <div>
+        <span id="_ctl0__ctl0_pageContent__ctl4__ctl2_cnCourseExclu" class="course-prereq">
+        </span>
+       </div>
+       <span id="_ctl0__ctl0_pageContent__ctl4__ctl2_cnCourseEquiv" class="course-prereq">
+       </span>
+      </div>
+     </td>
+    </tr>
+    <tr>
+     <td class="Example " align="right">
+      <a href="#top" style="COLOR:#0000ff">
+       back to top
+      </a>
+     </td>
+    </tr>
+    <tr>
+     <div>
+     </div>
+    </tr>
+    <tr>
+     <td>
+      <div class="item-container">
+       <a name="86791">
+       </a>
+       <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+         <td width="25%" valign="top">
+          <span id="_ctl0__ctl0_pageContent__ctl5__ctl2_cnCourseCode" class="course-code">
+           CANC-440*/0.5
+           <a href="javascript:ShowCourseTimeTable(event,'CANC','440')">
+            <img src="Images/TimeTableM.gif" border="0" />
+           </a>
+          </span>
+         </td>
+         <td align="left" valign="bottom">
+          <span id="_ctl0__ctl0_pageContent__ctl5__ctl2_cnCourseTitle" class="course-title">
+           Cancer Biology and Therapeutics
+          </span>
+         </td>
+         <td nowrap="nowrap" align="right" valign="bottom">
+          <span id="_ctl0__ctl0_pageContent__ctl5__ctl2_cnSpecialCode" class="course-specialcode">
+           1L;2T
+          </span>
+         </td>
+        </tr>
+       </table>
+       <div>
+        <span id="_ctl0__ctl0_pageContent__ctl5__ctl2_cnCourseDescription" class="course-desc">
+         For a complete description, see
+         <em>
+          Life Sciences
+         </em>
+         .
+        </span>
+        <span id="_ctl0__ctl0_pageContent__ctl5__ctl2_cnCoursePrereq" class="course-prereq">
+        </span>
+       </div>
+       <div>
+        <span id="_ctl0__ctl0_pageContent__ctl5__ctl2_cnCourseCoreq" class="course-prereq">
+        </span>
+       </div>
+       <div>
+        <span id="_ctl0__ctl0_pageContent__ctl5__ctl2_cnCourseExclu" class="course-prereq">
+        </span>
+       </div>
+       <span id="_ctl0__ctl0_pageContent__ctl5__ctl2_cnCourseEquiv" class="course-prereq">
+       </span>
+      </div>
+     </td>
+    </tr>
+    <tr>
+     <td class="Example " align="right">
+      <a href="#top" style="COLOR:#0000ff">
+       back to top
+      </a>
+     </td>
+    </tr>
+    <tr>
+     <div>
+     </div>
+    </tr>
+    <tr>
+     <td>
+      <div class="item-container">
+       <a name="86792">
+       </a>
+       <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+         <td width="25%" valign="top">
+          <span id="_ctl0__ctl0_pageContent__ctl6__ctl2_cnCourseCode" class="course-code">
+           CANC-497*/0.5
+           <a href="javascript:ShowCourseTimeTable(event,'CANC','497')">
+            <img src="Images/TimeTableM.gif" border="0" />
+           </a>
+          </span>
+         </td>
+         <td align="left" valign="bottom">
+          <span id="_ctl0__ctl0_pageContent__ctl6__ctl2_cnCourseTitle" class="course-title">
+           Current Topics in Cancer Biology and Genetics
+          </span>
+         </td>
+         <td nowrap="nowrap" align="right" valign="bottom">
+          <span id="_ctl0__ctl0_pageContent__ctl6__ctl2_cnSpecialCode" class="course-specialcode">
+           2T
+          </span>
+         </td>
+        </tr>
+       </table>
+       <div>
+        <span id="_ctl0__ctl0_pageContent__ctl6__ctl2_cnCourseDescription" class="course-desc">
+         For a complete description, see
+         <em>
+          Life Sciences
+         </em>
+         .
+        </span>
+        <span id="_ctl0__ctl0_pageContent__ctl6__ctl2_cnCoursePrereq" class="course-prereq">
+        </span>
+       </div>
+       <div>
+        <span id="_ctl0__ctl0_pageContent__ctl6__ctl2_cnCourseCoreq" class="course-prereq">
+        </span>
+       </div>
+       <div>
+        <span id="_ctl0__ctl0_pageContent__ctl6__ctl2_cnCourseExclu" class="course-prereq">
+        </span>
+       </div>
+       <span id="_ctl0__ctl0_pageContent__ctl6__ctl2_cnCourseEquiv" class="course-prereq">
+       </span>
+      </div>
+     </td>
+    </tr>
+    <tr>
+     <td class="Example " align="right">
+      <a href="#top" style="COLOR:#0000ff">
+       back to top
+      </a>
+     </td>
+    </tr>
+    <tr>
+     <div>
+     </div>
+    </tr>
+    <tr>
+     <td>
+      <div class="item-container">
+       <a name="86793">
+       </a>
+       <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+         <td width="25%" valign="top">
+          <span id="_ctl0__ctl0_pageContent__ctl7__ctl2_cnCourseCode" class="course-code">
+           CANC-499/1.5
+           <a href="javascript:ShowCourseTimeTable(event,'CANC','499')">
+            <img src="Images/TimeTableM.gif" border="0" />
+           </a>
+          </span>
+         </td>
+         <td align="left" valign="bottom">
+          <span id="_ctl0__ctl0_pageContent__ctl7__ctl2_cnCourseTitle" class="course-title">
+           Research Project in Cancer Biology and Genetics
+          </span>
+         </td>
+         <td nowrap="nowrap" align="right" valign="bottom">
+          <span id="_ctl0__ctl0_pageContent__ctl7__ctl2_cnSpecialCode" class="course-specialcode">
+           10P
+          </span>
+         </td>
+        </tr>
+       </table>
+       <div>
+        <span id="_ctl0__ctl0_pageContent__ctl7__ctl2_cnCourseDescription" class="course-desc">
+         For a complete description, see
+         <em>
+          Life Sciences
+         </em>
+         .
+        </span>
+        <span id="_ctl0__ctl0_pageContent__ctl7__ctl2_cnCoursePrereq" class="course-prereq">
+        </span>
+       </div>
+       <div>
+        <span id="_ctl0__ctl0_pageContent__ctl7__ctl2_cnCourseCoreq" class="course-prereq">
+        </span>
+       </div>
+       <div>
+        <span id="_ctl0__ctl0_pageContent__ctl7__ctl2_cnCourseExclu" class="course-prereq">
+        </span>
+       </div>
+       <span id="_ctl0__ctl0_pageContent__ctl7__ctl2_cnCourseEquiv" class="course-prereq">
+       </span>
+      </div>
+     </td>
+    </tr>
+    <tr>
+     <td class="Example " align="right">
+      <a href="#top" style="COLOR:#0000ff">
+       back to top
+      </a>
+     </td>
+    </tr>
+    <tr>
+     <div>
+     </div>
+    </tr>
+    <tr>
+     <td>
+      <div class="item-container">
+       <a name="86794">
+       </a>
+       <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+         <td width="25%" valign="top">
+          <span id="_ctl0__ctl0_pageContent__ctl8__ctl2_cnCourseCode" class="course-code">
+           PATH-499/1.5
+           <a href="javascript:ShowCourseTimeTable(event,'PATH','499')">
+            <img src="Images/TimeTableM.gif" border="0" />
+           </a>
+          </span>
+         </td>
+         <td align="left" valign="bottom">
+          <span id="_ctl0__ctl0_pageContent__ctl8__ctl2_cnCourseTitle" class="course-title">
+           Research Project in Pathology
+          </span>
+         </td>
+         <td nowrap="nowrap" align="right" valign="bottom">
+          <span id="_ctl0__ctl0_pageContent__ctl8__ctl2_cnSpecialCode" class="course-specialcode">
+           10P;2T
+          </span>
+         </td>
+        </tr>
+       </table>
+       <div>
+        <span id="_ctl0__ctl0_pageContent__ctl8__ctl2_cnCourseDescription" class="course-desc">
+         <div>
+          A research project involving the study of human disease processes. The project will be supervised by a Faculty member in the Department and will provide opportunities for experimental design, data analysis and both written and oral presentation of results. Students must contact a potential faculty supervisor in the Spring preceding registration in fourth year. Enrolment is limited; restricted to fourth year honours; acceptance by a supervisor required prior to registration. Offered in Fall Term.
+         </div>
+         <div>
+          NOTE    Students whose research requires the care and/or handling of animals must also register in
+          <a href="Courses_of_Instruction_in_the_Faculty_of_Health_Sciences.html#86430" class="link-text">
+           LISC 488
+          </a>
+          /0.0.
+         </div>
+        </span>
+        <span id="_ctl0__ctl0_pageContent__ctl8__ctl2_cnCoursePrereq" class="course-prereq">
+        </span>
+       </div>
+       <div>
+        <span id="_ctl0__ctl0_pageContent__ctl8__ctl2_cnCourseCoreq" class="course-prereq">
+        </span>
+       </div>
+       <div>
+        <span id="_ctl0__ctl0_pageContent__ctl8__ctl2_cnCourseExclu" class="course-prereq">
+         EXCLUSIONS   
+         <a href="Courses_of_Instruction_39.html#102567" class="link-text">
+          ANAT 499
+         </a>
+         ,
+         <a href="Courses_of_Instruction_in_the_Faculty_of_Health_Sciences.html#86434" class="link-text">
+          CANC 499
+         </a>
+         ,
+         <a href="Courses_of_Instruction_in_the_Faculty_of_Health_Sciences.html#86435" class="link-text">
+          EPID 499
+         </a>
+         ,
+         <a href="Courses_of_Instruction_in_the_Faculty_of_Health_Sciences.html#86436" class="link-text">
+          LISC 499
+         </a>
+         ,
+         <a href="Courses_of_Instruction_23.html#86613" class="link-text">
+          MICR 455
+         </a>
+         ,
+         <a href="Courses_of_Instruction_23.html#86615" class="link-text">
+          MICR 499
+         </a>
+         ,
+         <a href="Courses_of_Instruction_in_the_Faculty_of_Health_Sciences.html#86437" class="link-text">
+          NSCI 499
+         </a>
+         ,
+         <a href="Courses_of_Instruction_26.html#86812" class="link-text">
+          PHAR 499
+         </a>
+         ,
+         <a href="Courses_of_Instruction_29.html#87167" class="link-text">
+          PHGY 499
+         </a>
+         .
+        </span>
+       </div>
+       <span id="_ctl0__ctl0_pageContent__ctl8__ctl2_cnCourseEquiv" class="course-prereq">
+       </span>
+      </div>
+     </td>
+    </tr>
+    <tr>
+     <td class="Example " align="right">
+      <a href="#top" style="COLOR:#0000ff">
+       back to top
+      </a>
+     </td>
+    </tr>
+    <tr>
+     <div>
+     </div>
+    </tr>
    </table>
-   <link type="text/css" rel="stylesheet" href="Master.css" />
+   <tr>
+    <td colspan="2" style="PADDING-RIGHT: 7px; PADDING-LEFT: 7px; WIDTH: 625px; HEIGHT: 30px" valign="middle" height="30">
+     <span id="_ctl0__ctl0_Catnavbasicbreadcrumb1" class="breadcrumb">
+     </span>
+     <?xml version='1.0' encoding='utf-8'?>
+     <a href="index.html" class="breadcrumb">
+      Arts and Science
+     </a>
+     <img src="Images/BreadcrumbBullet.gif" />
+     <a href="Departments__Programs_and_Courses.html" class="breadcrumb">
+      Departments, Programs and Courses
+     </a>
+     <img src="Images/BreadcrumbBullet.gif" />
+     <a href="Pathology_and_Molecular_Medicine_o.html" class="breadcrumb">
+      Pathology and Molecular Medicine
+     </a>
+     <img src="Images/BreadcrumbBullet.gif" />
+     <a href="Courses_of_Instruction_25.html" class="breadcrumb">
+      Courses of Instruction
+     </a>
+    </td>
+   </tr>
+   <tr>
+    <td align="center" colspan="2">
+     <span id="_ctl0__ctl0_PrevNextPage">
+     </span>
+     <a href="Music_o.html">
+      <img src="Images/PreviousChapter.gif" alt="previous chapter" class="" border="0" />
+     </a>
+     <a>
+     </a>
+     <a href="Pathology_and_Molecular_Medicine_Degree_Programs.html">
+      <img src="Images/PreviousPage.gif" alt="previous page" class="" border="0" />
+     </a>
+     <a>
+     </a>
+     <a href="Pharmacology_and_Toxicology_o.html">
+      <img src="Images/NextChapter.gif" alt="next chapter" class="" border="0" />
+     </a>
+     <a>
+     </a>
+    </td>
+   </tr>
+   <!--=====FOOTER=====-->
+   <tr>
+    <td colspan="2">
+     <hr width="75%" />
+     <table align="center">
+      <tr align="center">
+       <td align="center">
+        <a class="plain10" title="Privacy Statement" href="http://www.queensu.ca/calendars/disclaimer_files/disclaimer.htm">
+         Privacy Statement
+        </a>
+       </td>
+       <td align="center" width="10">
+        |
+       </td>
+       <td align="center">
+        <a href="http://www.queensu.ca/campusmap/" onmouseover="parent.status='Find what you\'re looking for on the campus map';return true">
+         Campus Map
+        </a>
+       </td>
+       <td align="center" width="10">
+        |
+       </td>
+       <td align="center">
+        <a href=" http://www.queensu.ca/secretariat/senate/policies/" onmouseover="parent.status='Back to the Code of Conduct home page';return true">
+         Code of Conduct
+        </a>
+       </td>
+       <td align="center" width="10">
+        |
+       </td>
+       <td align="center">
+        <a href="http://www.queensu.ca/secretariat/senate/policies/codes.html " onmouseover="parent.status='Back to the Computer Code of Ethics home page';return true">
+         Computer Code of Ethics
+        </a>
+       </td>
+       <td align="center" width="10">
+        |
+       </td>
+       <td align="center">
+        <a href="http://www.queensu.ca/secretariat/senate/policies/index.html " onmouseover="parent.status='Back to the Senate Academic Policies home page';return true">
+         Senate Academic Policies
+        </a>
+       </td>
+       <td align="center" width="10">
+        |
+       </td>
+       <td align="center">
+        <a href="http://www.queensu.ca/studentaffairs/index.html" onmouseover="parent.status='Back to the Student Services home page';return true">
+         Student Services
+        </a>
+       </td>
+       <td align="center" width="10">
+        |
+       </td>
+       <td align="center">
+        <a href="http://www.queensu.ca/search" onmouseover="parent.status='Search this site';return true">
+         Search
+        </a>
+       </td>
+      </tr>
+     </table>
+     <br />
+     <br />
+     <div class="footer" align="center">
+      © 2001-2005 Queen's 
+      University. Please read our
+      <a title="Read the disclaimer" href="http://www.queensu.ca/calendars/disclaimer_files/disclaimer.htm">
+       disclaimer
+      </a>
+      .
+      <br />
+      Information regarding legal notices, copyright and 
+      privacy can be found
+      <a title="Read the information on legal notices... " href="http://www.queensu.ca/www/legal/">
+       here
+      </a>
+      .
+     </div>
+    </td>
+   </tr>
   </table>
+  <link type="text/css" rel="stylesheet" href="Master.css" />
  </body>
 </html>
