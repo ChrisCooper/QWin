@@ -4,6 +4,10 @@ import re
 import CourseModels
 
 def getSoup():
+	"""
+	Returns the beautiful soup structure from the timetable website.
+	"""
+	#getActualResults = True
 	getActualResults = False
 	
 	if (getActualResults):
@@ -17,9 +21,14 @@ def getSoup():
 	print "Cleaning up data..."
 	soup = BeautifulSoup(dump)
 	print "done!"
+
+	
 	return soup
 	
 def getCourseRows():
+	"""
+	Returns a list of beautiful soup tags representing all section rows from the timetable website.
+	"""
 	soup = getSoup()
 	print "Identifying courses..."
 	rows = soup.findAll('tr', attrs={'id' : "searchResultsRow"})
@@ -27,7 +36,9 @@ def getCourseRows():
 	return rows
 
 def getCourseEntryFromCourseRow(row):
-
+	"""
+	Returns a CourseEntry model for a timetable website section entry given the beautiful soup tag
+	"""
 	course = CourseModels.CourseEntry()
 	
 	tds=row.findAll('td')
@@ -55,13 +66,16 @@ def getCourseEntryFromCourseRow(row):
 	course.thursTime		= getUniformEntry(tds[11])
 	course.friTime			= getUniformEntry(tds[12])
 	course.building			= getUniformEntry(tds[13])
-	course.room				= getUniformEntry(tds[14])
+	course.room			= getUniformEntry(tds[14])
 	course.instructor		= getUniformEntry(tds[15])
 	course.comments			= getUniformEntry(tds[16])
 	
 	return course
 
 def getUniformEntry(node):
+	"""
+	Returns a stripped entry from a tag with the 'span' keyword
+	"""
 	span = node.find('span')
 	data = span.nextSibling
 	if (data == None):
@@ -69,6 +83,9 @@ def getUniformEntry(node):
 	return data.strip()
 
 def getCourseEntries():
+	"""
+	Returns a list of CourseEntry models representing the entire timetable website 
+	"""
 	rows = getCourseRows()
 	
 	print "Extracting individual courses..."

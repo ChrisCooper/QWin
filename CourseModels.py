@@ -21,7 +21,8 @@ class CourseEntry:
 		self.room=""
 		self.instructor=""
 		self.comments=""
-	
+
+			
 	def getKey(self):
 		return self.subject + self.code
 	
@@ -31,13 +32,26 @@ class CourseEntry:
 
 class Course:
 	def __init__(self):
-		self.id = -1
 		self.subject = ""
 		self.code = ""
+		self.credits = ""
+		self.name = ""
+		self.description = ""
+		self.prereqs = ""
+		self.coreqs = ""
+		self.exclus = ""
+		self.equivs = ""
+		self.notes = ""
+		self.format = ""
 		self.sections = []
+		
+	def getKey(self):
+		return self.subject + self.code
 	
 	def __str__(self):
-		string = "--------------------\n" + self.subject+" "+self.code+"\n"
+		string = "--------------------\n" + self.subject+" "+self.code+ ", " +self.credits+"\n"
+		string += self.name + "\n"
+		string += self.description + "\n"
 		for section in self.sections:
 			string += "\t" + str(section) + "\n"
 		return string
@@ -107,4 +121,25 @@ def convertToBuiltinType(obj):
 		for period in obj.timePeriods:
 			d["timePeriods"].append(convertToBuiltinType(period))
 	return d
+
+def mergeCourses(course, otherCourse):
+	newCourse = Course()
+	newCourse.subject = returnObjectWithContent(course.subject, otherCourse.subject)
+	newCourse.code = returnObjectWithContent(course.code, otherCourse.code)
+	newCourse.credits = returnObjectWithContent(course.credits, otherCourse.credits)
+	newCourse.name = returnObjectWithContent(course.name, otherCourse.name)
+	newCourse.description = returnObjectWithContent(course.description, otherCourse.description)
+	newCourse.prereqs = returnObjectWithContent(course.prereqs, otherCourse.prereqs)
+	newCourse.coreqs = returnObjectWithContent(course.coreqs, otherCourse.coreqs)
+	newCourse.exclus = returnObjectWithContent(course.exclus, otherCourse.exclus)
+	newCourse.equivs = returnObjectWithContent(course.equivs, otherCourse.equivs)
+	newCourse.notes = returnObjectWithContent(course.notes, otherCourse.notes)
+	newCourse.format = returnObjectWithContent(course.format, otherCourse.format)
+	newCourse.sections = returnObjectWithContent(course.sections, otherCourse.sections)
+	return newCourse
+
+def returnObjectWithContent(firstContent, secondContent):
+	if ((not firstContent == None) and (not len(firstContent) == 0)):
+		return firstContent
+	return secondContent
 
