@@ -15,6 +15,8 @@
 
 @synthesize subject;
 @synthesize code;
+@synthesize name;
+@synthesize description;
 @synthesize courseKey;
 @synthesize sections;
 
