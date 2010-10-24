@@ -45,12 +45,11 @@ def createCourseModels():
 					timePeriod = timePeriods[key]
 				
 				section.timePeriods.append(timePeriod)
-				
-	for key in courseInformationList:
-		if key in courses:
-			courses[key] = mergeCourses(courses[key], courseInformationList[key])
-		else:
-			courses[key] = courseInformationList[key]
+
+	for key in courses:
+		if key in courseInformationList:
+			courseInformationList[key] = mergeCourses(courses[key], courseInformationList[key])
+	courses = courseInformationList
 	
 	print "Done!\n"
 	
@@ -61,7 +60,13 @@ def createCourseModels():
 		for i in range(len(courseKeys)):
 			if not i == 0:
 				file.write(",\n")
-			json.dump(CourseModels.convertToBuiltinType(courses[courseKeys[i]]), file, indent=2) 
+			builtIn = CourseModels.convertToBuiltinType(courses[courseKeys[i]])
+			
+			for key in builtIn:
+				if not (isinstance(builtIn[key], basestring) or isinstance(builtIn[key], list)):
+					builtIn[key] = builtIn[key].contents[0]
+			
+			json.dump(builtIn, file, indent=2)
 
 		file.write("\n]")
 	

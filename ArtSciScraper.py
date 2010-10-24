@@ -8,6 +8,7 @@ def getSoup():
 	Returns the beautiful soup structure from the subject listing website.
 	"""
 	getActualResults = False
+	#getActualResults = True
 	
 	if (getActualResults):
 		print "Fetching raw course data..."
@@ -119,9 +120,9 @@ def getCoursesFromLink(link):
 			.*          # Anything can be a seperator
 			(\d{3})     # Course number is 3 digits (e.g. '121')
 			[^0-9]*     # Optional separator
-			(\d.\d)?    # Number of credits (e.g. '1.0')
+			(\d.\d\d?)?    # Number of credits (e.g. '1.0')
 			''', re.VERBOSE)
-		
+
 		results = codePattern.search(code).groups()                   
 		
 		subject = results[0]
