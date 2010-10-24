@@ -14,6 +14,7 @@
 	NSString *name;
 	NSString *description;
 	NSString *code;
+	NSString *credits;
 	NSString *courseKey;
 	NSArray *sections;
 }
@@ -24,6 +25,7 @@
 @property (nonatomic, retain) NSString *subject;
 @property (nonatomic, retain) NSString *code;
 @property (nonatomic, retain) NSString *name;
+@property (nonatomic, retain) NSString *credits;
 @property (nonatomic, retain) NSString *description;
 @property (nonatomic, retain) NSString *courseKey;
 @property (nonatomic, retain) NSArray *sections;

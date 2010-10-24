@@ -95,6 +95,7 @@
 	[newCourse setCourseKey:[subject stringByAppendingString:code]];
 	[newCourse setName:name];
 	[newCourse setDescription:description];
+	[newCourse setCredits:credits];
 	
 	[newCourse setSections:sections];
 	

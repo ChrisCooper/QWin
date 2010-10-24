@@ -22,7 +22,7 @@
 	[codeField setStringValue:[course getKey]];
 	[titleField setStringValue:[course name]];
 	[descriptionField setStringValue:[course description]];
-
+	[creditsField setStringValue:[course credits]];
 }
 
 @end
