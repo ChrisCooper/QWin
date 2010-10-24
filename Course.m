@@ -25,6 +25,10 @@
 	return courseKey;
 }
 
+-(NSString*)getFullCode{
+	return [NSString stringWithFormat:@"%@ %@", subject, code];
+}
+
 -(void) logDescription{
 	NSLog(@"________________________");
 	NSLog(@"Course: %@ %@", [Logger getString:[self subject]], [Logger getString:[self code]]);

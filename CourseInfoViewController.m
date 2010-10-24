@@ -17,12 +17,15 @@
 @synthesize formatField;
 @synthesize descriptionField;
 @synthesize requisitesField;
+@synthesize sectionTable;
 
 -(void) displayCourse:(Course*)course{
-	[codeField setStringValue:[course getKey]];
+	[codeField setStringValue:[course getFullCode]];
 	[titleField setStringValue:[course name]];
 	[descriptionField setStringValue:[course description]];
 	[creditsField setStringValue:[course credits]];
+	
+	[sectionTable setCourse:course];
 }
 
 @end

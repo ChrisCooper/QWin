@@ -21,6 +21,7 @@
 
 -(void) logDescription;
 -(NSString*)getKey;
+-(NSString*)getFullCode;
 
 @property (nonatomic, retain) NSString *subject;
 @property (nonatomic, retain) NSString *code;

@@ -17,6 +17,7 @@
 	IBOutlet NSTextField *formatField;
 	IBOutlet NSTextField *descriptionField;
 	IBOutlet NSTextField *requisitesField;
+	IBOutlet NSTableView *sectionTable;
 }
 
 -(void) displayCourse:(Course*)course;
@@ -27,5 +28,6 @@
 @property (nonatomic, retain) NSTextField *formatField;
 @property (nonatomic, retain) NSTextField *descriptionField;
 @property (nonatomic, retain) NSTextField *requisitesField;
+@property (nonatomic, retain) NSTableView *sectionTable;
 
 @end

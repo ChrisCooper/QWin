@@ -29,9 +29,9 @@
 	Course *course = [[[[CourseModelManager sharedInstance] getCourses] allValues] objectAtIndex:row];
 	
 	if (tableColumn == keyColumn){
-		return [course getKey];
+		return  [course getFullCode];
 	} else if (tableColumn == titleColumn){
-		return @"Title goes right here";
+		return [course name];
 	}
 	return @"";
 }
