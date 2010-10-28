@@ -49,12 +49,13 @@ def createCourseModels():
 	for key in courses:
 		if key in courseInformationList:
 			courseInformationList[key] = mergeCourses(courses[key], courseInformationList[key])
+			
 	courses = courseInformationList
 	
 	print "Done!\n"
 	
 	print "Writing JSON file..."
-	with open('courses.json', mode='w') as file:
+	with open('build/Debug/courses.json', mode='w') as file:
 		file.write("[\n")
 		courseKeys = courses.keys()
 		for i in range(len(courseKeys)):
