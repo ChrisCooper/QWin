@@ -129,14 +129,29 @@ def getCoursesFromLink(link):
 		number = results[1]
 		if not results[2] == None:
 			credits = results[2]
+
+		#debugging
+		#if number == "117":
+			#print div
 		
 		name = div.find("span", attrs={"class":"course-title"})
 		if len(name.contents) > 0:
-			name = name.contents[0]
-			name = str(name).strip()
+			name = str(name.contents[0])
+			name = name.replace("&nbsp;", "")
+			name = name.strip()
 		else:
 			name = ''
+			
 		
+		format = div.find("span", attrs={"class":"course-specialcode"})
+		if len(format.contents) > 0:
+			format = str(format.contents[0])
+			format = format.strip()
+		else:
+			format = ''
+			
+			
+		#TODO: Recursively add description contents
 		description = div.find("span", attrs={"class":"course-desc"})
 		if len(description.contents) > 0:
 			if description.contents[0].find("div"):
@@ -156,6 +171,7 @@ def getCoursesFromLink(link):
 		course.subject = subject
 		course.credits = credits
 		course.name = name
+		course.format = format
 		course.description = description
 		
 		course.title = div.find("span", attrs={"class":"course-title"}).contents[0]
