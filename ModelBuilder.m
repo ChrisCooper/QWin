@@ -70,7 +70,7 @@
 		//Add the new course
 		[courseModels addObject:newCourse];
 		[[CourseModelManager sharedInstance] addCourse:newCourse];
-		[newCourse logDescription];
+		//[newCourse logDescription];
 	
 	}
 }
@@ -83,6 +83,7 @@
 	NSString *name = [courseDict objectForKey:JSON_NAME_KEY];
 	NSString *description = [courseDict objectForKey:JSON_DESCRIPTION_KEY];
 	NSString *credits = [courseDict objectForKey:JSON_CREDITS_KEY];
+	NSString *format = [courseDict objectForKey:JSON_FORMAT_KEY];
 	
 	NSArray *sectionDicts = [courseDict objectForKey:JSON_SECTIONS_KEY];
 	NSArray *sections = [self createSectionsFromSectionDicts:sectionDicts];
@@ -96,6 +97,7 @@
 	[newCourse setName:name];
 	[newCourse setDescription:description];
 	[newCourse setCredits:credits];
+	[newCourse setFormat:format];
 	
 	[newCourse setSections:sections];
 	

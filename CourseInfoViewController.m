@@ -22,10 +22,11 @@
 -(void) displayCourse:(Course*)course{
 	[codeField setStringValue:[course getFullCode]];
 	[titleField setStringValue:[course name]];
-	[descriptionField setStringValue:[course description]];
+	[descriptionField setString:[course description]];
 	[creditsField setStringValue:[course credits]];
+	[formatField setStringValue:[course format]];
 	
-	[sectionTable setCourse:course];
+	//[sectionTable setCourse:course];
 }
 
 @end

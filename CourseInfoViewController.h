@@ -15,7 +15,7 @@
 	IBOutlet NSTextField *creditsField;
 	IBOutlet NSTextField *titleField;
 	IBOutlet NSTextField *formatField;
-	IBOutlet NSTextField *descriptionField;
+	IBOutlet NSTextView *descriptionField;
 	IBOutlet NSTextField *requisitesField;
 	IBOutlet NSTableView *sectionTable;
 }
@@ -26,7 +26,7 @@
 @property (nonatomic, retain) NSTextField *creditsField;
 @property (nonatomic, retain) NSTextField *titleField;
 @property (nonatomic, retain) NSTextField *formatField;
-@property (nonatomic, retain) NSTextField *descriptionField;
+@property (nonatomic, retain) NSTextView *descriptionField;
 @property (nonatomic, retain) NSTextField *requisitesField;
 @property (nonatomic, retain) NSTableView *sectionTable;
 
