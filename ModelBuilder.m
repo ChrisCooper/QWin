@@ -23,8 +23,6 @@
 #define JSON_NOTES_KEY @"notes"
 #define JSON_FORMAT_KEY @"format"
 #define JSON_SECTIONS_KEY @"sections"
-
-//JSON Course key strings
 #define JSON_BUILDING_KEY @"building"
 #define JSON_TERM_KEY @"term"
 #define JSON_ROOM_KEY @"room"
@@ -33,6 +31,12 @@
 #define JSON_LETTER_KEY @"letter"
 #define JSON_INSTRUCTOR_KEY @"instructor"
 #define JSON_TYPE_KEY @"type"
+
+//Time Period key strings
+#define JSON_DAY_OF_WEEK_KEY @"dayOfWeek"
+#define JSON_DURATION_KEY @"duration"
+#define JSON_MINUTE_KEY @"minute"
+#define JSON_HOUR_KEY @"hour"
 
 @implementation ModelBuilder
 
@@ -127,7 +131,7 @@
 	NSString *type = [sectionDict objectForKey:JSON_TYPE_KEY];
 	
 	NSArray *timePeriodDicts = [sectionDict objectForKey:JSON_TIME_PERIODS_KEY];
-	NSArray *timePeriods = [self createTimePeriodsFromTimePeriodDicts:timePeriodDicts];
+	NSArray *timePeriods = [self createTimePeriodsFromTimePeriodDicts:timePeriodDicts forSection:section];
 	
 	[section setBuilding:building];
 	[section setTerm:term];
@@ -141,15 +145,37 @@
 	return section;
 }
 
--(NSArray*)createTimePeriodsFromTimePeriodDicts:(NSArray*)timePeriodDicts{
+-(NSArray*)createTimePeriodsFromTimePeriodDicts:(NSArray*)timePeriodDicts forSection:(Section*)section{
 	NSMutableArray* timePeriods = [[NSMutableArray alloc] init];
+	
+	for (int i = 0; i < [timePeriodDicts count]; i++){
+		NSDictionary *timePeriodDict = (NSDictionary*)[timePeriodDicts objectAtIndex:i];
+		
+		NSNumber *dayOfWeekNumber = [timePeriodDict objectForKey:JSON_DAY_OF_WEEK_KEY];
+
+		NSInteger dayOfWeek = [dayOfWeekNumber integerValue] + 1; //Sunday is not included in the scraping scheme, this offsets that
+		
+		NSString *duration = [timePeriodDict objectForKey:JSON_DURATION_KEY];
+		//This junk turns @"1.5" into hours:1, minutes:30
+		CGFloat durationFloat = [duration floatValue];
+		NSInteger durationHours = (int)(durationFloat);
+		NSInteger durationMinutes = (int)(60*(durationFloat - durationHours));
+		 
+		NSNumber *minute = [timePeriodDict objectForKey:JSON_MINUTE_KEY];
+		NSNumber *hour = [timePeriodDict objectForKey:JSON_HOUR_KEY];
+		
+		TimePeriod *timePeriod = [[TimePeriod alloc] init];
+		[timePeriod setWeekDay:dayOfWeek andHour:[hour integerValue] andMinute:[minute integerValue]];
+		[timePeriod setDurationWithHours:durationHours andMinutes:durationMinutes];
+
+		[timePeriod addSection:section];
+		
+		[timePeriods addObject:timePeriod];
+	}
+
 	return timePeriods;
 }
 
--(TimePeriod*)createTimePeriodFromTimePeriodDict:(NSDictionary*)timePeriodDict{
-	TimePeriod * newTimePeriod = [[TimePeriod alloc] init];
-	return newTimePeriod;
-}
 
 
 @end

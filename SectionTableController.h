@@ -7,10 +7,37 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "CourseInfoViewController.h"
 
 
-@interface SectionTableController : NSObject {
-
+@interface SectionTableController : NSObject <NSTableViewDataSource, NSTableViewDelegate> {
+	IBOutlet NSTableView *table;
+	IBOutlet NSTableColumn *termColumn;
+	IBOutlet NSTableColumn *typeColumn;
+	IBOutlet NSTableColumn *letterColumn;
+	IBOutlet NSTableColumn *buildingColumn;
+	IBOutlet NSTableColumn *roomColumn;
+	IBOutlet NSTableColumn *instructorColumn;
+	IBOutlet NSTableColumn *timeColumn;
+	
+	IBOutlet CourseInfoViewController *infoController;
+	
+	Course *course;
 }
+
+@property (nonatomic, retain) NSTableView *table;
+
+@property (nonatomic, retain) NSTableColumn *termColumn;
+@property (nonatomic, retain) NSTableColumn *typeColumn;
+@property (nonatomic, retain) NSTableColumn *letterColumn;
+@property (nonatomic, retain) NSTableColumn *buildingColumn;
+@property (nonatomic, retain) NSTableColumn *roomColumn;
+@property (nonatomic, retain) NSTableColumn *instructorColumn;
+@property (nonatomic, retain) NSTableColumn *timeColumn;
+@property (nonatomic, retain) Course *course;
+
+@property (nonatomic, retain) CourseInfoViewController *infoController;
+
+-(void) refresh;
 
 @end

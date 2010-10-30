@@ -7,14 +7,19 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "Section.h"
 
 
 @interface TimePeriod : NSObject {
 	NSDateComponents *dayAndTime;
 	NSDateComponents *duration;
-	NSArray *sections;
+	NSMutableArray *sections;
 }
 
+-(NSString*)getDescription;
 -(void) logDescription;
+-(void) setDurationWithHours:(NSInteger)hours andMinutes:(NSInteger)minutes;
+-(void) setWeekDay:(NSInteger)weekDay andHour:(NSInteger)hour andMinute:(NSInteger)minute;
+-(void) addSection:(Section*)section;
 
 @end

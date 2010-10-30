@@ -23,6 +23,7 @@
 }
 
 -(void) logDescription;
+- (NSString*) getTimeDescription;
 
 @property (nonatomic, retain) NSString *letter;
 @property (nonatomic, retain) NSString *building;

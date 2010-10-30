@@ -17,7 +17,7 @@
 @synthesize formatField;
 @synthesize descriptionField;
 @synthesize requisitesField;
-@synthesize sectionTable;
+@synthesize sectionTableController;
 
 -(void) displayCourse:(Course*)course{
 	[codeField setStringValue:[course getFullCode]];
@@ -26,7 +26,8 @@
 	[creditsField setStringValue:[course credits]];
 	[formatField setStringValue:[course format]];
 	
-	//[sectionTable setCourse:course];
+	[sectionTableController setCourse:course];
+	[sectionTableController refresh];
 }
 
 @end

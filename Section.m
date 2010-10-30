@@ -23,6 +23,10 @@
 @synthesize timePeriods;
 @synthesize course;
 
+- (NSString*) getTimeDescription{
+	return @"----- 10:30 -----  5:30  2:00";
+}
+
 -(void) logDescription{
 	NSLog(@"\tSection:---->");
 	NSLog(@"\t\t%@ %@", [Logger getString:[self type]], [Logger getString:[self letter]]);
@@ -50,6 +54,9 @@
 		for (TimePeriod *timePeriod in timePeriods){
 			[timePeriod logDescription];
 		}
+	} else {
+		
+		NSLog(@"\t\tNo time periods:");
 	}
 }
 

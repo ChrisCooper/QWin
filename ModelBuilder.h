@@ -24,7 +24,6 @@
 -(NSArray*) createSectionsFromSectionDicts:(NSArray*) sectionDicts;
 -(Section*) createSectionFromSectionDict:(NSDictionary*)sectionDict;
 
--(NSArray*)createTimePeriodsFromTimePeriodDicts:(NSArray*)timePeriodDicts;
--(TimePeriod*)createTimePeriodFromTimePeriodDict:(NSDictionary*)timePeriodDict;
+-(NSArray*)createTimePeriodsFromTimePeriodDicts:(NSArray*)timePeriodDicts forSection:(Section*)section;
 
 @end

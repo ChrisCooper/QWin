@@ -9,6 +9,8 @@
 #import <Cocoa/Cocoa.h>
 #import "Models.h"
 
+@class SectionTableController;
+
 
 @interface CourseInfoViewController : NSViewController {
 	IBOutlet NSTextField *codeField;
@@ -17,7 +19,7 @@
 	IBOutlet NSTextField *formatField;
 	IBOutlet NSTextView *descriptionField;
 	IBOutlet NSTextField *requisitesField;
-	IBOutlet NSTableView *sectionTable;
+	IBOutlet SectionTableController *sectionTableController;
 }
 
 -(void) displayCourse:(Course*)course;
@@ -28,6 +30,6 @@
 @property (nonatomic, retain) NSTextField *formatField;
 @property (nonatomic, retain) NSTextView *descriptionField;
 @property (nonatomic, retain) NSTextField *requisitesField;
-@property (nonatomic, retain) NSTableView *sectionTable;
+@property (nonatomic, retain) SectionTableController *sectionTableController;
 
 @end
