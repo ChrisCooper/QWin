@@ -7,8 +7,9 @@ def getSoup():
 	"""
 	Returns the beautiful soup structure from the subject listing website.
 	"""
-	getActualResults = False
-	#getActualResults = True
+	
+	getActualResults = True
+	#getActualResults = False
 	
 	if (getActualResults):
 		print "Fetching raw course data..."
@@ -138,6 +139,7 @@ def getCoursesFromLink(link):
 		if len(name.contents) > 0:
 			name = str(name.contents[0])
 			name = name.replace("&nbsp;", "")
+			name = name.replace("&rsquo;", "'")
 			name = name.strip()
 		else:
 			name = ''
@@ -161,10 +163,13 @@ def getCoursesFromLink(link):
 				description = str(description).strip()
 		else:
 			description = ''
+		
 			
 		if not isinstance(description, basestring):
 			description = ''
 		
+		description = description.replace("&nbsp;", "")
+		description = description.replace("&rsquo;", "'")
 			
 		course = CourseModels.Course()
 		course.code = number
