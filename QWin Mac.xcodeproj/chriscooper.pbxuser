@@ -204,6 +204,7 @@
 			BFA9314F127DCF9300633601 /* PBXTextBookmark */ = BFA9314F127DCF9300633601 /* PBXTextBookmark */;
 			BFA93150127DCF9300633601 /* PBXTextBookmark */ = BFA93150127DCF9300633601 /* PBXTextBookmark */;
 			BFA93151127DCF9300633601 /* PBXTextBookmark */ = BFA93151127DCF9300633601 /* PBXTextBookmark */;
+			BFA93153127DD3B600633601 /* PBXTextBookmark */ = BFA93153127DD3B600633601 /* PBXTextBookmark */;
 			BFBDBEC3127C259900CC3AAB = BFBDBEC3127C259900CC3AAB /* PBXTextBookmark */;
 			BFBDBED8127C270200CC3AAB = BFBDBED8127C270200CC3AAB /* PBXTextBookmark */;
 			BFBDBEF9127C29CC00CC3AAB = BFBDBEF9127C29CC00CC3AAB /* PBXTextBookmark */;
@@ -1624,6 +1625,16 @@
 		vrLen = 978;
 		vrLoc = 584;
 	};
+	BFA93153127DD3B600633601 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = BFDA97701235CB6100972D0A /* CourseTableController.m */;
+		name = "CourseTableController.m: 45";
+		rLen = 0;
+		rLoc = 1138;
+		rType = 0;
+		vrLen = 978;
+		vrLoc = 584;
+	};
 	BFBDBEC3127C259900CC3AAB /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = BF1C65E51233A54B00982FC3 /* TimePeriod.h */;
@@ -1886,7 +1897,7 @@
 	BFDA97701235CB6100972D0A /* CourseTableController.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1061, 832}}";
-			sepNavSelRange = "{1257, 0}";
+			sepNavSelRange = "{1120, 0}";
 			sepNavVisRange = "{584, 978}";
 			sepNavWindowFrame = "{{15, 458}, {608, 415}}";
 		};

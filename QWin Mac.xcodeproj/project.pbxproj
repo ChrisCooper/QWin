@@ -28,6 +28,7 @@
 		BFA0991512321434002C071A /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA0990E12321434002C071A /* SBJsonBase.m */; };
 		BFA0991612321434002C071A /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA0991012321434002C071A /* SBJsonParser.m */; };
 		BFA0991712321434002C071A /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA0991212321434002C071A /* SBJsonWriter.m */; };
+		BFA9315F127DD57900633601 /* TimetableBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = BFA9315E127DD57900633601 /* TimetableBackground.png */; };
 		BFDA97101235B8E800972D0A /* Logger.m in Sources */ = {isa = PBXBuildFile; fileRef = BFDA970F1235B8E800972D0A /* Logger.m */; };
 		BFDA97711235CB6100972D0A /* CourseTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFDA97701235CB6100972D0A /* CourseTableController.m */; };
 /* End PBXBuildFile section */
@@ -75,6 +76,7 @@
 		BFA0991012321434002C071A /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
 		BFA0991112321434002C071A /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
 		BFA0991212321434002C071A /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		BFA9315E127DD57900633601 /* TimetableBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TimetableBackground.png; sourceTree = "<group>"; };
 		BFDA925412359F0500972D0A /* Models.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Models.h; sourceTree = "<group>"; };
 		BFDA970E1235B8E800972D0A /* Logger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Logger.h; sourceTree = "<group>"; };
 		BFDA970F1235B8E800972D0A /* Logger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Logger.m; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				BFA9315D127DD55300633601 /* Images */,
 				8D1107310486CEB800E47090 /* QWin_Mac-Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
 				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
@@ -251,6 +254,14 @@
 			path = JSON;
 			sourceTree = "<group>";
 		};
+		BFA9315D127DD55300633601 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				BFA9315E127DD57900633601 /* TimetableBackground.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		BFDA97721235CB9100972D0A /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -318,6 +329,7 @@
 				BF8F850B121F67EC00EDD478 /* CourseModels.py in Resources */,
 				BF8F850D121F944000EDD478 /* ModelBuilder.py in Resources */,
 				BF1699E512223D5500E899B4 /* ArtSciScraper.py in Resources */,
+				BFA9315F127DD57900633601 /* TimetableBackground.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
