@@ -13,7 +13,7 @@
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
 			<integer value="29"/>
-			<integer value="704"/>
+			<integer value="748"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -2066,6 +2066,13 @@
 									<int key="NSvFlags">274</int>
 									<object class="NSMutableArray" key="NSSubviews">
 										<bool key="EncodedWithXMLCoder">YES</bool>
+										<object class="NSCustomView" id="224320037">
+											<reference key="NSNextResponder" ref="652459755"/>
+											<int key="NSvFlags">319</int>
+											<string key="NSFrame">{{59, 5}, {836, 814}}</string>
+											<reference key="NSSuperview" ref="652459755"/>
+											<string key="NSClassName">CourseSlotView</string>
+										</object>
 										<object class="NSImageView" id="942917308">
 											<reference key="NSNextResponder" ref="652459755"/>
 											<int key="NSvFlags">274</int>
@@ -2864,14 +2871,6 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
-						<string key="label">view</string>
-						<reference key="source" ref="359470532"/>
-						<reference key="destination" ref="795932168"/>
-					</object>
-					<int key="connectionID">651</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
 						<string key="label">infoController</string>
 						<reference key="source" ref="359470532"/>
 						<reference key="destination" ref="525157210"/>
@@ -2912,43 +2911,11 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
-						<string key="label">sectionTable</string>
-						<reference key="source" ref="525157210"/>
-						<reference key="destination" ref="832339455"/>
-					</object>
-					<int key="connectionID">667</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
 						<string key="label">descriptionField</string>
 						<reference key="source" ref="525157210"/>
 						<reference key="destination" ref="983373743"/>
 					</object>
 					<int key="connectionID">673</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">titleColumn</string>
-						<reference key="source" ref="544955442"/>
-						<reference key="destination" ref="943449408"/>
-					</object>
-					<int key="connectionID">675</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">keyColumn</string>
-						<reference key="source" ref="544955442"/>
-						<reference key="destination" ref="815298300"/>
-					</object>
-					<int key="connectionID">677</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">view</string>
-						<reference key="source" ref="544955442"/>
-						<reference key="destination" ref="795932168"/>
-					</object>
-					<int key="connectionID">678</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
@@ -4114,8 +4081,10 @@
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="942917308"/>
+							<reference ref="224320037"/>
 						</object>
 						<reference key="parent" ref="155332614"/>
+						<string key="objectName">Right View</string>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">702</int>
@@ -4125,6 +4094,7 @@
 							<reference ref="1060013731"/>
 						</object>
 						<reference key="parent" ref="155332614"/>
+						<string key="objectName">Left View</string>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">614</int>
@@ -4462,6 +4432,15 @@
 						<reference key="parent" ref="943449408"/>
 					</object>
 					<object class="IBObjectRecord">
+						<int key="objectID">748</int>
+						<reference key="object" ref="224320037"/>
+						<object class="NSMutableArray" key="children">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+						</object>
+						<reference key="parent" ref="652459755"/>
+						<string key="objectName">Drawing View</string>
+					</object>
+					<object class="IBObjectRecord">
 						<int key="objectID">704</int>
 						<reference key="object" ref="942917308"/>
 						<object class="NSMutableArray" key="children">
@@ -4764,6 +4743,7 @@
 					<string>73.ImportedFromIB2</string>
 					<string>74.IBPluginDependency</string>
 					<string>74.ImportedFromIB2</string>
+					<string>748.IBPluginDependency</string>
 					<string>75.IBPluginDependency</string>
 					<string>75.ImportedFromIB2</string>
 					<string>77.IBPluginDependency</string>
@@ -4891,7 +4871,7 @@
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<integer value="1"/>
 					<string>{{525, 802}, {197, 73}}</string>
-					<string>{{647, 643}, {435, 20}}</string>
+					<string>{{647, 831}, {435, 20}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<integer value="1"/>
 					<string>{74, 862}</string>
@@ -5071,6 +5051,7 @@
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<integer value="1"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
+					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<integer value="1"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<integer value="1"/>
@@ -5108,7 +5089,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">747</int>
+			<int key="maxID">748</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -5186,6 +5167,14 @@
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBProjectSource</string>
 						<string key="minorKey">CourseInfoViewController.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">CourseSlotView</string>
+					<string key="superclassName">NSView</string>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">CourseSlotView.h</string>
 					</object>
 				</object>
 				<object class="IBPartialClassDescription">

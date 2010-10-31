@@ -21,8 +21,7 @@
 
 -(id)init {
 	if (self = [super init]){
-		NSLog(@"initialized");
-		[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(receivedRefreshNotification:) name:@"name" object:nil];
+		[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(receivedRefreshNotification:) name:@"courses_changed" object:nil];
 	}
 	return self;
 }
