@@ -13,7 +13,7 @@
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
 			<integer value="29"/>
-			<integer value="616"/>
+			<integer value="704"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -2066,7 +2066,7 @@
 									<int key="NSvFlags">274</int>
 									<object class="NSMutableArray" key="NSSubviews">
 										<bool key="EncodedWithXMLCoder">YES</bool>
-										<object class="NSImageView" id="602163935">
+										<object class="NSImageView" id="942917308">
 											<reference key="NSNextResponder" ref="652459755"/>
 											<int key="NSvFlags">274</int>
 											<object class="NSMutableSet" key="NSDragTypes">
@@ -2081,10 +2081,10 @@
 													<string>NeXT TIFF v4.0 pasteboard type</string>
 												</object>
 											</object>
-											<string key="NSFrame">{{20, 20}, {860, 805}}</string>
+											<string key="NSFrame">{{0, -3}, {903, 848}}</string>
 											<reference key="NSSuperview" ref="652459755"/>
 											<bool key="NSEnabled">YES</bool>
-											<object class="NSImageCell" key="NSCell" id="856887004">
+											<object class="NSImageCell" key="NSCell" id="387684084">
 												<int key="NSCellFlags">130560</int>
 												<int key="NSCellFlags2">33554432</int>
 												<object class="NSCustomResource" key="NSContents">
@@ -4113,7 +4113,7 @@
 						<reference key="object" ref="652459755"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="602163935"/>
+							<reference ref="942917308"/>
 						</object>
 						<reference key="parent" ref="155332614"/>
 					</object>
@@ -4463,17 +4463,17 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">704</int>
-						<reference key="object" ref="602163935"/>
+						<reference key="object" ref="942917308"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="856887004"/>
+							<reference ref="387684084"/>
 						</object>
 						<reference key="parent" ref="652459755"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">705</int>
-						<reference key="object" ref="856887004"/>
-						<reference key="parent" ref="602163935"/>
+						<reference key="object" ref="387684084"/>
+						<reference key="parent" ref="942917308"/>
 					</object>
 				</object>
 			</object>
@@ -5108,7 +5108,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">705</int>
+			<int key="maxID">747</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -6070,7 +6070,7 @@
 				<bool key="EncodedWithXMLCoder">YES</bool>
 				<string>{9, 8}</string>
 				<string>{7, 2}</string>
-				<string>{718, 833}</string>
+				<string>{763, 853}</string>
 			</object>
 		</object>
 	</data>
