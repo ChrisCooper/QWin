@@ -19,6 +19,14 @@
 
 @synthesize infoController;
 
+-(id)init {
+	if (self = [super init]){
+		NSLog(@"initialized");
+		[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(receivedRefreshNotification:) name:@"name" object:nil];
+	}
+	return self;
+}
+
 - (NSInteger)numberOfRowsInTableView:(NSTableView *)tableView {
 	NSInteger tableRows = [[[CourseModelManager sharedInstance] getCourses] count];
 	return tableRows;
@@ -44,8 +52,12 @@
 	[infoController displayCourse:course];
 }
 
--(IBAction)refresh:(id)sender{
+-(void)refresh:(id)sender{
 	[table reloadData];
+}
+
+- (void) receivedRefreshNotification:(NSNotification*)notification{
+	[self refresh:self];
 }
 
 @end

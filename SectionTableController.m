@@ -53,7 +53,7 @@
 	//NSInteger selectedIndex = [table selectedRow];
 }
 
--(void) refresh{
+-(void) refreshTable{
 	[table reloadData];
 }
 

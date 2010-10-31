@@ -18,12 +18,14 @@
 	IBOutlet CourseInfoViewController *infoController;
 }
 
--(IBAction)refresh:(id)sender;
-
 @property (nonatomic, retain) NSTableView *table;
 @property (nonatomic, retain) NSTableColumn *keyColumn;
 @property (nonatomic, retain) NSTableColumn *titleColumn;
 
 @property (nonatomic, retain) CourseInfoViewController *infoController;
+
+-(void)refresh:(id)sender;
+- (void) receivedRefreshNotification:(NSNotification*)notification;
+
 
 @end

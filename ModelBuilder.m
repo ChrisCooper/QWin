@@ -77,6 +77,9 @@
 		//[newCourse logDescription];
 	
 	}
+	
+	NSLog(@"Issuing notification");
+	[[NSNotificationCenter defaultCenter] postNotificationName:@"name" object:self];
 }
 
 -(Course*) createCourseFromDictionary:(NSDictionary*)courseDict{

@@ -7,6 +7,7 @@
 //
 
 #import "CourseInfoViewController.h"
+#import "SectionTableController.h"
 
 
 @implementation CourseInfoViewController
@@ -25,9 +26,21 @@
 	[descriptionField setString:[course description]];
 	[creditsField setStringValue:[course credits]];
 	[formatField setStringValue:[course format]];
-	
 	[sectionTableController setCourse:course];
-	[sectionTableController refresh];
+	[sectionTableController refreshTable];
+}
+
+- (void) dealloc {
+	[[NSNotificationCenter defaultCenter] removeObserver:self];
+	
+	[codeField release];
+	[creditsField release];
+	[titleField release];
+	[formatField release];
+	[descriptionField release];
+	[requisitesField release];
+	[sectionTableController release];
+	[super dealloc];
 }
 
 @end

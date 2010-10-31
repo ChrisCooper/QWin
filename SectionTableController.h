@@ -38,6 +38,6 @@
 
 @property (nonatomic, retain) CourseInfoViewController *infoController;
 
--(void) refresh;
+-(void) refreshTable;
 
 @end
