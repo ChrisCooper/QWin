@@ -13,7 +13,7 @@
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
 			<integer value="29"/>
-			<integer value="748"/>
+			<integer value="703"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -2069,7 +2069,7 @@
 										<object class="NSCustomView" id="224320037">
 											<reference key="NSNextResponder" ref="652459755"/>
 											<int key="NSvFlags">319</int>
-											<string key="NSFrame">{{59, 5}, {836, 814}}</string>
+											<string key="NSFrame">{{59, 5}, {837, 814}}</string>
 											<reference key="NSSuperview" ref="652459755"/>
 											<string key="NSClassName">CourseSlotView</string>
 										</object>
@@ -3004,6 +3004,14 @@
 						<reference key="destination" ref="741122730"/>
 					</object>
 					<int key="connectionID">700</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">slotView</string>
+						<reference key="source" ref="544955442"/>
+						<reference key="destination" ref="224320037"/>
+					</object>
+					<int key="connectionID">749</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -5089,7 +5097,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">748</int>
+			<int key="maxID">749</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -5287,6 +5295,7 @@
 							<string>instructorColumn</string>
 							<string>letterColumn</string>
 							<string>roomColumn</string>
+							<string>slotView</string>
 							<string>table</string>
 							<string>termColumn</string>
 							<string>timeColumn</string>
@@ -5299,6 +5308,7 @@
 							<string>NSTableColumn</string>
 							<string>NSTableColumn</string>
 							<string>NSTableColumn</string>
+							<string>CourseSlotView</string>
 							<string>NSTableView</string>
 							<string>NSTableColumn</string>
 							<string>NSTableColumn</string>
@@ -5314,6 +5324,7 @@
 							<string>instructorColumn</string>
 							<string>letterColumn</string>
 							<string>roomColumn</string>
+							<string>slotView</string>
 							<string>table</string>
 							<string>termColumn</string>
 							<string>timeColumn</string>
@@ -5340,6 +5351,10 @@
 							<object class="IBToOneOutletInfo">
 								<string key="name">roomColumn</string>
 								<string key="candidateClassName">NSTableColumn</string>
+							</object>
+							<object class="IBToOneOutletInfo">
+								<string key="name">slotView</string>
+								<string key="candidateClassName">CourseSlotView</string>
 							</object>
 							<object class="IBToOneOutletInfo">
 								<string key="name">table</string>

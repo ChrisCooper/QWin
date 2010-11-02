@@ -8,6 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 #import "CourseInfoViewController.h"
+#import "CourseSlotView.h"
 
 
 @interface SectionTableController : NSObject <NSTableViewDataSource, NSTableViewDelegate> {
@@ -23,6 +24,8 @@
 	IBOutlet CourseInfoViewController *infoController;
 	
 	Course *course;
+	
+	IBOutlet CourseSlotView *slotView;
 }
 
 @property (nonatomic, retain) NSTableView *table;
@@ -37,7 +40,9 @@
 @property (nonatomic, retain) Course *course;
 
 @property (nonatomic, retain) CourseInfoViewController *infoController;
+@property (nonatomic, retain) CourseSlotView *slotView;
 
 -(void) refreshTable;
+-(void) capTableSelection;
 
 @end

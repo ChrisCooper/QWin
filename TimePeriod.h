@@ -16,10 +16,15 @@
 	NSMutableArray *sections;
 }
 
+@property (nonatomic, retain) NSDateComponents *dayAndTime;
+@property (nonatomic, retain) NSDateComponents *duration;
+
 -(NSString*)getDescription;
 -(void) logDescription;
 -(void) setDurationWithHours:(NSInteger)hours andMinutes:(NSInteger)minutes;
 -(void) setWeekDay:(NSInteger)weekDay andHour:(NSInteger)hour andMinute:(NSInteger)minute;
 -(void) addSection:(Section*)section;
+-(NSDateComponents*)dayAndTime;
+-(NSDateComponents*)duration;
 
 @end

@@ -22,6 +22,8 @@
 -(id)init {
 	if (self = [super init]){
 		[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(receivedRefreshNotification:) name:@"courses_changed" object:nil];
+		NSSortDescriptor *descriptor = [NSSortDescriptor sortDescriptorWithKey:@"code" ascending:YES];
+		[table setSortDescriptors:[NSArray arrayWithObject:descriptor]];
 	}
 	return self;
 }

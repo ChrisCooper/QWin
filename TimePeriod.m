@@ -12,6 +12,9 @@
 
 @implementation TimePeriod
 
+@synthesize dayAndTime;
+@synthesize duration;
+
 - (id) init{
 	if (self = [super init]){
 		duration = [[NSDateComponents alloc] init];

@@ -21,6 +21,7 @@
 @synthesize timeColumn;
 @synthesize infoController;
 @synthesize course;
+@synthesize slotView;
 
 - (NSInteger)numberOfRowsInTableView:(NSTableView *)tableView {
 	NSInteger tableRows = [[course sections] count];
@@ -50,11 +51,47 @@
 }
 
 - (void)tableViewSelectionDidChange:(NSNotification *)notification{
-	//NSInteger selectedIndex = [table selectedRow];
+	NSLog(@"Change");
+	NSInteger selectedIndex = [table selectedRow];
+	
+	if (selectedIndex >= [[course sections] count]){
+		[self capTableSelection];
+		[slotView setSection:nil];
+		[slotView setNeedsDisplay:YES];
+		return;
+	} else if (selectedIndex == -1){
+		if ([[course sections] count] != 0){
+			NSIndexSet *indexSet = [NSIndexSet indexSetWithIndex:1];
+			[table selectRowIndexes:indexSet byExtendingSelection:NO];
+			[slotView setSection:[[course sections] objectAtIndex:1]];
+		} else{
+			[slotView setSection:nil];
+		}
+		[slotView setNeedsDisplay:YES];
+		return;
+	}
+	
+		
+	Section *section = [[course sections] objectAtIndex: selectedIndex];
+	
+	[slotView setSection:section];
+	[slotView setNeedsDisplay:YES];
+}
+
+-(void)capTableSelection{
+	if ([[course sections] count] == 0){
+		[table selectRowIndexes:nil byExtendingSelection:NO];
+	} else {
+		NSInteger sectionIndex = [[course sections] count] - 1;
+		NSIndexSet *indexSet = [NSIndexSet indexSetWithIndex:sectionIndex];
+		[table selectRowIndexes:indexSet byExtendingSelection:NO];
+		[slotView setSection:[[course sections] objectAtIndex:sectionIndex]];
+	}
 }
 
 -(void) refreshTable{
 	[table reloadData];
+	[self tableViewSelectionDidChange:nil];
 }
 
 
