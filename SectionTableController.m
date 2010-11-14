@@ -51,19 +51,21 @@
 }
 
 - (void)tableViewSelectionDidChange:(NSNotification *)notification{
-	NSLog(@"Change");
+	NSLog(@"Selected index: %d, sections count: %d", [table selectedRow], [[course sections] count]);
 	NSInteger selectedIndex = [table selectedRow];
+	NSInteger sectionCount = [[course sections] count];
 	
-	if (selectedIndex >= [[course sections] count]){
+	if (selectedIndex >= sectionCount){
+		NSLog(@"Inside selected index: %d, sections count: %d", selectedIndex, sectionCount);
 		[self capTableSelection];
 		[slotView setSection:nil];
 		[slotView setNeedsDisplay:YES];
 		return;
 	} else if (selectedIndex == -1){
 		if ([[course sections] count] != 0){
-			NSIndexSet *indexSet = [NSIndexSet indexSetWithIndex:1];
+			NSIndexSet *indexSet = [NSIndexSet indexSetWithIndex:0];
 			[table selectRowIndexes:indexSet byExtendingSelection:NO];
-			[slotView setSection:[[course sections] objectAtIndex:1]];
+			[slotView setSection:[[course sections] objectAtIndex:0]];
 		} else{
 			[slotView setSection:nil];
 		}
@@ -81,10 +83,12 @@
 -(void)capTableSelection{
 	if ([[course sections] count] == 0){
 		[table selectRowIndexes:nil byExtendingSelection:NO];
+		NSLog(@"Setting section");
 	} else {
 		NSInteger sectionIndex = [[course sections] count] - 1;
 		NSIndexSet *indexSet = [NSIndexSet indexSetWithIndex:sectionIndex];
 		[table selectRowIndexes:indexSet byExtendingSelection:NO];
+		NSLog(@"Setting section");
 		[slotView setSection:[[course sections] objectAtIndex:sectionIndex]];
 	}
 }
