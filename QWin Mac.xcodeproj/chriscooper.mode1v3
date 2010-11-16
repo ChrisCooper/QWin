@@ -336,7 +336,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>BF77DC25129081540035B4DF</string>
+										<string>BFAD01D312932932009D8340</string>
 										<key>history</key>
 										<array>
 											<string>BF38DDB012123CB40021F16C</string>
@@ -380,7 +380,7 @@
 											<string>BFD82BF1127FBE4D00EE514D</string>
 											<string>BFD82BF2127FBE4D00EE514D</string>
 											<string>BFD82BF3127FBE4D00EE514D</string>
-											<string>BFD589F8128F695300C1F343</string>
+											<string>BF77DC291290FE070035B4DF</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -392,14 +392,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {1122, 456}}</string>
+								<string>{{0, 0}, {1122, 447}}</string>
 								<key>RubberWindowFrame</key>
 								<string>0 59 1440 819 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>456pt</string>
+							<string>447pt</string>
 						</dict>
 						<dict>
 							<key>ContentConfiguration</key>
@@ -412,14 +412,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 461}, {1122, 317}}</string>
+								<string>{{0, 452}, {1122, 326}}</string>
 								<key>RubberWindowFrame</key>
 								<string>0 59 1440 819 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
 							<key>Proportion</key>
-							<string>317pt</string>
+							<string>326pt</string>
 						</dict>
 					</array>
 					<key>Proportion</key>
@@ -438,9 +438,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>BF77DC16129080A90035B4DF</string>
+				<string>BFAD01D412932932009D8340</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>BF77DC17129080A90035B4DF</string>
+				<string>BFAD01D512932932009D8340</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -578,12 +578,7 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>BF77DC26129081540035B4DF</string>
-		<string>BF77DC21129080A90035B4DF</string>
-		<string>BF77DC22129080A90035B4DF</string>
-		<string>1CD10A99069EF8BA00B06720</string>
 		<string>BF860E0E120E436600006BB7</string>
-		<string>1C78EAAD065D492600B07095</string>
 		<string>/Users/chriscooper/Programming/mac/quwin_mac/QWin Mac.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
@@ -664,7 +659,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>BF860E0E120E436600006BB7</string>
-				<string>BF77DC18129080A90035B4DF</string>
+				<string>BFAD01D612932932009D8340</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
@@ -958,7 +953,7 @@
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>Identifier</key>

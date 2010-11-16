@@ -80,6 +80,13 @@
 	[slotView setNeedsDisplay:YES];
 }
 
+- (void)tableView:(NSTableView *)tableView didClickTableColumn:(NSTableColumn *)tableColumn
+{
+	// Either reverse the sort or change the sorting column
+	
+	
+}
+
 -(void)capTableSelection{
 	if ([[course sections] count] == 0){
 		[table selectRowIndexes:nil byExtendingSelection:NO];
