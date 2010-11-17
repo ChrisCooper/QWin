@@ -2,14 +2,14 @@
 {
 	256AC3D80F4B6AC300CF3369 /* QWin_MacAppDelegate.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {880, 607}}";
-			sepNavSelRange = "{334, 0}";
+			sepNavIntBoundsRect = "{{0, 0}, {1061, 599}}";
+			sepNavSelRange = "{278, 0}";
 			sepNavVisRange = "{0, 334}";
 		};
 	};
 	256AC3D90F4B6AC300CF3369 /* QWin_MacAppDelegate.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {880, 599}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1061, 599}}";
 			sepNavSelRange = "{450, 18}";
 			sepNavVisRange = "{0, 485}";
 			sepNavWindowFrame = "{{2, 4}, {1438, 874}}";
@@ -126,6 +126,28 @@
 			BFAD01DE12933871009D8340 /* PBXTextBookmark */ = BFAD01DE12933871009D8340 /* PBXTextBookmark */;
 			BFAD01DF12933871009D8340 /* PBXTextBookmark */ = BFAD01DF12933871009D8340 /* PBXTextBookmark */;
 			BFAD01E012933871009D8340 /* PBXTextBookmark */ = BFAD01E012933871009D8340 /* PBXTextBookmark */;
+			BFAD02091293AA8E009D8340 /* XCBuildMessageTextBookmark */ = BFAD02091293AA8E009D8340 /* XCBuildMessageTextBookmark */;
+			BFAD020A1293AA8E009D8340 /* PBXTextBookmark */ = BFAD020A1293AA8E009D8340 /* PBXTextBookmark */;
+			BFAD020E1293AAA8009D8340 /* PBXTextBookmark */ = BFAD020E1293AAA8009D8340 /* PBXTextBookmark */;
+			BFAD020F1293AAA8009D8340 /* PBXTextBookmark */ = BFAD020F1293AAA8009D8340 /* PBXTextBookmark */;
+			BFAD02101293AAA8009D8340 /* PBXTextBookmark */ = BFAD02101293AAA8009D8340 /* PBXTextBookmark */;
+			BFAD02111293AAA8009D8340 /* PBXTextBookmark */ = BFAD02111293AAA8009D8340 /* PBXTextBookmark */;
+			BFAD02121293AAA8009D8340 /* PBXTextBookmark */ = BFAD02121293AAA8009D8340 /* PBXTextBookmark */;
+			BFAD02131293AAA8009D8340 /* PBXTextBookmark */ = BFAD02131293AAA8009D8340 /* PBXTextBookmark */;
+			BFAD02141293AAA8009D8340 /* PBXTextBookmark */ = BFAD02141293AAA8009D8340 /* PBXTextBookmark */;
+			BFAD02151293AAA8009D8340 /* PBXTextBookmark */ = BFAD02151293AAA8009D8340 /* PBXTextBookmark */;
+			BFAD02161293AAA8009D8340 /* PBXTextBookmark */ = BFAD02161293AAA8009D8340 /* PBXTextBookmark */;
+			BFAD02171293AAA8009D8340 /* PBXTextBookmark */ = BFAD02171293AAA8009D8340 /* PBXTextBookmark */;
+			BFAD02181293AAA8009D8340 /* PBXTextBookmark */ = BFAD02181293AAA8009D8340 /* PBXTextBookmark */;
+			BFAD02191293AAA8009D8340 /* PBXTextBookmark */ = BFAD02191293AAA8009D8340 /* PBXTextBookmark */;
+			BFAD021A1293AAA8009D8340 /* PBXTextBookmark */ = BFAD021A1293AAA8009D8340 /* PBXTextBookmark */;
+			BFAD021B1293AAA8009D8340 /* PBXTextBookmark */ = BFAD021B1293AAA8009D8340 /* PBXTextBookmark */;
+			BFAD021C1293AAA8009D8340 /* PBXTextBookmark */ = BFAD021C1293AAA8009D8340 /* PBXTextBookmark */;
+			BFAD021E1293AAB5009D8340 /* XCBuildMessageTextBookmark */ = BFAD021E1293AAB5009D8340 /* XCBuildMessageTextBookmark */;
+			BFAD021F1293AAB5009D8340 /* PBXTextBookmark */ = BFAD021F1293AAB5009D8340 /* PBXTextBookmark */;
+			BFAD02221293AB02009D8340 /* PBXTextBookmark */ = BFAD02221293AB02009D8340 /* PBXTextBookmark */;
+			BFAD02231293AB02009D8340 /* PBXTextBookmark */ = BFAD02231293AB02009D8340 /* PBXTextBookmark */;
+			BFAD02241293AB02009D8340 /* PBXTextBookmark */ = BFAD02241293AB02009D8340 /* PBXTextBookmark */;
 			BFB5E0AE127E0C6800C02B77 = BFB5E0AE127E0C6800C02B77 /* PBXTextBookmark */;
 			BFB5E0B0127E0C6800C02B77 = BFB5E0B0127E0C6800C02B77 /* PBXTextBookmark */;
 			BFBDBEFB127C29CC00CC3AAB = BFBDBEFB127C29CC00CC3AAB /* PBXTextBookmark */;
@@ -310,15 +332,15 @@
 	BF1C660D1233B4C000982FC3 /* CourseModelManager.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1061, 599}}";
-			sepNavSelRange = "{380, 111}";
+			sepNavSelRange = "{245, 253}";
 			sepNavVisRange = "{0, 498}";
 		};
 	};
 	BF1C660E1233B4C000982FC3 /* CourseModelManager.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1061, 1092}}";
-			sepNavSelRange = "{814, 428}";
-			sepNavVisRange = "{825, 692}";
+			sepNavSelRange = "{1300, 0}";
+			sepNavVisRange = "{0, 976}";
 			sepNavWindowFrame = "{{15, 458}, {608, 415}}";
 		};
 	};
@@ -768,17 +790,236 @@
 	BFAD01EF12939C5D009D8340 /* TimetableManager.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1061, 599}}";
-			sepNavSelRange = "{405, 0}";
-			sepNavVisRange = "{0, 406}";
+			sepNavSelRange = "{352, 0}";
+			sepNavVisRange = "{0, 397}";
 			sepNavWindowFrame = "{{15, 134}, {1073, 739}}";
 		};
 	};
 	BFAD01F012939C5D009D8340 /* TimetableManager.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1061, 599}}";
-			sepNavSelRange = "{227, 0}";
-			sepNavVisRange = "{0, 234}";
+			sepNavIntBoundsRect = "{{0, 0}, {1061, 845}}";
+			sepNavSelRange = "{438, 0}";
+			sepNavVisRange = "{0, 969}";
+			sepNavWindowFrame = "{{38, 113}, {1073, 739}}";
 		};
+	};
+	BFAD02091293AA8E009D8340 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "'@end' missing in implementation context";
+		fRef = BFAD01F012939C5D009D8340 /* TimetableManager.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 71;
+		rType = 1;
+	};
+	BFAD020A1293AA8E009D8340 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = BFAD01F012939C5D009D8340 /* TimetableManager.m */;
+		name = "TimetableManager.m: 59";
+		rLen = 0;
+		rLoc = 1032;
+		rType = 0;
+		vrLen = 275;
+		vrLoc = 1026;
+	};
+	BFAD020E1293AAA8009D8340 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = BF3EA4281273FB28009DF8F5 /* SectionTableController.h */;
+		name = "SectionTableController.h: 46";
+		rLen = 0;
+		rLoc = 1430;
+		rType = 0;
+		vrLen = 1041;
+		vrLoc = 396;
+	};
+	BFAD020F1293AAA8009D8340 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = BF1C65E012339FF700982FC3 /* Course.m */;
+		name = "Course.m: 27";
+		rLen = 0;
+		rLoc = 444;
+		rType = 0;
+		vrLen = 535;
+		vrLoc = 0;
+	};
+	BFAD02101293AAA8009D8340 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = BF1C65DF12339FF700982FC3 /* Course.h */;
+		name = "Course.h: 16";
+		rLen = 0;
+		rLoc = 285;
+		rType = 0;
+		vrLen = 805;
+		vrLoc = 32;
+	};
+	BFAD02111293AAA8009D8340 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = BF8365DB123928AC007A1C50 /* CourseInfoViewController.m */;
+		name = "CourseInfoViewController.m: 18";
+		rLen = 0;
+		rLoc = 356;
+		rType = 0;
+		vrLen = 856;
+		vrLoc = 265;
+	};
+	BFAD02121293AAA8009D8340 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = BF8365DA123928AC007A1C50 /* CourseInfoViewController.h */;
+		name = "CourseInfoViewController.h: 24";
+		rLen = 0;
+		rLoc = 565;
+		rType = 0;
+		vrLen = 985;
+		vrLoc = 47;
+	};
+	BFAD02131293AAA8009D8340 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = BFDA976F1235CB6100972D0A /* CourseTableController.h */;
+		name = "CourseTableController.h: 28";
+		rLen = 0;
+		rLoc = 765;
+		rType = 0;
+		vrLen = 821;
+		vrLoc = 0;
+	};
+	BFAD02141293AAA8009D8340 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = BF1C65F91233AF2100982FC3 /* ModelBuilder.m */;
+		name = "ModelBuilder.m: 85";
+		rLen = 0;
+		rLoc = 2440;
+		rType = 0;
+		vrLen = 1121;
+		vrLoc = 3007;
+	};
+	BFAD02151293AAA8009D8340 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = BFDA97701235CB6100972D0A /* CourseTableController.m */;
+		name = "CourseTableController.m: 43";
+		rLen = 0;
+		rLoc = 1265;
+		rType = 0;
+		vrLen = 1457;
+		vrLoc = 310;
+	};
+	BFAD02161293AAA8009D8340 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3D90F4B6AC300CF3369 /* QWin_MacAppDelegate.m */;
+		name = "QWin_MacAppDelegate.m: 20";
+		rLen = 18;
+		rLoc = 450;
+		rType = 0;
+		vrLen = 485;
+		vrLoc = 0;
+	};
+	BFAD02171293AAA8009D8340 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3D80F4B6AC300CF3369 /* QWin_MacAppDelegate.h */;
+		name = "QWin_MacAppDelegate.h: 12";
+		rLen = 0;
+		rLoc = 278;
+		rType = 0;
+		vrLen = 334;
+		vrLoc = 0;
+	};
+	BFAD02181293AAA8009D8340 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = BF1C660D1233B4C000982FC3 /* CourseModelManager.h */;
+		name = "CourseModelManager.h: 14";
+		rLen = 253;
+		rLoc = 245;
+		rType = 0;
+		vrLen = 498;
+		vrLoc = 0;
+	};
+	BFAD02191293AAA8009D8340 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = BFAD01EF12939C5D009D8340 /* TimetableManager.h */;
+		name = "TimetableManager.h: 20";
+		rLen = 0;
+		rLoc = 352;
+		rType = 0;
+		vrLen = 434;
+		vrLoc = 0;
+	};
+	BFAD021A1293AAA8009D8340 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = BF1C660E1233B4C000982FC3 /* CourseModelManager.m */;
+		name = "CourseModelManager.m: 66";
+		rLen = 0;
+		rLoc = 1300;
+		rType = 0;
+		vrLen = 976;
+		vrLoc = 0;
+	};
+	BFAD021B1293AAA8009D8340 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = BFAD01F012939C5D009D8340 /* TimetableManager.m */;
+		name = "TimetableManager.m: 52";
+		rLen = 0;
+		rLoc = 974;
+		rType = 0;
+		vrLen = 732;
+		vrLoc = 569;
+	};
+	BFAD021C1293AAA8009D8340 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = BFAD01F012939C5D009D8340 /* TimetableManager.m */;
+		name = "TimetableManager.m: 56";
+		rLen = 0;
+		rLoc = 1012;
+		rType = 0;
+		vrLen = 727;
+		vrLoc = 569;
+	};
+	BFAD021E1293AAB5009D8340 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Incompatible Objective-C types initializing 'struct NSMutableDictionary *', expected 'struct NSMutableArray *'";
+		fRef = BFAD01F012939C5D009D8340 /* TimetableManager.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 0;
+		rLoc = 41;
+		rType = 1;
+	};
+	BFAD021F1293AAB5009D8340 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = BFAD01F012939C5D009D8340 /* TimetableManager.m */;
+		name = "TimetableManager.m: 38";
+		rLen = 0;
+		rLoc = 827;
+		rType = 0;
+		vrLen = 359;
+		vrLoc = 707;
+	};
+	BFAD02221293AB02009D8340 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = BFAD01EF12939C5D009D8340 /* TimetableManager.h */;
+		name = "TimetableManager.h: 20";
+		rLen = 0;
+		rLoc = 352;
+		rType = 0;
+		vrLen = 397;
+		vrLoc = 0;
+	};
+	BFAD02231293AB02009D8340 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = BFAD01F012939C5D009D8340 /* TimetableManager.m */;
+		name = "TimetableManager.m: 42";
+		rLen = 0;
+		rLoc = 890;
+		rType = 0;
+		vrLen = 973;
+		vrLoc = 0;
+	};
+	BFAD02241293AB02009D8340 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = BFAD01F012939C5D009D8340 /* TimetableManager.m */;
+		name = "TimetableManager.m: 23";
+		rLen = 0;
+		rLoc = 438;
+		rType = 0;
+		vrLen = 969;
+		vrLoc = 0;
 	};
 	BFB5E09A127E0A9A00C02B77 /* CourseSlotView.h */ = {
 		uiCtxt = {

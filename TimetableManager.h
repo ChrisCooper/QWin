@@ -16,7 +16,8 @@
 
 @property (nonatomic, retain) NSMutableArray *sections;
 
--(NSMutableArray*) getSections;
++ (TimetableManager*)sharedInstance;
+
 -(void) addSection:(Section*)section;
 
 @end
