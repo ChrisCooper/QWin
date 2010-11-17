@@ -29,6 +29,7 @@
 		BFA0991612321434002C071A /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA0991012321434002C071A /* SBJsonParser.m */; };
 		BFA0991712321434002C071A /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA0991212321434002C071A /* SBJsonWriter.m */; };
 		BFA9315F127DD57900633601 /* TimetableBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = BFA9315E127DD57900633601 /* TimetableBackground.png */; };
+		BFAD01F112939C5D009D8340 /* TimetableManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BFAD01F012939C5D009D8340 /* TimetableManager.m */; };
 		BFB5E09C127E0A9A00C02B77 /* CourseSlotView.m in Sources */ = {isa = PBXBuildFile; fileRef = BFB5E09B127E0A9A00C02B77 /* CourseSlotView.m */; };
 		BFDA97101235B8E800972D0A /* Logger.m in Sources */ = {isa = PBXBuildFile; fileRef = BFDA970F1235B8E800972D0A /* Logger.m */; };
 		BFDA97711235CB6100972D0A /* CourseTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFDA97701235CB6100972D0A /* CourseTableController.m */; };
@@ -78,6 +79,8 @@
 		BFA0991112321434002C071A /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
 		BFA0991212321434002C071A /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
 		BFA9315E127DD57900633601 /* TimetableBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TimetableBackground.png; sourceTree = "<group>"; };
+		BFAD01EF12939C5D009D8340 /* TimetableManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimetableManager.h; sourceTree = "<group>"; };
+		BFAD01F012939C5D009D8340 /* TimetableManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimetableManager.m; sourceTree = "<group>"; };
 		BFB5E09A127E0A9A00C02B77 /* CourseSlotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseSlotView.h; sourceTree = "<group>"; };
 		BFB5E09B127E0A9A00C02B77 /* CourseSlotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseSlotView.m; sourceTree = "<group>"; };
 		BFDA925412359F0500972D0A /* Models.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Models.h; sourceTree = "<group>"; };
@@ -104,8 +107,6 @@
 			children = (
 				256AC3D80F4B6AC300CF3369 /* QWin_MacAppDelegate.h */,
 				256AC3D90F4B6AC300CF3369 /* QWin_MacAppDelegate.m */,
-				BF1C660D1233B4C000982FC3 /* CourseModelManager.h */,
-				BF1C660E1233B4C000982FC3 /* CourseModelManager.m */,
 				BFAD01DB12933853009D8340 /* Controllers */,
 				BFDA97721235CB9100972D0A /* Views */,
 				BF1E9B21120FD3BF001BB743 /* Model */,
@@ -211,6 +212,7 @@
 		BF1E9B21120FD3BF001BB743 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				BFAD01EE12939B30009D8340 /* Core */,
 				BF1C36A91235F9E9006BC8D5 /* ModelClasses */,
 				BF1C65E91233AD2800982FC3 /* Parsing */,
 			);
@@ -273,6 +275,17 @@
 				BFDA97731235CBE700972D0A /* CourseBrowser */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		BFAD01EE12939B30009D8340 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				BF1C660D1233B4C000982FC3 /* CourseModelManager.h */,
+				BF1C660E1233B4C000982FC3 /* CourseModelManager.m */,
+				BFAD01EF12939C5D009D8340 /* TimetableManager.h */,
+				BFAD01F012939C5D009D8340 /* TimetableManager.m */,
+			);
+			name = Core;
 			sourceTree = "<group>";
 		};
 		BFB5E099127E0A4F00C02B77 /* Timesheet */ = {
@@ -378,6 +391,7 @@
 				BF8365DC123928AC007A1C50 /* CourseInfoViewController.m in Sources */,
 				BF3EA42A1273FB28009DF8F5 /* SectionTableController.m in Sources */,
 				BFB5E09C127E0A9A00C02B77 /* CourseSlotView.m in Sources */,
+				BFAD01F112939C5D009D8340 /* TimetableManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
