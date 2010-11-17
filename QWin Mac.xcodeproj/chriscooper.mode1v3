@@ -229,6 +229,8 @@
 			<key>Layout</key>
 			<array>
 				<dict>
+					<key>BecomeActive</key>
+					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -265,10 +267,11 @@
 							<array>
 								<string>29B97314FDCFA39411CA2CEA</string>
 								<string>080E96DDFE201D6D7F000001</string>
-								<string>BFDA97721235CB9100972D0A</string>
-								<string>BFB5E099127E0A4F00C02B77</string>
+								<string>BFAD01DB12933853009D8340</string>
 								<string>BF8365DD123928B4007A1C50</string>
 								<string>BFDA97731235CBE700972D0A</string>
+								<string>BFDA97721235CB9100972D0A</string>
+								<string>BFB5E099127E0A4F00C02B77</string>
 								<string>BF1E9B21120FD3BF001BB743</string>
 								<string>BF1C36A91235F9E9006BC8D5</string>
 								<string>BF1C65E91233AD2800982FC3</string>
@@ -279,9 +282,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>14</integer>
-									<integer>10</integer>
-									<integer>6</integer>
+									<integer>15</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
@@ -317,14 +318,12 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>SectionTableController.m</string>
+								<string>CourseInfoViewController.h</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -332,11 +331,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>SectionTableController.m</string>
+										<string>CourseInfoViewController.h</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>BFAD01D312932932009D8340</string>
+										<string>BFAD01E012933871009D8340</string>
 										<key>history</key>
 										<array>
 											<string>BF38DDB012123CB40021F16C</string>
@@ -364,10 +363,8 @@
 											<string>BFBDBF64127C406A00CC3AAB</string>
 											<string>BFBDBF65127C406A00CC3AAB</string>
 											<string>BFA930C6127DC4BD00633601</string>
-											<string>BFA930C7127DC4BD00633601</string>
 											<string>BFA930C8127DC4BD00633601</string>
 											<string>BFA930C9127DC4BD00633601</string>
-											<string>BFB5E0AE127E0C6800C02B77</string>
 											<string>BFB5E0B0127E0C6800C02B77</string>
 											<string>BF48A8F8127F4BA4001DA63C</string>
 											<string>BF48A8F9127F4BA4001DA63C</string>
@@ -379,8 +376,10 @@
 											<string>BFD82BF0127FBE4D00EE514D</string>
 											<string>BFD82BF1127FBE4D00EE514D</string>
 											<string>BFD82BF2127FBE4D00EE514D</string>
-											<string>BFD82BF3127FBE4D00EE514D</string>
-											<string>BF77DC291290FE070035B4DF</string>
+											<string>BFAD01DC12933871009D8340</string>
+											<string>BFAD01DD12933871009D8340</string>
+											<string>BFAD01DE12933871009D8340</string>
+											<string>BFAD01DF12933871009D8340</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -578,6 +577,10 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>BFAD01E812933871009D8340</string>
+		<string>BFAD01E912933871009D8340</string>
+		<string>1C78EAAD065D492600B07095</string>
+		<string>1CD10A99069EF8BA00B06720</string>
 		<string>BF860E0E120E436600006BB7</string>
 		<string>/Users/chriscooper/Programming/mac/quwin_mac/QWin Mac.xcodeproj</string>
 	</array>
@@ -781,13 +784,13 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1CD10A99069EF8BA00B06720</string>
-				<string>BF77DC19129080A90035B4DF</string>
+				<string>BFAD01E112933871009D8340</string>
 				<string>1C162984064C10D400B95A72</string>
-				<string>BF77DC1A129080A90035B4DF</string>
-				<string>BF77DC1B129080A90035B4DF</string>
-				<string>BF77DC1C129080A90035B4DF</string>
-				<string>BF77DC1D129080A90035B4DF</string>
-				<string>BF77DC1E129080A90035B4DF</string>
+				<string>BFAD01E212933871009D8340</string>
+				<string>BFAD01E312933871009D8340</string>
+				<string>BFAD01E412933871009D8340</string>
+				<string>BFAD01E512933871009D8340</string>
+				<string>BFAD01E612933871009D8340</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.debugV3</string>
@@ -906,8 +909,6 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -943,7 +944,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C78EAAD065D492600B07095</string>
-				<string>BF77DC1F129080A90035B4DF</string>
+				<string>BFAD01E712933871009D8340</string>
 				<string>1C78EAAC065D492600B07095</string>
 			</array>
 			<key>ToolbarConfiguration</key>

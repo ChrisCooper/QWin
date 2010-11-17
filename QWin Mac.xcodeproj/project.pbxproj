@@ -106,6 +106,7 @@
 				256AC3D90F4B6AC300CF3369 /* QWin_MacAppDelegate.m */,
 				BF1C660D1233B4C000982FC3 /* CourseModelManager.h */,
 				BF1C660E1233B4C000982FC3 /* CourseModelManager.m */,
+				BFAD01DB12933853009D8340 /* Controllers */,
 				BFDA97721235CB9100972D0A /* Views */,
 				BF1E9B21120FD3BF001BB743 /* Model */,
 				BFDA970E1235B8E800972D0A /* Logger.h */,
@@ -265,6 +266,15 @@
 			name = Images;
 			sourceTree = "<group>";
 		};
+		BFAD01DB12933853009D8340 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BF8365DD123928B4007A1C50 /* CourseInfo */,
+				BFDA97731235CBE700972D0A /* CourseBrowser */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 		BFB5E099127E0A4F00C02B77 /* Timesheet */ = {
 			isa = PBXGroup;
 			children = (
@@ -278,8 +288,6 @@
 			isa = PBXGroup;
 			children = (
 				BFB5E099127E0A4F00C02B77 /* Timesheet */,
-				BF8365DD123928B4007A1C50 /* CourseInfo */,
-				BFDA97731235CBE700972D0A /* CourseBrowser */,
 			);
 			name = Views;
 			sourceTree = "<group>";
