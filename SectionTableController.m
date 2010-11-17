@@ -7,6 +7,7 @@
 //
 
 #import "SectionTableController.h"
+#import "TimetableManager.h"
 
 
 @implementation SectionTableController
@@ -84,7 +85,13 @@
 {
 	// Either reverse the sort or change the sorting column
 	
-	
+}
+
+-(IBAction)addCurrentSection:(id)sender{
+	if ([table selectedRow] != -1){
+		Section *section = [[course sections] objectAtIndex:[table selectedRow]];
+		[[TimetableManager sharedInstance] addSection:section];
+	}
 }
 
 -(void)capTableSelection{

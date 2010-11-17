@@ -281,9 +281,9 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>22</integer>
-									<integer>18</integer>
-									<integer>17</integer>
+									<integer>16</integer>
+									<integer>14</integer>
+									<integer>13</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
@@ -326,7 +326,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>TimetableManager.m</string>
+								<string>CourseSlotView.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -334,11 +334,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>TimetableManager.m</string>
+										<string>CourseSlotView.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>BFAD02241293AB02009D8340</string>
+										<string>BFAD02651293B1A9009D8340</string>
 										<key>history</key>
 										<array>
 											<string>BF38DDB012123CB40021F16C</string>
@@ -355,7 +355,6 @@
 											<string>BFDA92321235924C00972D0A</string>
 											<string>BFDA92331235924C00972D0A</string>
 											<string>BFDA97131235BC6200972D0A</string>
-											<string>BFDA97141235BC6200972D0A</string>
 											<string>BF9E709812372C8D0096834B</string>
 											<string>BF160BB4127A04C2008AEDBC</string>
 											<string>BF160BF0127A14B7008AEDBC</string>
@@ -364,27 +363,28 @@
 											<string>BFBDBF65127C406A00CC3AAB</string>
 											<string>BFA930C6127DC4BD00633601</string>
 											<string>BF48A8F8127F4BA4001DA63C</string>
-											<string>BF48A8F9127F4BA4001DA63C</string>
-											<string>BF48A903127F4C4D001DA63C</string>
-											<string>BF48A904127F4C4D001DA63C</string>
-											<string>BF19F5BF127F6FF4004265F7</string>
-											<string>BF19A0E4127F8D0A00672C38</string>
-											<string>BFAD01DC12933871009D8340</string>
 											<string>BFAD01DD12933871009D8340</string>
-											<string>BFAD020E1293AAA8009D8340</string>
-											<string>BFAD020F1293AAA8009D8340</string>
 											<string>BFAD02101293AAA8009D8340</string>
 											<string>BFAD02111293AAA8009D8340</string>
-											<string>BFAD02121293AAA8009D8340</string>
-											<string>BFAD02131293AAA8009D8340</string>
-											<string>BFAD02141293AAA8009D8340</string>
-											<string>BFAD02151293AAA8009D8340</string>
 											<string>BFAD02161293AAA8009D8340</string>
 											<string>BFAD02171293AAA8009D8340</string>
-											<string>BFAD02181293AAA8009D8340</string>
-											<string>BFAD021A1293AAA8009D8340</string>
-											<string>BFAD02221293AB02009D8340</string>
-											<string>BFAD02231293AB02009D8340</string>
+											<string>BFAD022F1293AF23009D8340</string>
+											<string>BFAD02301293AF23009D8340</string>
+											<string>BFAD02311293AF23009D8340</string>
+											<string>BFAD02321293AF23009D8340</string>
+											<string>BFAD02331293AF23009D8340</string>
+											<string>BFAD02361293AF23009D8340</string>
+											<string>BFAD02371293AF23009D8340</string>
+											<string>BFAD02381293AF23009D8340</string>
+											<string>BFAD02391293AF23009D8340</string>
+											<string>BFAD023A1293AF23009D8340</string>
+											<string>BFAD023B1293AF23009D8340</string>
+											<string>BFAD023C1293AF23009D8340</string>
+											<string>BFAD025C1293B0C0009D8340</string>
+											<string>BFAD025D1293B0C0009D8340</string>
+											<string>BFAD025E1293B0C0009D8340</string>
+											<string>BFAD025F1293B0C0009D8340</string>
+											<string>BFAD02341293AF23009D8340</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -582,7 +582,6 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>BFAD02251293AB02009D8340</string>
 		<string>BF860E2C120E4D7800006BB7</string>
 		<string>BFAD01E812933871009D8340</string>
 		<string>BFAD01E912933871009D8340</string>
@@ -615,7 +614,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>TimetableManager.m</string>
+								<string>SectionTableController.m</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -918,6 +917,8 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>

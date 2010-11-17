@@ -8,6 +8,7 @@
 
 #import "CourseSlotView.h"
 #import "TimePeriod.h"
+#import "TimetableManager.h"
 
 
 @implementation CourseSlotView
@@ -26,6 +27,10 @@
 - (void)drawRect:(NSRect)dirtyRect {	
 	if (section != nil){
 		[self drawSection:section inRect:dirtyRect];
+	}
+	
+	for (Section *savedSection in [[TimetableManager sharedInstance] sections]){
+		[self drawSection:savedSection inRect:dirtyRect];
 	}
 }
 

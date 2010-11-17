@@ -45,4 +45,6 @@
 -(void) refreshTable;
 -(void) capTableSelection;
 
+-(IBAction)addCurrentSection:(id)sender;
+
 @end
