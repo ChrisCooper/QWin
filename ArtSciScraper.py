@@ -8,8 +8,8 @@ def getSoup():
 	Returns the beautiful soup structure from the subject listing website.
 	"""
 	
-	getActualResults = True
-	#getActualResults = False
+	#getActualResults = True
+	getActualResults = False
 	
 	if (getActualResults):
 		print "Fetching raw course data..."

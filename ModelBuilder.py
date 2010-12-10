@@ -3,6 +3,7 @@ from CourseScraper import *
 from CourseModels import *
 from ArtSciScraper import *
 import json
+import os
 
 def createCourseModels():
 	"""
@@ -55,6 +56,12 @@ def createCourseModels():
 	print "Done!\n"
 	
 	print "Writing JSON file..."
+	
+	filename = 'build/Debug/'
+	dir = os.path.dirname(filename)
+	if not os.path.exists(dir):
+		os.makedirs(dir)
+	
 	with open('build/Debug/courses.json', mode='w') as file:
 		file.write("[\n")
 		courseKeys = courses.keys()
