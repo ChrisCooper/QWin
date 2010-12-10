@@ -44,7 +44,7 @@ static TimetableManager *sharedInstance = nil;
 -(void) addSection:(Section*)section{
 	if (![sections doesContain:section]){
 		[sections addObject:section];
-		NSLog(@"Added section");
+		NSLog(@"Added section to timetable manager");
 	}
 }
 

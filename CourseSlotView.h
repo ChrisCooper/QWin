@@ -12,11 +12,14 @@
 
 @interface CourseSlotView : NSView {
 	Section *section;
+	NSColor *color;
 }
 
 @property (nonatomic, retain) Section *section;
+@property (nonatomic, retain) NSColor *color;
 
--(void)drawSection:(Section*)theSection inRect:(NSRect)rect;
--(void)drawTime:(NSDateComponents*)time withDuration:(NSDateComponents*)duration inRect:(NSRect)rect;
+- (id)initWithFrame:(NSRect)frame section:(Section*)_section color:(NSColor*)_color;
+
+-(void)drawTime:(NSDateComponents*)time withDuration:(NSDateComponents*)duration andColor:(NSColor*)color inRect:(NSRect)rect;
 
 @end

@@ -2102,7 +2102,7 @@
 														</object>
 														<object class="NSScrollView" id="823700931">
 															<reference key="NSNextResponder" ref="738919730"/>
-															<int key="NSvFlags">268</int>
+															<int key="NSvFlags">274</int>
 															<object class="NSMutableArray" key="NSSubviews">
 																<bool key="EncodedWithXMLCoder">YES</bool>
 																<object class="NSClipView" id="533638592">
@@ -2362,6 +2362,9 @@
 			<object class="NSViewController" id="525157210"/>
 			<object class="NSCustomObject" id="544955442">
 				<string key="NSClassName">SectionTableController</string>
+			</object>
+			<object class="NSCustomObject" id="765492203">
+				<string key="NSClassName">SlotViewController</string>
 			</object>
 		</object>
 		<object class="IBObjectContainer" key="IBDocument.Objects">
@@ -3246,6 +3249,22 @@
 						<reference key="destination" ref="256969344"/>
 					</object>
 					<int key="connectionID">813</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">slotCanvas</string>
+						<reference key="source" ref="765492203"/>
+						<reference key="destination" ref="224320037"/>
+					</object>
+					<int key="connectionID">815</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">slotcontroller</string>
+						<reference key="source" ref="544955442"/>
+						<reference key="destination" ref="765492203"/>
+					</object>
+					<int key="connectionID">816</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -4819,6 +4838,11 @@
 						<reference key="object" ref="582937027"/>
 						<reference key="parent" ref="52688500"/>
 					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">814</int>
+						<reference key="object" ref="765492203"/>
+						<reference key="parent" ref="0"/>
+					</object>
 				</object>
 			</object>
 			<object class="NSMutableDictionary" key="flattenedProperties">
@@ -5486,7 +5510,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">813</int>
+			<int key="maxID">816</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -5695,7 +5719,7 @@
 							<string>instructorColumn</string>
 							<string>letterColumn</string>
 							<string>roomColumn</string>
-							<string>slotView</string>
+							<string>slotcontroller</string>
 							<string>table</string>
 							<string>termColumn</string>
 							<string>timeColumn</string>
@@ -5708,7 +5732,7 @@
 							<string>NSTableColumn</string>
 							<string>NSTableColumn</string>
 							<string>NSTableColumn</string>
-							<string>CourseSlotView</string>
+							<string>SlotViewController</string>
 							<string>NSTableView</string>
 							<string>NSTableColumn</string>
 							<string>NSTableColumn</string>
@@ -5724,7 +5748,7 @@
 							<string>instructorColumn</string>
 							<string>letterColumn</string>
 							<string>roomColumn</string>
-							<string>slotView</string>
+							<string>slotcontroller</string>
 							<string>table</string>
 							<string>termColumn</string>
 							<string>timeColumn</string>
@@ -5753,8 +5777,8 @@
 								<string key="candidateClassName">NSTableColumn</string>
 							</object>
 							<object class="IBToOneOutletInfo">
-								<string key="name">slotView</string>
-								<string key="candidateClassName">CourseSlotView</string>
+								<string key="name">slotcontroller</string>
+								<string key="candidateClassName">SlotViewController</string>
 							</object>
 							<object class="IBToOneOutletInfo">
 								<string key="name">table</string>
@@ -5777,6 +5801,25 @@
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBProjectSource</string>
 						<string key="minorKey">SectionTableController.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">SlotViewController</string>
+					<string key="superclassName">NSObject</string>
+					<object class="NSMutableDictionary" key="outlets">
+						<string key="NS.key.0">slotCanvas</string>
+						<string key="NS.object.0">CourseSlotView</string>
+					</object>
+					<object class="NSMutableDictionary" key="toOneOutletInfosByName">
+						<string key="NS.key.0">slotCanvas</string>
+						<object class="IBToOneOutletInfo" key="NS.object.0">
+							<string key="name">slotCanvas</string>
+							<string key="candidateClassName">CourseSlotView</string>
+						</object>
+					</object>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">SlotViewController.h</string>
 					</object>
 				</object>
 			</object>

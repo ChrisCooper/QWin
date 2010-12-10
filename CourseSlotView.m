@@ -14,34 +14,41 @@
 @implementation CourseSlotView
 
 @synthesize section;
+@synthesize color;
 
-- (id)initWithFrame:(NSRect)frame {
+-(id)initWithFrame:(NSRect)frameRect{
+	NSLog(@"inited with frame");
+	self = [super initWithFrame:frameRect];
+    if (self) {
+        // Initialization code here.
+		[self setColor:[NSColor blueColor]];
+		[self setSection:nil];
+		[self setAlphaValue:0.7];
+    }
+    return self;
+}
+
+- (id)initWithFrame:(NSRect)frame section:(Section*)_section color:(NSColor*)_color{
+	NSLog(@"inited with frame, section, color");
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code here.
-		[self setAlphaValue:0.4];
+		[self setColor:_color];
+		[self setSection:_section];
+		[self setAlphaValue:0.7];
     }
     return self;
 }
 
 - (void)drawRect:(NSRect)dirtyRect {	
-	if (section != nil){
-		[self drawSection:section inRect:dirtyRect];
-	}
-	
-	for (Section *savedSection in [[TimetableManager sharedInstance] sections]){
-		[self drawSection:savedSection inRect:dirtyRect];
+	if (section != nil && color != nil){
+		for (TimePeriod *timePeriod in [section timePeriods]){
+			[self drawTime:[timePeriod dayAndTime] withDuration:[timePeriod duration] andColor:color inRect:[self bounds]];
+		}
 	}
 }
 
--(void)drawSection:(Section*)theSection inRect:(NSRect)rect{
-	
-	for (TimePeriod *timePeriod in [theSection timePeriods]){
-		[self drawTime:[timePeriod dayAndTime] withDuration:[timePeriod duration] inRect:rect];
-	}
-}
-
--(void)drawTime:(NSDateComponents*)time withDuration:(NSDateComponents*)duration inRect:(NSRect)rect{
+-(void)drawTime:(NSDateComponents*)time withDuration:(NSDateComponents*)duration andColor:(NSColor*)_color inRect:(NSRect)rect{
 	NSInteger day = [time weekday];
 	NSInteger hour = [time hour];
 	NSInteger minute = [time minute];
@@ -50,19 +57,19 @@
 	NSInteger durationMinutes  = [duration minute];
 	
 	
-	CGFloat rowHeight = rect.size.height / 27; //27 rows in total
-	CGFloat columnWidth = rect.size.width / 5; //5 columns in total
+	CGFloat rowHeight = [self bounds].size.height / 27; //27 rows in total
+	CGFloat columnWidth = [self bounds].size.width / 5; //5 columns in total
 	
 	NSInteger rowsDown = 2*(hour-8) + (minute/30);
 	
 	NSInteger left = columnWidth*(day-1);
 	NSInteger height = durationHours*rowHeight*2 + durationMinutes/30*rowHeight;
-	NSInteger top = rect.size.height - (rowsDown * rowHeight) - height;
+	NSInteger top = [self bounds].size.height - (rowsDown * rowHeight) - height;
 	
 	NSRect filledRect = NSMakeRect(left, top, columnWidth, height);
-	[[NSColor colorWithDeviceRed:0.0f green:0.0f blue:1.0f alpha:1.0] set];
-	NSRectFill(filledRect);
 	
+	[color set];
+	NSRectFill(filledRect);
 }
 
 @end

@@ -22,7 +22,7 @@
 @synthesize timeColumn;
 @synthesize infoController;
 @synthesize course;
-@synthesize slotView;
+@synthesize slotcontroller;;
 
 - (NSInteger)numberOfRowsInTableView:(NSTableView *)tableView {
 	NSInteger tableRows = [[course sections] count];
@@ -52,33 +52,28 @@
 }
 
 - (void)tableViewSelectionDidChange:(NSNotification *)notification{
-	NSLog(@"Selected index: %d, sections count: %d", [table selectedRow], [[course sections] count]);
 	NSInteger selectedIndex = [table selectedRow];
 	NSInteger sectionCount = [[course sections] count];
 	
 	if (selectedIndex >= sectionCount){
-		NSLog(@"Inside selected index: %d, sections count: %d", selectedIndex, sectionCount);
 		[self capTableSelection];
-		[slotView setSection:nil];
-		[slotView setNeedsDisplay:YES];
+		[slotcontroller setSection:nil];
 		return;
 	} else if (selectedIndex == -1){
 		if ([[course sections] count] != 0){
 			NSIndexSet *indexSet = [NSIndexSet indexSetWithIndex:0];
 			[table selectRowIndexes:indexSet byExtendingSelection:NO];
-			[slotView setSection:[[course sections] objectAtIndex:0]];
+			[slotcontroller setSection:[[course sections] objectAtIndex:0]];
 		} else{
-			[slotView setSection:nil];
+			[slotcontroller setSection:nil];
 		}
-		[slotView setNeedsDisplay:YES];
 		return;
 	}
 	
 		
 	Section *section = [[course sections] objectAtIndex: selectedIndex];
 	
-	[slotView setSection:section];
-	[slotView setNeedsDisplay:YES];
+	[slotcontroller setSection:section];
 }
 
 - (void)tableView:(NSTableView *)tableView didClickTableColumn:(NSTableColumn *)tableColumn
@@ -91,19 +86,18 @@
 	if ([table selectedRow] != -1){
 		Section *section = [[course sections] objectAtIndex:[table selectedRow]];
 		[[TimetableManager sharedInstance] addSection:section];
+		[slotcontroller addSection:section];
 	}
 }
 
 -(void)capTableSelection{
 	if ([[course sections] count] == 0){
 		[table selectRowIndexes:nil byExtendingSelection:NO];
-		NSLog(@"Setting section");
 	} else {
 		NSInteger sectionIndex = [[course sections] count] - 1;
 		NSIndexSet *indexSet = [NSIndexSet indexSetWithIndex:sectionIndex];
 		[table selectRowIndexes:indexSet byExtendingSelection:NO];
-		NSLog(@"Setting section");
-		[slotView setSection:[[course sections] objectAtIndex:sectionIndex]];
+		[slotcontroller setSection:[[course sections] objectAtIndex:sectionIndex]];
 	}
 }
 
